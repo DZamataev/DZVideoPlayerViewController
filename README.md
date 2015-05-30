@@ -110,3 +110,9 @@ Denis Zamataev, denis.zamataev@gmail.com
 ## License
 
 DZVideoPlayerViewController is available under the MIT license. See the LICENSE file for more info.
+
+---------------
+
+[![follow button](http://dzamataev.github.io/images/twitter_follow.png)](https://twitter.com/DZamataev)
+
+[![endorse](https://api.coderwall.com/dzamataev/endorsecount.png)](https://coderwall.com/dzamataev)
