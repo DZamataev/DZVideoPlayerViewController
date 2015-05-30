@@ -21,7 +21,15 @@ iOS Video Player control with playback controls, remote control center commands,
 
 ## Usage
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+This pod contains no Example project. You can find example usage of this control here at [OhMyTube github page.](https://github.com/DZamataev/OhMyTube)
+
+Basic snippet to start with:
+
+``` ObjC
+    self.videoPlayerViewController.videoURL = [NSURL URLWithString:@"http://distilleryvesper7-3.ak.instagram.com/fdc51d8ea73611e3a15612e740d32ce3_101.mp4"];
+    self.videoPlayerViewController.isBackgroundPlaybackEnabled = YES;
+    [self.videoPlayerViewController prepareAndPlayAutomatically:YES];
+```
 
 ## Requirements
 
