@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
                        iOS Video Player control with playback controls, remote control center commands, background playback, now playing info updates. Implemented with AVPlayer, supports both online and offline videos. Highly customizable with Interface Builder.
                        DESC
   s.homepage         = "https://github.com/DZamataev/DZVideoPlayerViewController"
-  s.screenshots     = "https://raw.githubusercontent.com/DZamataev/DZVideoPlayerViewController/master/Screenshots/screenshot1.png", "https://raw.githubusercontent.com/DZamataev/DZVideoPlayerViewController/master/Screenshots/screenshot2.png"
+  s.screenshots     = "https://raw.githubusercontent.com/DZamataev/DZVideoPlayerViewController/master/Screenshots/screenshot1.1.png", "https://raw.githubusercontent.com/DZamataev/DZVideoPlayerViewController/master/Screenshots/screenshot2.1.png"
   s.license          = 'MIT'
   s.author           = { "Denis Zamataev" => "denis.zamataev@gmail.com" }
   s.source           = { :git => "https://github.com/DZamataev/DZVideoPlayerViewController.git", :tag => s.version.to_s }

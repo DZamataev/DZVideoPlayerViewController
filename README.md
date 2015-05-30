@@ -11,9 +11,9 @@ iOS Video Player control, implemented with AVPlayer.
 
 ##Screenshots
 
-![image](https://raw.githubusercontent.com/DZamataev/DZVideoPlayerViewController/master/Screenshots/screenshot1.png)
+![image](https://raw.githubusercontent.com/DZamataev/DZVideoPlayerViewController/master/Screenshots/screenshot1.1.png)
 
-![image](https://raw.githubusercontent.com/DZamataev/DZVideoPlayerViewController/master/Screenshots/screenshot2.png)
+![image](https://raw.githubusercontent.com/DZamataev/DZVideoPlayerViewController/master/Screenshots/screenshot2.1.png)
 
 ##About
 
