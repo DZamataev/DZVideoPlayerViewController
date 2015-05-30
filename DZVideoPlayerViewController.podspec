@@ -10,29 +10,24 @@
 Pod::Spec.new do |s|
   s.name             = "DZVideoPlayerViewController"
   s.version          = "0.1.0"
-  s.summary          = "A short description of DZVideoPlayerViewController."
+  s.summary          = "iOS Video Player control, implemented with AVPlayer."
   s.description      = <<-DESC
-                       An optional longer description of DZVideoPlayerViewController
-
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
+                       iOS Video Player control with playback controls, remote control center commands, background playback, now playing info updates. Implemented with AVPlayer, supports both online and offline videos. Highly customizable with Interface Builder.
                        DESC
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/DZVideoPlayerViewController"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+  s.homepage         = "https://github.com/DZamataev/DZVideoPlayerViewController"
+  s.screenshots     = "https://raw.githubusercontent.com/DZamataev/DZVideoPlayerController/master/Screenshots/screenshot1.png", "https://raw.githubusercontent.com/DZamataev/DZVideoPlayerController/master/Screenshots/screenshot2.png"
   s.license          = 'MIT'
   s.author           = { "Denis Zamataev" => "denis.zamataev@gmail.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/DZVideoPlayerViewController.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => "https://github.com/DZamataev/DZVideoPlayerViewController.git", :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/dzamataev'
 
-  s.platform     = :ios, '7.0'
+  s.platform     = :ios, '8.0'
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes/**/*'
   s.resource_bundles = {
-    'DZVideoPlayerViewController' => ['Pod/Assets/*.png']
+    'DZVideoPlayerViewController' => ['Pod/Assets/*.png', 'Pod/Assets/*.xib']
   }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.frameworks = 'AVFoundation', 'AudioToolbox'
 end
