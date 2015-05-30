@@ -14,12 +14,12 @@ static const NSString *PlayerStatusContext;
 
 @interface DZVideoPlayerViewController ()
 {
+    BOOL _isFullscreen;
 }
 @property (strong, nonatomic) AVPlayer *player;
 @property (strong, nonatomic) AVPlayerItem *playerItem;
 
 @property (assign, nonatomic) BOOL isSeeking;
-@property (assign, nonatomic) BOOL isFullscreen;
 @property (assign, nonatomic) BOOL isControlsHidden;
 @property (assign, nonatomic) CGRect initialFrame;
 @property (strong, nonatomic) NSTimer *idleTimer;
@@ -93,6 +93,10 @@ static const NSString *PlayerStatusContext;
 
 - (BOOL)isPlaying {
     return [self.player rate] > 0.0f;
+}
+
+- (BOOL)isFullscreen {
+    return _isFullscreen;
 }
 
 #pragma mark - Navigation
@@ -188,7 +192,7 @@ static const NSString *PlayerStatusContext;
         self.pauseButton.enabled = NO;
     }
     
-    if ([self isFullscreen]) {
+    if (self.isFullscreen) {
         self.fullscreenExpandButton.hidden = YES;
         self.fullscreenExpandButton.enabled = NO;
         
@@ -205,7 +209,7 @@ static const NSString *PlayerStatusContext;
 }
 
 - (void)toggleFullscreen:(id)sender {
-    self.isFullscreen = !self.isFullscreen;
+    _isFullscreen = !_isFullscreen;
     [self onToggleFullscreen];
     [self startIdleCountdown];
 }

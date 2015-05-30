@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "DZVideoPlayerViewController"
-  s.version          = "0.1.1"
+  s.version          = "0.1.2"
   s.summary          = "iOS Video Player control, implemented with AVPlayer."
   s.description      = <<-DESC
                        iOS Video Player control with playback controls, remote control center commands, background playback, now playing info updates. Implemented with AVPlayer, supports both online and offline videos. Highly customizable with Interface Builder.

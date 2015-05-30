@@ -27,6 +27,7 @@
 @property (readonly, nonatomic) NSTimeInterval currentPlaybackTime;
 @property (readonly, nonatomic) NSTimeInterval availableDuration;
 @property (readonly, nonatomic) BOOL isPlaying;
+@property (readonly, nonatomic) BOOL isFullscreen;
 
 // Interface Builder Outlets
 @property (weak, nonatomic) IBOutlet DZPlayerView *playerView;
