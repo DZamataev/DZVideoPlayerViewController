@@ -33,7 +33,7 @@ Basic snippet to start with:
 
 ## Requirements
 
-Runs on iOS 8.0 and later
+Runs on iOS 7.0 and later
 
 ## Installation
 
