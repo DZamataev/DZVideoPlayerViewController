@@ -26,9 +26,58 @@ This pod contains no Example project. You can find example usage of this control
 Basic snippet to start with:
 
 ``` ObjC
+    self.videoPlayerViewController.delegate = self;
     self.videoPlayerViewController.videoURL = [NSURL URLWithString:@"http://distilleryvesper7-3.ak.instagram.com/fdc51d8ea73611e3a15612e740d32ce3_101.mp4"];
     self.videoPlayerViewController.isBackgroundPlaybackEnabled = YES;
     [self.videoPlayerViewController prepareAndPlayAutomatically:YES];
+```
+
+Implement DZVideoPlayerViewControllerDelegate
+
+``` ObjC
+#pragma mark - <DZVideoPlayerViewControllerDelegate>
+
+- (void)playerFailedToLoadAssetWithError:(NSError *)error {
+
+}
+
+- (void)playerDidPlay {
+    
+}
+
+- (void)playerDidPause {
+    
+}
+
+- (void)playerDidStop {
+    
+}
+
+- (void)playerDidToggleFullscreen {
+    if (self.videoPlayerViewController.isFullscreen) {
+        // TODO: implement expand videoPlayerViewController to fullscreen
+    }
+    else {
+        // TODO: implement shrink videoPlayerViewController from fullscreen
+    }
+}
+
+- (void)playerDidPlayToEndTime {
+    
+}
+
+- (void)playerFailedToPlayToEndTime {
+    
+}
+
+- (void)playerPlaybackStalled {
+    
+}
+
+- (void)playerGatherNowPlayingInfo:(NSMutableDictionary *)nowPlayingInfo {
+//    [nowPlayingInfo setObject:self.video.author forKey:MPMediaItemPropertyArtist];
+    [nowPlayingInfo setObject:self.video.title forKey:MPMediaItemPropertyTitle];
+}
 ```
 
 ## Requirements
