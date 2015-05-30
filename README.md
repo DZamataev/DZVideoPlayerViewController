@@ -88,9 +88,9 @@ Runs on iOS 7.0 and later
 
 There are at least 3 ways to customize this control.
 
-1. Create custom XIB and hook up the Outlets as they appear in default XIB ```(DZVideoPlayerViewController.xib)```. No need to hook actions, because they will be added programmatically in the ```DZVideoPlayerViewController``` class.
+1. Create custom XIB and hook up the Outlets as they appear in default XIB (```DZVideoPlayerViewController.xib```). No need to hook actions, because they will be added programmatically in the ```DZVideoPlayerViewController``` class.
 2. Subclass ```DZVideoPlayerViewController``` and provide your overrides for different methods.
-3. Manipulate views by their public properties. Set images for ```playButton``` and ```pauseButton```, change tint color on ```progressIndicator```, hide ```fullscreenExpandButton``` and ```fullscreenShrink``` button if you don't want that feature.
+3. Manipulate views by their public properties. Set images for ```playButton``` and ```pauseButton```, change tint color on ```progressIndicator```, hide ```fullscreenExpandButton``` and ```fullscreenShrinkButton``` if you don't want that feature.
 
 Feel free to provide Pull Requests with custom XIBs you create. Good luck!
 
