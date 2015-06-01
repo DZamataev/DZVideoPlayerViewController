@@ -17,7 +17,14 @@ iOS Video Player control, implemented with AVPlayer.
 
 ##About
 
-iOS Video Player control with playback controls, remote control center commands, background playback, now playing info updates. Implemented with AVPlayer, supports both online and offline videos. Highly customizable with Interface Builder.
+iOS Video Player control that features
+* play online or offline videos
+* playback controls: play, pause, toggle fullscreen, current time and left time labels
+* progress indicator that shows downloaded amount and allows the user to rewind
+* remote control center commands 
+* background playback
+* now playing info updates
+* easy customization with Interface Builder 
 
 ## Usage
 
@@ -102,6 +109,13 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod "DZVideoPlayerViewController"
 ```
+
+## Similar Controls
+
+* [GUIPlayerView](https://github.com/guilhermearaujo/GUIPlayerView)
+* [PBJVideoPlayer](https://github.com/piemonte/PBJVideoPlayer)
+* [YKMediaPlayerKit](https://github.com/YasKuraishi/YKMediaPlayerKit)
+* [iOS-Video-Player](https://github.com/haikieu/iOS-Video-Player)
 
 ## Author
 
