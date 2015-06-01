@@ -11,9 +11,12 @@
 #import <AudioToolbox/AudioToolbox.h>
 #import <MediaPlayer/MediaPlayer.h>
 
+#import "DZVideoPlayerViewController_constants.h"
 #import "DZVideoPlayerViewControllerDelegate.h"
 #import "DZPlayerView.h"
 #import "DZProgressIndicatorSlider.h"
+#import "DZVideoPlayerViewControllerContainerView.h"
+
 
 @interface DZVideoPlayerViewController : UIViewController
 @property (weak, nonatomic) id<DZVideoPlayerViewControllerDelegate> delegate;
@@ -43,6 +46,10 @@
 @property (weak, nonatomic) IBOutlet UIButton *fullscreenExpandButton;
 @property (weak, nonatomic) IBOutlet UIButton *fullscreenShrinkButton;
 //
+
++ (NSBundle*)bundle;
+
++ (NSString *)nibNameForStyle:(DZVideoPlayerViewControllerStyle)style;
 
 - (void)prepareAndPlayAutomatically:(BOOL)playAutomatically;
 

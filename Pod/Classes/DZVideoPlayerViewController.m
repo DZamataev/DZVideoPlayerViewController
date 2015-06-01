@@ -35,6 +35,52 @@ static const NSString *PlayerStatusContext;
 
 @implementation DZVideoPlayerViewController
 
++ (NSBundle *)bundle {
+    NSBundle *bundle = [NSBundle bundleWithPath:[[NSBundle mainBundle]
+                                                 pathForResource:@"DZVideoPlayerViewController"
+                                                 ofType:@"bundle"]];
+    return bundle;
+}
+
++ (NSString *)nibNameForStyle:(DZVideoPlayerViewControllerStyle)style {
+    NSString *nibName;
+    NSString *classString = NSStringFromClass([DZVideoPlayerViewController class]);
+    switch (style) {
+        case DZVideoPlayerViewControllerStyleDefault:
+            nibName = classString;
+            break;
+            
+        default:
+            break;
+    }
+    return nibName;
+}
+
+- (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        [self commonInit];
+    }
+    return self;
+}
+
+- (instancetype)init {
+    self = [super init];
+    if (self) {
+        [self commonInit];
+    }
+    return self;
+}
+
+- (void)awakeFromNib {
+    [super awakeFromNib];
+    [self commonInit];
+}
+
+- (void)commonInit {
+    
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
