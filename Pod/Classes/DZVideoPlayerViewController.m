@@ -297,13 +297,15 @@ static const NSString *PlayerStatusContext;
             current = CMTimeGetSeconds(self.player.currentTime);
         }
         
+        CGFloat left = duration - current;
+        
         [self.progressIndicator setValue:(current / duration)];
         [self.progressIndicator setSecondaryValue:([self availableDuration] / duration)];
         
         // Set time labels
         
-        NSString *currentTimeString = [self stringFromTimeInterval:current];
-        NSString *remainingTimeString = [self stringFromTimeInterval:duration];
+        NSString *currentTimeString = current > 0 ? [self stringFromTimeInterval:current] : @"00:00";
+        NSString *remainingTimeString = left > 0 ? [self stringFromTimeInterval:left] : @"00:00";
         
         [self.currentTimeLabel setText:currentTimeString];
         [self.remainingTimeLabel setText:[NSString stringWithFormat:@"-%@", remainingTimeString]];
