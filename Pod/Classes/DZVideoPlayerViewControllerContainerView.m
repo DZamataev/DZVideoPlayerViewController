@@ -47,9 +47,10 @@
     self.videoPlayerViewController = [[DZVideoPlayerViewController alloc] initWithNibName:nibName
                                                                                    bundle:bundle];
     self.translatesAutoresizingMaskIntoConstraints = NO;
-    [self addSubview: self.videoPlayerViewController.view];
+    self.videoPlayerViewController.view.frame = self.bounds;
+    [self addSubview:self.videoPlayerViewController.view];
     
-    NSDictionary *viewsDictionary = @{@"view":self.videoPlayerViewController};
+    NSDictionary *viewsDictionary = @{@"view":self.videoPlayerViewController.view};
     NSMutableArray *constraintsArray = [NSMutableArray new];
     [constraintsArray addObjectsFromArray:[NSLayoutConstraint
                                            constraintsWithVisualFormat:@"H:|[view]|"

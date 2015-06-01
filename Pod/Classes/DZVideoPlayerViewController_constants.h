@@ -9,5 +9,5 @@
 #import <Foundation/Foundation.h>
 
 typedef NS_ENUM(NSInteger, DZVideoPlayerViewControllerStyle) {
-    DZVideoPlayerViewControllerStyleDefault = 1
+    DZVideoPlayerViewControllerStyleDefault = 0
 };

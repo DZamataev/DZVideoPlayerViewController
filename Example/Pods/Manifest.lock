@@ -1,14 +1,14 @@
 PODS:
-  - DZVideoPlayerViewController (0.1.0)
+  - DZVideoPlayerViewController (0.1.3)
 
 DEPENDENCIES:
   - DZVideoPlayerViewController (from `../`)
 
 EXTERNAL SOURCES:
   DZVideoPlayerViewController:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
-  DZVideoPlayerViewController: c5e24a90bf1d315c15d5c03c84889c2573c91943
+  DZVideoPlayerViewController: 718cfa2500100e89060b38e43969f82e1d91bb86
 
 COCOAPODS: 0.37.2

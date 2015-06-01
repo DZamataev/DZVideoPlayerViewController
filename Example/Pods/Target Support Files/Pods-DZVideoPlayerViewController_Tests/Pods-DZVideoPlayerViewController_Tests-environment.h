@@ -10,5 +10,5 @@
 #define COCOAPODS_POD_AVAILABLE_DZVideoPlayerViewController
 #define COCOAPODS_VERSION_MAJOR_DZVideoPlayerViewController 0
 #define COCOAPODS_VERSION_MINOR_DZVideoPlayerViewController 1
-#define COCOAPODS_VERSION_PATCH_DZVideoPlayerViewController 0
+#define COCOAPODS_VERSION_PATCH_DZVideoPlayerViewController 3
 
