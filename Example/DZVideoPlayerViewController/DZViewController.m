@@ -27,6 +27,7 @@ NSString *const kVideoFileExtension = @"mp4";
     self.videoPlayerViewController = self.videoContainerView.videoPlayerViewController;
     self.videoPlayerViewController.delegate = self;
     self.videoPlayerViewController.isBackgroundPlaybackEnabled = YES;
+    self.videoPlayerViewController.shouldShowFullscreenExpandAndShrinkButtons = NO;
     
     NSURL *fileURL = [[NSBundle mainBundle] URLForResource:kVideoFileName withExtension:kVideoFileExtension];
     self.videoPlayerViewController.videoURL = fileURL;
@@ -77,6 +78,10 @@ NSString *const kVideoFileExtension = @"mp4";
 }
 
 - (void)playerPlaybackStalled {
+    
+}
+
+- (void)playerDoneButtonTouched {
     
 }
 

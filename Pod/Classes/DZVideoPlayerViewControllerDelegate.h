@@ -19,6 +19,7 @@
 - (void)playerDidPlayToEndTime;
 - (void)playerFailedToPlayToEndTime;
 - (void)playerPlaybackStalled;
+- (void)playerDoneButtonTouched;
 
 /*
  Check isFullscreen property and animate view controller's view appropriately.

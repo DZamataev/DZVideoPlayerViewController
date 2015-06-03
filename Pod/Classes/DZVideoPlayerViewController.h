@@ -25,6 +25,7 @@
 @property (assign, nonatomic) BOOL isBackgroundPlaybackEnabled; // defaults to NO
 @property (strong, nonatomic) NSMutableArray *viewsToHideOnIdle; // has toolbarView by default
 @property (assign, nonatomic) NSTimeInterval delayBeforeHidingViewsOnIdle; // defaults to 3 seconds
+@property (assign, nonatomic) BOOL shouldShowFullscreenExpandAndShrinkButtons; // defaults to YES
 
 // Readonly properties
 @property (readonly, nonatomic) NSTimeInterval currentPlaybackTime;
@@ -39,6 +40,7 @@
 
 @property (weak, nonatomic) IBOutlet UIView *topToolbarView;
 @property (weak, nonatomic) IBOutlet UIView *bottomToolbarView;
+@property (weak, nonatomic) IBOutlet UIButton *doneButton;
 @property (weak, nonatomic) IBOutlet UIButton *playButton;
 @property (weak, nonatomic) IBOutlet UIButton *pauseButton;
 @property (weak, nonatomic) IBOutlet DZProgressIndicatorSlider *progressIndicator;

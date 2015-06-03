@@ -1,5 +1,5 @@
 PODS:
-  - DZVideoPlayerViewController (0.1.6)
+  - DZVideoPlayerViewController (0.2.0)
   - Expecta (1.0.0)
   - Specta (1.0.1)
 
@@ -13,7 +13,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  DZVideoPlayerViewController: 49c1966b880f26b07e82275ceeca2688eea44498
+  DZVideoPlayerViewController: b70535850e709ceb1766ec0268920939b65bc207
   Expecta: 32604574add2c46a36f8d2f716b6c5736eb75024
   Specta: 097be314a75de103703a3bf9a529dc1a398509d7
 

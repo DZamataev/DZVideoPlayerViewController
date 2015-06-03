@@ -83,8 +83,9 @@ static const NSString *PlayerStatusContext;
 }
 
 - (void)commonInit {
-    self.viewsToHideOnIdle = [NSMutableArray new];
-    self.delayBeforeHidingViewsOnIdle = 3.0;
+    _viewsToHideOnIdle = [NSMutableArray new];
+    _delayBeforeHidingViewsOnIdle = 3.0;
+    _shouldShowFullscreenExpandAndShrinkButtons = YES;
 }
 
 - (void)viewDidLoad {
@@ -124,6 +125,11 @@ static const NSString *PlayerStatusContext;
 }
 
 #pragma mark - Properties
+
+- (void)setShouldShowFullscreenExpandAndShrinkButtons:(BOOL)shouldShowFullscreenExpandAndShrinkButtons {
+    _shouldShowFullscreenExpandAndShrinkButtons = shouldShowFullscreenExpandAndShrinkButtons;
+    [self syncUI];
+}
 
 - (NSTimeInterval)availableDuration {
     NSTimeInterval result = 0;
@@ -248,25 +254,36 @@ static const NSString *PlayerStatusContext;
         self.pauseButton.enabled = NO;
     }
     
-    if (self.isFullscreen) {
-        self.fullscreenExpandButton.hidden = YES;
-        self.fullscreenExpandButton.enabled = NO;
-        
-        self.fullscreenShrinkButton.hidden = NO;
-        self.fullscreenShrinkButton.enabled = YES;
+    if (self.shouldShowFullscreenExpandAndShrinkButtons) {
+        if (self.isFullscreen) {
+            self.fullscreenExpandButton.hidden = YES;
+            self.fullscreenExpandButton.enabled = NO;
+            
+            self.fullscreenShrinkButton.hidden = NO;
+            self.fullscreenShrinkButton.enabled = YES;
+        }
+        else {
+            self.fullscreenExpandButton.hidden = NO;
+            self.fullscreenExpandButton.enabled = YES;
+            
+            self.fullscreenShrinkButton.hidden = YES;
+            self.fullscreenShrinkButton.enabled = NO;
+        }
     }
     else {
-        self.fullscreenExpandButton.hidden = NO;
-        self.fullscreenExpandButton.enabled = YES;
+        self.fullscreenExpandButton.hidden = YES;
+        self.fullscreenExpandButton.enabled = NO;
         
         self.fullscreenShrinkButton.hidden = YES;
         self.fullscreenShrinkButton.enabled = NO;
     }
+    
 }
 
 - (void)toggleFullscreen:(id)sender {
     _isFullscreen = !_isFullscreen;
     [self onToggleFullscreen];
+    [self syncUI];
     [self startIdleCountdown];
 }
 
@@ -429,6 +446,8 @@ static const NSString *PlayerStatusContext;
     [self.progressIndicator addTarget:self action:@selector(seek:) forControlEvents:UIControlEventValueChanged];
     [self.progressIndicator addTarget:self action:@selector(startSeeking:) forControlEvents:UIControlEventTouchDown];
     [self.progressIndicator addTarget:self action:@selector(endSeeking:) forControlEvents:UIControlEventTouchUpInside|UIControlEventTouchUpOutside];
+    
+    [self.doneButton addTarget:self action:@selector(onDoneButtonTouched) forControlEvents:UIControlEventTouchUpInside];
 }
 
 - (void)resignKVO {
@@ -614,6 +633,12 @@ static const NSString *PlayerStatusContext;
 - (void)onGatherNowPlayingInfo:(NSMutableDictionary *)nowPlayingInfo {
     if ([self.delegate respondsToSelector:@selector(playerGatherNowPlayingInfo:)]) {
         [self.delegate playerGatherNowPlayingInfo:nowPlayingInfo];
+    }
+}
+
+- (void)onDoneButtonTouched {
+    if ([self.delegate respondsToSelector:@selector(playerDoneButtonTouched)]) {
+        [self.delegate playerDoneButtonTouched];
     }
 }
 
