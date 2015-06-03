@@ -7,351 +7,926 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		048EC60362C20E8149189F71 /* videoplayer_play@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 48E0F11C47A6CB14D61D198C /* videoplayer_play@2x.png */; };
-		18C2390381E2A16020AD9F29 /* videoplayer_shrink@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FC7E4FEFB58DC1EDA4BCE50 /* videoplayer_shrink@3x.png */; };
-		26408B5364ED8C8D50D0198B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50ACCB443B291F0F7F9FF79A /* AVFoundation.framework */; };
-		2B0CC6AD6E05D6077A03A6F9 /* videoplayer_shrink@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F855A0FDF091BE5522C391F /* videoplayer_shrink@2x.png */; };
-		32A3D61216197C122B4CCC09 /* DZVideoPlayerViewControllerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 56EA0CA97901E15E78CAC907 /* DZVideoPlayerViewControllerDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3716366A3CE2B25F52BE56F3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EB799C06C02F3CEF7264A60 /* Foundation.framework */; };
-		410E2D39E82EEFDE12AF96A6 /* DZPlayerView.h in Headers */ = {isa = PBXBuildFile; fileRef = C830314B8A6D0EDF5AF9633A /* DZPlayerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		43F49A7BF04F6A9639F9A4A9 /* Pods-DZVideoPlayerViewController_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3419D84A5BAF2BE3CD3433 /* Pods-DZVideoPlayerViewController_Tests-dummy.m */; };
-		54186F4E9D8B32CE1FBC836C /* DZProgressIndicatorSlider.h in Headers */ = {isa = PBXBuildFile; fileRef = EA0B8750C25F74919C008BB3 /* DZProgressIndicatorSlider.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		590FBC9FD323C1F5E7ED5EA6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EB799C06C02F3CEF7264A60 /* Foundation.framework */; };
-		5BA8EB3B0C4881C9074B7EBD /* videoplayer_pause@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C59A20F9124D599781D259DF /* videoplayer_pause@3x.png */; };
-		6383637F90C559EC6FAB54DB /* videoplayer_shrink@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E6D276F97206BA170086E83 /* videoplayer_shrink@1x.png */; };
-		6D433FEE2A6DB2FADA38AAC0 /* Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BD275AA568B63BD7208792A /* Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7AA8B79AC925B0770A55E199 /* videoplayer_expand@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BD793F2CF4A3D6D976AA756D /* videoplayer_expand@3x.png */; };
-		87A1A4FFA2ACD6D9EF1AD861 /* videoplayer_expand@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C7F7D3E6533EEB0F2FE5711 /* videoplayer_expand@2x.png */; };
-		8EE2831B50465B87BAE70BC6 /* Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C420E935905DEEAA06FF3B91 /* Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController-dummy.m */; };
-		8EFD35F7BAF939CCA7F5956B /* DZVideoPlayerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 340F4E7D0F144919284FC92E /* DZVideoPlayerViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9740BCC5CB3878517BB8FAC2 /* videoplayer_expand@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08534F480F1413F5060DFD31 /* videoplayer_expand@1x.png */; };
-		9B1860700B08C6B3498B8C90 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87739259B97AEE35CB5783EE /* AudioToolbox.framework */; };
-		B5C70EC4D9C5E82ACC3C26F5 /* DZProgressIndicatorSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = EF663758F6F73910696F194C /* DZProgressIndicatorSlider.m */; };
-		B7A68C10CB3420E75EB5A482 /* videoplayer_pause@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 98EB564F14573EFCFEAC492C /* videoplayer_pause@2x.png */; };
-		B846FD97B28C472A86C1EBC4 /* Pods-DZVideoPlayerViewController_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 90FF537E61417B9B3A0D2B22 /* Pods-DZVideoPlayerViewController_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BD62D987F3D4046D5CDC635E /* DZVideoPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 725D282164B96B9FDA7BBCE3 /* DZVideoPlayerViewController.xib */; };
-		D06CB3F1E61CFAE84D837A11 /* DZVideoPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB88C01DCBAB2A2256FFB21 /* DZVideoPlayerViewController.m */; };
-		D7F87516BC4F51C9416B9652 /* DZVideoPlayerViewControllerContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A379B1CE881473025F6F4F /* DZVideoPlayerViewControllerContainerView.m */; };
-		E0EFC7E02CFB4316E901C809 /* DZVideoPlayerViewControllerContainerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 19D2E53FEFD3232D087D360A /* DZVideoPlayerViewControllerContainerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E2AD18DFFE6769A36B50567E /* videoplayer_play@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = F3E6F9D874923049D7A0588D /* videoplayer_play@1x.png */; };
-		E6878020EE2D6283F2A2FA74 /* videoplayer_play@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 141295004BBD8F140DAB9845 /* videoplayer_play@3x.png */; };
-		F431E13EDD33A150FA2BE3FE /* videoplayer_pause@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = E76FCA4B4518CD2DD52A4B0C /* videoplayer_pause@1x.png */; };
-		FA580848AE18DA46694ABBB6 /* DZVideoPlayerViewController_constants.h in Headers */ = {isa = PBXBuildFile; fileRef = B49E2B4661827EBBB4071B13 /* DZVideoPlayerViewController_constants.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FA65F041578B5D2D7CC38F6F /* DZVideoPlayerViewController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5E3C9A6A11DAD1866A6F951F /* DZVideoPlayerViewController.bundle */; };
-		FD7F1D77E1A640D0C10187FF /* DZPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = A750ED6AB0C3821963F51F78 /* DZPlayerView.m */; };
+		015B08842DD8DAFD4DD01644 /* EXPMatchers+beNil.h in Headers */ = {isa = PBXBuildFile; fileRef = 56B08306FA75A51ABF26CF6D /* EXPMatchers+beNil.h */; };
+		016C80FB77540B46B089FC2F /* Pods-DZVideoPlayerViewController_Example-DZVideoPlayerViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4769702F3AF16932981EC7C4 /* Pods-DZVideoPlayerViewController_Example-DZVideoPlayerViewController-dummy.m */; };
+		03D79CE87E487C6E0F4346D4 /* EXPMatchers+beNil.m in Sources */ = {isa = PBXBuildFile; fileRef = 07C1FAE1E7E303BBC5FA5E44 /* EXPMatchers+beNil.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		045122E8A7BEE807A19474CB /* NSObject+Expecta.h in Headers */ = {isa = PBXBuildFile; fileRef = 589E120F830358034A0AAFA7 /* NSObject+Expecta.h */; };
+		046A88FF3D18FEC66D263C60 /* EXPMatchers+beSubclassOf.h in Headers */ = {isa = PBXBuildFile; fileRef = 5ED67272E6D1106DA8F16F4E /* EXPMatchers+beSubclassOf.h */; };
+		08E45626EE0CF839A672DF21 /* EXPMatchers+beInstanceOf.h in Headers */ = {isa = PBXBuildFile; fileRef = DC9E02482EE1BE41CF23C9EC /* EXPMatchers+beInstanceOf.h */; };
+		0B014AC3BBD88557B5633EEE /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12E89F1DD451A00711175056 /* XCTest.framework */; };
+		0B1DF4B4CFA59FFF69779A4A /* SPTExampleGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 351E1557B7CD981382202E9C /* SPTExampleGroup.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		0C0FC9D3D477AC2BE71EE5E4 /* videoplayer_pause@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AAE0177A1912E367FF6E5ED3 /* videoplayer_pause@2x.png */; };
+		0D69A444F80677B6DB403F7B /* SPTTestSuite.h in Headers */ = {isa = PBXBuildFile; fileRef = A05617AC42451838B40D9BE9 /* SPTTestSuite.h */; };
+		1030D3A6FD6380B6FA88EF62 /* SpectaUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 02CA156528AA6EE032D5D219 /* SpectaUtility.h */; };
+		10AA5D05B2205CBCBC6D49F4 /* SPTGlobalBeforeAfterEach.h in Headers */ = {isa = PBXBuildFile; fileRef = 10ECC0BBE9D269B0CC307F13 /* SPTGlobalBeforeAfterEach.h */; };
+		15D0197EBAFF5AE927851B78 /* NSValue+Expecta.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E3B069C9A4325ED9F1EA021 /* NSValue+Expecta.h */; };
+		1604CE72638AA82EFAEE0D16 /* EXPDoubleTuple.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F7D31F4FB141C6DAB214FF7 /* EXPDoubleTuple.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		16188F768F94DB336FAFAEB0 /* EXPMatchers+beKindOf.h in Headers */ = {isa = PBXBuildFile; fileRef = D01FFEDFC110ADB20CBA0BBB /* EXPMatchers+beKindOf.h */; };
+		17396A5CA63448DED86D614A /* DZVideoPlayerViewController_constants.h in Headers */ = {isa = PBXBuildFile; fileRef = 588D8479E1349943B2CA12C1 /* DZVideoPlayerViewController_constants.h */; };
+		183A3761646337BD98FAE425 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 018A0921DBD4146182E33749 /* Foundation.framework */; };
+		19D21F27930215621D564D76 /* DZVideoPlayerViewControllerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D054571968BD43A8532D371 /* DZVideoPlayerViewControllerDelegate.h */; };
+		19E4620B394248239B2B36CC /* EXPMatchers+equal.m in Sources */ = {isa = PBXBuildFile; fileRef = 797A62556AED9C60DE21B12A /* EXPMatchers+equal.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		1BEBA66B6E0FF7309C8788D3 /* DZPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = D82A14B548B3B3ABB32156A5 /* DZPlayerView.m */; };
+		1C315CE6457B7E8E909DD424 /* DZProgressIndicatorSlider.h in Headers */ = {isa = PBXBuildFile; fileRef = CC87D9473A37714C1D238307 /* DZProgressIndicatorSlider.h */; };
+		1F9FF8CF3561D8A456906B71 /* SPTExcludeGlobalBeforeAfterEach.h in Headers */ = {isa = PBXBuildFile; fileRef = 33CABE0E915A0E042BE408D8 /* SPTExcludeGlobalBeforeAfterEach.h */; };
+		212D94C6F599506A36969E1D /* EXPMatchers+conformTo.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A62DF0596DA748F45DB38D8 /* EXPMatchers+conformTo.h */; };
+		21DF8C25CF59DC4FAA9E9973 /* EXPMatchers+beFalsy.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D8F86DE2D81D92E5BC42AF /* EXPMatchers+beFalsy.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		22FADE8B9029D71B60973785 /* DZVideoPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA6F65C7247A0F84ED68ADE1 /* DZVideoPlayerViewController.m */; };
+		23AF5450CDCDE72FFE42A94E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12E89F1DD451A00711175056 /* XCTest.framework */; };
+		245A0F5028E2C08EA357367A /* EXPMatchers.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FF9DA4FE4603BBF6BABA656 /* EXPMatchers.h */; };
+		257ACD40CE726DEA64AA1030 /* DZProgressIndicatorSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = B7ECDC8C77866239ED1A65A9 /* DZProgressIndicatorSlider.m */; };
+		2CB413752F6391A5F867A97C /* videoplayer_play@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2928997962587193355FF7F0 /* videoplayer_play@1x.png */; };
+		2D911817BAC8BFD213B3B287 /* videoplayer_expand@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 425F9E028AC3602FE532110A /* videoplayer_expand@2x.png */; };
+		2EB4042049223591E2DA3126 /* videoplayer_play@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A610BD18098A4CB46704227 /* videoplayer_play@2x.png */; };
+		31B8CE2C2028FC1924BDC10B /* EXPMatchers+raiseWithReason.m in Sources */ = {isa = PBXBuildFile; fileRef = 436ACA4965765ED6D6A21690 /* EXPMatchers+raiseWithReason.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		34EC8BDD80A9C2F23DBF658D /* videoplayer_shrink@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 444CC46A7F44EF0FCD0F82A3 /* videoplayer_shrink@1x.png */; };
+		35BE1EE0FA84A14593CE5595 /* DZVideoPlayerViewControllerContainerView.h in Headers */ = {isa = PBXBuildFile; fileRef = C3595EB45E78626D835C5B9C /* DZVideoPlayerViewControllerContainerView.h */; };
+		3673721995C1076AE6B1D9B6 /* EXPMatchers+conformTo.m in Sources */ = {isa = PBXBuildFile; fileRef = E6524C6DBE535AD535BD63B9 /* EXPMatchers+conformTo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		36E3155BECE3C9A847206D8B /* Pods-DZVideoPlayerViewController_Tests-Expecta-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 735CC095FBC8FE8306DA3B2C /* Pods-DZVideoPlayerViewController_Tests-Expecta-dummy.m */; };
+		38A2CA81EC22773FEC127FD3 /* EXPMatchers+match.h in Headers */ = {isa = PBXBuildFile; fileRef = C64EBF85E368B6900A3003C6 /* EXPMatchers+match.h */; };
+		3AE01C226137F144821D77C4 /* EXPExpect.h in Headers */ = {isa = PBXBuildFile; fileRef = 94E3E6F8D17FD8CF06EA499F /* EXPExpect.h */; };
+		3B95BBCF2C7A2227D06C00B5 /* videoplayer_shrink@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F4DFA03A9584DDFFCED0312B /* videoplayer_shrink@2x.png */; };
+		3C972C8E4EF9920E471A85CE /* EXPMatchers+equal.h in Headers */ = {isa = PBXBuildFile; fileRef = 0543A0ED719BB02DF6CEDDB8 /* EXPMatchers+equal.h */; };
+		3D84340C1CD012DB7690A579 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 639ADDD7C886D53E915AFB48 /* AVFoundation.framework */; };
+		3E5CAE01B1420AFA2D4D9DB2 /* XCTestCase+Specta.h in Headers */ = {isa = PBXBuildFile; fileRef = E06AC5E0CDB4539EA827AE0C /* XCTestCase+Specta.h */; };
+		3EC1BE23C4709627974C69D8 /* DZVideoPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E1E1A7FAB3AFB99861763EA /* DZVideoPlayerViewController.xib */; };
+		434CDFEE1DDE42CB686B3438 /* EXPMatchers+contain.h in Headers */ = {isa = PBXBuildFile; fileRef = 081BA545DFBFA39F24794F63 /* EXPMatchers+contain.h */; };
+		4745EAB00AF7C4FBD769AD80 /* EXPMatchers+beginWith.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFA9EAA341B04FDA55597C0 /* EXPMatchers+beginWith.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		47494B2BF1BD268B0BAD68C5 /* EXPMatchers+postNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C44BD1C887269AAAB32E46 /* EXPMatchers+postNotification.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		48BB3C3F39A624DDB312AD19 /* SPTExample.m in Sources */ = {isa = PBXBuildFile; fileRef = D327A7845F7CA85B2532FFA2 /* SPTExample.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		48F2D27AD6D0D86A1E266D18 /* videoplayer_play@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A610BD18098A4CB46704227 /* videoplayer_play@2x.png */; };
+		49145C0AC0BC457A6C24DE20 /* ExpectaSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = D36A38CB50ED953DC43C785F /* ExpectaSupport.h */; };
+		49F9B5D4A68BF257D60FDB0D /* DZVideoPlayerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 424F136EDC90121A4505D063 /* DZVideoPlayerViewController.h */; };
+		4DA1983944FB8DF8481103C5 /* EXPMatchers+raise.m in Sources */ = {isa = PBXBuildFile; fileRef = 682814DBF2EE6BE87D41A8D9 /* EXPMatchers+raise.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		50DC0B8D2E078D8AC9653052 /* EXPMatchers+beKindOf.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C19327EECAAFEEBA21FDEB /* EXPMatchers+beKindOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		513C25183E2B38CDA66E2D7C /* ExpectaSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = ACBD6FEB0860B4B527DAF997 /* ExpectaSupport.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		530BEA1CD153ACCB3780F49C /* DZVideoPlayerViewControllerContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = A47753DF083C1A081464EF26 /* DZVideoPlayerViewControllerContainerView.m */; };
+		53E9FB247C6140DFB98C920C /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54FF7277B50DC33553AF8005 /* AudioToolbox.framework */; };
+		54DBBA7DC3007387C03195BC /* videoplayer_shrink@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E07B8A8D090ADAE7147FFC5 /* videoplayer_shrink@3x.png */; };
+		54FD57D7C9E117EE46DE9F4D /* SPTSharedExampleGroups.m in Sources */ = {isa = PBXBuildFile; fileRef = 032710AF1A2B75C48BBC01FF /* SPTSharedExampleGroups.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		57DA408B90A67DC59AF83A13 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 639ADDD7C886D53E915AFB48 /* AVFoundation.framework */; };
+		585B75D2003C535A8102FD4C /* EXPMatchers+respondTo.h in Headers */ = {isa = PBXBuildFile; fileRef = CC59AC75D745883D2D834408 /* EXPMatchers+respondTo.h */; };
+		58A540821F5F3D2895E27B40 /* SpectaTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = BB654F7E885E35FF5A592011 /* SpectaTypes.h */; };
+		5C302F68F01E7D5D248ACFB3 /* DZProgressIndicatorSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = B7ECDC8C77866239ED1A65A9 /* DZProgressIndicatorSlider.m */; };
+		5CE915657439D17C0A2E3CC2 /* EXPMatchers+beLessThan.h in Headers */ = {isa = PBXBuildFile; fileRef = B4E7286B93E7BC51DEE00930 /* EXPMatchers+beLessThan.h */; };
+		5D5B6420A9291F22F47887EF /* SpectaDSL.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B1FBDFC021D6B49C9CF768 /* SpectaDSL.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		5FFC4968ED9E43CAA7B958E2 /* EXPMatchers+raise.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B5EAFBAD0D7E2B70B52A959 /* EXPMatchers+raise.h */; };
+		602407D36A216D988AE9D07A /* EXPMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = CF415EBCA677C4CAA3D326E3 /* EXPMatcher.h */; };
+		60F923BFED62E3C3B7B64D72 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 018A0921DBD4146182E33749 /* Foundation.framework */; };
+		6355A9D9AEC35321D22FECF8 /* EXPMatchers+beSupersetOf.h in Headers */ = {isa = PBXBuildFile; fileRef = 85573C21876DA903C22C614E /* EXPMatchers+beSupersetOf.h */; };
+		640790D0D10893FB9D96BE23 /* EXPMatchers+beCloseTo.h in Headers */ = {isa = PBXBuildFile; fileRef = 276ECEC39C79D15DA8BF9690 /* EXPMatchers+beCloseTo.h */; };
+		6478850A8120D529CF99633C /* videoplayer_expand@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 52D867DE6DC02829A2B76EF7 /* videoplayer_expand@1x.png */; };
+		6685655964404B53ED303997 /* EXPMatchers+beIdenticalTo.m in Sources */ = {isa = PBXBuildFile; fileRef = C65CEB7530D6A3A7EEF02E2D /* EXPMatchers+beIdenticalTo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		683207F03ECB7BD183E737F4 /* SPTExampleGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = CEF4E92294167A53B659CC8F /* SPTExampleGroup.h */; };
+		696A27666EFCB847A4E0B020 /* Pods-DZVideoPlayerViewController_Tests-Specta-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 97D82C833BE31497D91F6C63 /* Pods-DZVideoPlayerViewController_Tests-Specta-dummy.m */; };
+		6C184CA04F67ED63F9D20EFF /* Pods-DZVideoPlayerViewController_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C64AB417685811A95DBFCE85 /* Pods-DZVideoPlayerViewController_Example-dummy.m */; };
+		755FF4931761E18540CEDA3F /* EXPMatchers+endWith.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C42B70E5EC326E28A6E864A /* EXPMatchers+endWith.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		76F958DF5FB551D21CCB897D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 018A0921DBD4146182E33749 /* Foundation.framework */; };
+		786DE8AD86E1E53AF8BF44FF /* EXPMatchers+beInTheRangeOf.h in Headers */ = {isa = PBXBuildFile; fileRef = C3EA8EF76B4DF1845E063A8E /* EXPMatchers+beInTheRangeOf.h */; };
+		7A192FF3273EDF751756B845 /* EXPFloatTuple.h in Headers */ = {isa = PBXBuildFile; fileRef = B99049C87EA39C9BAFF8D31F /* EXPFloatTuple.h */; };
+		7B494AF9D00E6087F8EBB770 /* videoplayer_shrink@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F4DFA03A9584DDFFCED0312B /* videoplayer_shrink@2x.png */; };
+		7CD0A8D76DD8243E8F1F2115 /* videoplayer_pause@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C1444B0149367590AEFE407 /* videoplayer_pause@3x.png */; };
+		7E806BB5CAB9952956538E87 /* DZPlayerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 68A4D8D78019D0F7FCB466E3 /* DZPlayerView.h */; };
+		806281B9CEE6C214504BE527 /* EXPMatchers+contain.m in Sources */ = {isa = PBXBuildFile; fileRef = 5228C84D59BCFFCB03A147E3 /* EXPMatchers+contain.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		821CD359E56BD7F6DC8A316F /* EXPMatchers+beLessThanOrEqualTo.h in Headers */ = {isa = PBXBuildFile; fileRef = B0C94905AB98FE1DFC618FBD /* EXPMatchers+beLessThanOrEqualTo.h */; };
+		849BA268C143CD19DC64B39B /* SPTCompiledExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E53E4A77146B5B12583A466 /* SPTCompiledExample.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		86B68888D9DC8D78523B0A97 /* videoplayer_pause@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = FD3500CFA07043EA9F9DD04B /* videoplayer_pause@1x.png */; };
+		871FB8C7D5F42FCB5F339D9A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 018A0921DBD4146182E33749 /* Foundation.framework */; };
+		87D4E95AB3FAFE3BC9A34C41 /* videoplayer_expand@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 425F9E028AC3602FE532110A /* videoplayer_expand@2x.png */; };
+		8A8A93D9FB4B368EDE8A2944 /* EXPMatchers+beGreaterThanOrEqualTo.m in Sources */ = {isa = PBXBuildFile; fileRef = 340F2C0BA25C62DAF7C00585 /* EXPMatchers+beGreaterThanOrEqualTo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8C17E54C58CEE025EDB2CE37 /* EXPMatchers+haveCountOf.h in Headers */ = {isa = PBXBuildFile; fileRef = D350053444FCA28980638FBA /* EXPMatchers+haveCountOf.h */; };
+		8D06290E4EB16EA96C70F051 /* EXPMatchers+beginWith.h in Headers */ = {isa = PBXBuildFile; fileRef = A64FBE4A4D504D6203106439 /* EXPMatchers+beginWith.h */; };
+		91DE7229D0E0F296FA9D14D3 /* EXPMatchers+beSubclassOf.m in Sources */ = {isa = PBXBuildFile; fileRef = D52A178AEC9F573F56F89C3C /* EXPMatchers+beSubclassOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		945977BA4780502B8BF17A9E /* DZVideoPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA6F65C7247A0F84ED68ADE1 /* DZVideoPlayerViewController.m */; };
+		94862AC9901AEEA71F441FB0 /* EXPMatchers+beInstanceOf.m in Sources */ = {isa = PBXBuildFile; fileRef = E4BD4E6B605B1F0676E87D67 /* EXPMatchers+beInstanceOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		95A3FD57B99574AAB3C5E5D7 /* EXPMatchers+postNotification.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FFDA45923CC205D2714A87C /* EXPMatchers+postNotification.h */; };
+		9769D313A82D0EADB74C1DD8 /* EXPBlockDefinedMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 9866AAE75F1931145C6ADB72 /* EXPBlockDefinedMatcher.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9A6A098B8766C76F71D7E929 /* EXPMatcherHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = F78DE6A577FAB6954A52240F /* EXPMatcherHelpers.h */; };
+		9AF942B294F8DA6EB10D7410 /* ExpectaObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 868FB078B0320A6462D39072 /* ExpectaObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A0983ADE90F337CC20F4ACE7 /* EXPFloatTuple.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA38EB7E327F98DA40BA167 /* EXPFloatTuple.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A41D05C18B0022ED89E2A17D /* Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C14D3BDDFA090D98F11B32C /* Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController-dummy.m */; };
+		A440431E60690CAA0410E816 /* SPTCompiledExample.h in Headers */ = {isa = PBXBuildFile; fileRef = 0280C69506053FFF15ED86B3 /* SPTCompiledExample.h */; };
+		A45FC92116B2C4B566DD6B1A /* SPTCallSite.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CB183DD1CC521A2CF647C0A /* SPTCallSite.h */; };
+		A82362CEFD894C0DC885ABA0 /* Specta.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F298551C48602ACF03AE4EB /* Specta.h */; };
+		A8AC19CED93A6570CFD177A0 /* DZVideoPlayerViewControllerContainerView.h in Headers */ = {isa = PBXBuildFile; fileRef = C3595EB45E78626D835C5B9C /* DZVideoPlayerViewControllerContainerView.h */; };
+		AA1436D3A8067B52A07A0180 /* DZVideoPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E1E1A7FAB3AFB99861763EA /* DZVideoPlayerViewController.xib */; };
+		AAF146B32BFA16005FE486AF /* SpectaUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 31252A4763A98455586F132B /* SpectaUtility.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		AE4BD1D219D7EBE560B239ED /* EXPDoubleTuple.h in Headers */ = {isa = PBXBuildFile; fileRef = FDCBCF6A6D86F567C7A32E61 /* EXPDoubleTuple.h */; };
+		AE97E4473D69D0EEF4FC3310 /* EXPMatcherHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = C81671C5CCCCC4F4DC3CACF4 /* EXPMatcherHelpers.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		AE9BF1C70E6010961199CDFF /* EXPDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EDD30CA5FF3EDAD62855479 /* EXPDefines.h */; };
+		B3AC695151A2253A087CF888 /* SPTSpec.h in Headers */ = {isa = PBXBuildFile; fileRef = B0F46B47D853E3F708C07A01 /* SPTSpec.h */; };
+		B441FB9543320BD76E7EC511 /* videoplayer_expand@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FDC1115587C7896D59F7D06 /* videoplayer_expand@3x.png */; };
+		B67D60445D682EB74D0383F8 /* EXPMatchers+haveCountOf.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA69ECE2247C1A6F51FC261 /* EXPMatchers+haveCountOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B6D0DFC511C1C2A3C1B6EE75 /* EXPMatchers+beTruthy.h in Headers */ = {isa = PBXBuildFile; fileRef = DE724D8FED7FA211E8CFF1BD /* EXPMatchers+beTruthy.h */; };
+		BA400C54912A105460EDFA51 /* DZProgressIndicatorSlider.h in Headers */ = {isa = PBXBuildFile; fileRef = CC87D9473A37714C1D238307 /* DZProgressIndicatorSlider.h */; };
+		BE6D2480F5BE20CDB41E7B2F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 018A0921DBD4146182E33749 /* Foundation.framework */; };
+		C13E8422F5A3619703A0A9D3 /* EXPMatchers+beFalsy.h in Headers */ = {isa = PBXBuildFile; fileRef = 914305C5FE53A260BC091032 /* EXPMatchers+beFalsy.h */; };
+		C20D6D220B3831F2AEFD14AF /* Pods-DZVideoPlayerViewController_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A10860AD28FC856D972DBF /* Pods-DZVideoPlayerViewController_Tests-dummy.m */; };
+		C7B6F1FA85144750145AA312 /* videoplayer_play@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7826AC28A066BC5D257EE3C8 /* videoplayer_play@3x.png */; };
+		C97E73CB507B4C95ED379A37 /* EXPMatchers+beLessThanOrEqualTo.m in Sources */ = {isa = PBXBuildFile; fileRef = C813E28003A828792E2AB878 /* EXPMatchers+beLessThanOrEqualTo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CB6489079CCBE8B794F2488E /* videoplayer_play@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2928997962587193355FF7F0 /* videoplayer_play@1x.png */; };
+		CD3B0FD2C91C966F6873CC8C /* SPTTestSuite.m in Sources */ = {isa = PBXBuildFile; fileRef = D55DD9FC9D429A1C912622C1 /* SPTTestSuite.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		CFA80A1C19E1EAB509FF8F36 /* DZPlayerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 68A4D8D78019D0F7FCB466E3 /* DZPlayerView.h */; };
+		D09DF29C9E7CAE411D6B9B7E /* EXPMatchers+beCloseTo.m in Sources */ = {isa = PBXBuildFile; fileRef = 765D83155EF9054BA3582A23 /* EXPMatchers+beCloseTo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D0E1B76BDEB8A90ACA5F3226 /* videoplayer_play@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7826AC28A066BC5D257EE3C8 /* videoplayer_play@3x.png */; };
+		D1AEE30EDD8B00087B117219 /* videoplayer_pause@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AAE0177A1912E367FF6E5ED3 /* videoplayer_pause@2x.png */; };
+		D23FA6A8FF040147BEF15BF7 /* EXPMatchers+beTruthy.m in Sources */ = {isa = PBXBuildFile; fileRef = 494E465CED1508FFF4256CE7 /* EXPMatchers+beTruthy.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D480E4DB55FCE2A0FAADB2A4 /* videoplayer_pause@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = FD3500CFA07043EA9F9DD04B /* videoplayer_pause@1x.png */; };
+		D4C70BD145DC6BCD58E04404 /* videoplayer_pause@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C1444B0149367590AEFE407 /* videoplayer_pause@3x.png */; };
+		D5AB8EB17EC71ABF6C54214F /* DZVideoPlayerViewControllerContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = A47753DF083C1A081464EF26 /* DZVideoPlayerViewControllerContainerView.m */; };
+		D7FC5770DE0D92F07C733262 /* EXPMatchers+beGreaterThan.m in Sources */ = {isa = PBXBuildFile; fileRef = 1261279B7CE310C9BEA5D914 /* EXPMatchers+beGreaterThan.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D8448855A21AB7A2BF99155D /* Expecta.h in Headers */ = {isa = PBXBuildFile; fileRef = C542EFFD7A5BC22CB3D1ED67 /* Expecta.h */; };
+		DAB1FCAD9F4236FB1BADABCE /* SPTExample.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DDFB4CFC0B3DDB05CA09C6D /* SPTExample.h */; };
+		DB8DB2EBDB2AC279F5C520BE /* EXPMatchers+beGreaterThanOrEqualTo.h in Headers */ = {isa = PBXBuildFile; fileRef = B94F46AAC5A555DC71E167B1 /* EXPMatchers+beGreaterThanOrEqualTo.h */; };
+		DC9F3F9C1374D2CE55B0FDF9 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54FF7277B50DC33553AF8005 /* AudioToolbox.framework */; };
+		DE00075FA93D22E066DB1DC7 /* EXPMatchers+beInTheRangeOf.m in Sources */ = {isa = PBXBuildFile; fileRef = 70B0D07DF6974A0F41337D46 /* EXPMatchers+beInTheRangeOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		DE2CC95CFCF7E26538AB89EC /* EXPMatchers+match.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F2FF3AC0090F0B32B9173C5 /* EXPMatchers+match.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		DE9A9E090820BAE0E736F789 /* DZVideoPlayerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 424F136EDC90121A4505D063 /* DZVideoPlayerViewController.h */; };
+		E0A00C234B17BE2FDEBC1647 /* SPTSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EFC9ED626D24F433189403E /* SPTSpec.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		E31B24B898AD118B6DE765E8 /* EXPMatchers+beLessThan.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D50633C598E6929BEF07A1 /* EXPMatchers+beLessThan.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E4F96F707695700E1D8785EF /* XCTestCase+Specta.m in Sources */ = {isa = PBXBuildFile; fileRef = 1420A61E163767CA85DF4EFA /* XCTestCase+Specta.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		E5C8D1948DE43ED42878A543 /* EXPMatchers+endWith.h in Headers */ = {isa = PBXBuildFile; fileRef = 68953EFDDB8834943D3625A9 /* EXPMatchers+endWith.h */; };
+		E7E465BE6D18F4AE22C9E56B /* EXPMatchers+raiseWithReason.h in Headers */ = {isa = PBXBuildFile; fileRef = FB779BCD811D7F372152F6D2 /* EXPMatchers+raiseWithReason.h */; };
+		E85C42DAC3F7826E5A9C2FF5 /* videoplayer_expand@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 52D867DE6DC02829A2B76EF7 /* videoplayer_expand@1x.png */; };
+		E8F2B4DDDD936E0933DFC96F /* EXPMatchers+respondTo.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E276E30B029D4436F1C344 /* EXPMatchers+respondTo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E94724DCC3557310A005BBF3 /* NSValue+Expecta.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F2F87D6394B3BF149894334 /* NSValue+Expecta.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		EA25A9289BA9959A00B1F7EA /* EXPMatchers+beIdenticalTo.h in Headers */ = {isa = PBXBuildFile; fileRef = 6236A437A1A8125331403AD3 /* EXPMatchers+beIdenticalTo.h */; };
+		EC3A13663333ED5E82644A16 /* SpectaDSL.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AF16332852FC7E1652449D8 /* SpectaDSL.h */; };
+		ED041D9CDA543E660DF44748 /* EXPUnsupportedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3449256F36EA7EC3346E8F30 /* EXPUnsupportedObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		ED6440571D4941FF9501C015 /* XCTest+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 215D4C46DA00C9BE3769F4AB /* XCTest+Private.h */; };
+		EE709A9C70C87226CAB52015 /* SPTCallSite.m in Sources */ = {isa = PBXBuildFile; fileRef = BF9103AE1FF5A842A63A61DA /* SPTCallSite.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		EEDB5014A2AF243D5A05CFDA /* DZVideoPlayerViewController_constants.h in Headers */ = {isa = PBXBuildFile; fileRef = 588D8479E1349943B2CA12C1 /* DZVideoPlayerViewController_constants.h */; };
+		F2375683B3B8B93F7994132E /* SPTSharedExampleGroups.h in Headers */ = {isa = PBXBuildFile; fileRef = 78C1BBF2A00F031F123D0D64 /* SPTSharedExampleGroups.h */; };
+		F3CBC02E975C20CD3A70AF9A /* EXPUnsupportedObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A8C0E96D741F4B55ADED97F /* EXPUnsupportedObject.h */; };
+		F45B4C29F5EB956879E7F73E /* EXPBlockDefinedMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 628D0D6F84BA37E15F0E5501 /* EXPBlockDefinedMatcher.h */; };
+		F56C706BCD3BB641BAC35A99 /* DZVideoPlayerViewControllerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D054571968BD43A8532D371 /* DZVideoPlayerViewControllerDelegate.h */; };
+		F5798BC909E4D6E7B25CEDFF /* DZPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = D82A14B548B3B3ABB32156A5 /* DZPlayerView.m */; };
+		F85B80FEFAD188EFFFA6234B /* videoplayer_shrink@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E07B8A8D090ADAE7147FFC5 /* videoplayer_shrink@3x.png */; };
+		F94D12D89C9DC6B5E7A95B49 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 018A0921DBD4146182E33749 /* Foundation.framework */; };
+		F9E9200A1454E828F2E949F9 /* videoplayer_expand@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FDC1115587C7896D59F7D06 /* videoplayer_expand@3x.png */; };
+		FBD8CA0C3FCD1922AA270695 /* EXPMatchers+beSupersetOf.m in Sources */ = {isa = PBXBuildFile; fileRef = B439ADDEF3EFA8968EA46029 /* EXPMatchers+beSupersetOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FD9C028F9403198E52BBBB2F /* EXPExpect.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BBA69DE08D13907618C2E73 /* EXPExpect.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FE3364ACBBB2AD11C8FFB215 /* ExpectaObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D7C05D9E6E56E2FDE871010 /* ExpectaObject.h */; };
+		FEA7924DCC92ABAE1B5FCC65 /* EXPMatchers+beGreaterThan.h in Headers */ = {isa = PBXBuildFile; fileRef = 59EC181B2AC34497416B5333 /* EXPMatchers+beGreaterThan.h */; };
+		FF23D248007778B9DEF8487B /* videoplayer_shrink@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 444CC46A7F44EF0FCD0F82A3 /* videoplayer_shrink@1x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A5B15451CD2F9C16EC7E8901 /* PBXContainerItemProxy */ = {
+		705F730E602845422B93149D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = EAC6F0502B8F5D77DD60CDAB /* Project object */;
+			containerPortal = 0EC02C5A01B1F02ECDAB7BDE /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 50695386A2874EE5930AEEAF;
+			remoteGlobalIDString = 4012479967D78FA63D63B095;
+			remoteInfo = "Pods-DZVideoPlayerViewController_Example-DZVideoPlayerViewController";
+		};
+		77A07A02D3C1A6559365EE2D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0EC02C5A01B1F02ECDAB7BDE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7A415CDB01B5EE312A49344B;
 			remoteInfo = "Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController-DZVideoPlayerViewController";
 		};
-		AF1E8E28217B27F7B0F2105D /* PBXContainerItemProxy */ = {
+		8057A0599FC9908A2FBF5A16 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = EAC6F0502B8F5D77DD60CDAB /* Project object */;
+			containerPortal = 0EC02C5A01B1F02ECDAB7BDE /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = AAC5D09DAFB99D0ADC89971F;
+			remoteGlobalIDString = E6FEAC5D2546EF3662E99DC2;
 			remoteInfo = "Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController";
+		};
+		A2634BC410189D4B2362DEA0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0EC02C5A01B1F02ECDAB7BDE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD131CEECE0E06AFCDCFB599;
+			remoteInfo = "Pods-DZVideoPlayerViewController_Tests-Expecta";
+		};
+		AE2D01D99ADCE7D1D5F86151 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0EC02C5A01B1F02ECDAB7BDE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF7F63E3AE50E16CDC3B0176;
+			remoteInfo = "Pods-DZVideoPlayerViewController_Tests-Specta";
+		};
+		F894864BB1107574FB119AE7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0EC02C5A01B1F02ECDAB7BDE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8ADAAEC07E3D7ED9998EB8F4;
+			remoteInfo = "Pods-DZVideoPlayerViewController_Example-DZVideoPlayerViewController-DZVideoPlayerViewController";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0646144A7AACF08E03AFEE59 /* Pods-DZVideoPlayerViewController_Tests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DZVideoPlayerViewController_Tests-environment.h"; sourceTree = "<group>"; };
-		07DF179F68482730188EF9A1 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		08534F480F1413F5060DFD31 /* videoplayer_expand@1x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "videoplayer_expand@1x.png"; sourceTree = "<group>"; };
-		0BD275AA568B63BD7208792A /* Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController-umbrella.h"; sourceTree = "<group>"; };
-		141295004BBD8F140DAB9845 /* videoplayer_play@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "videoplayer_play@3x.png"; sourceTree = "<group>"; };
-		19CEE5CFA81AE5870A8E38D8 /* Pods_DZVideoPlayerViewController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DZVideoPlayerViewController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		19D2E53FEFD3232D087D360A /* DZVideoPlayerViewControllerContainerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DZVideoPlayerViewControllerContainerView.h; sourceTree = "<group>"; };
-		1C7F7D3E6533EEB0F2FE5711 /* videoplayer_expand@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "videoplayer_expand@2x.png"; sourceTree = "<group>"; };
-		2EB799C06C02F3CEF7264A60 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		340F4E7D0F144919284FC92E /* DZVideoPlayerViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DZVideoPlayerViewController.h; sourceTree = "<group>"; };
-		3A4222330B88C39E6F3FBA0B /* Pods-DZVideoPlayerViewController_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DZVideoPlayerViewController_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		47A277B61F95877D73F04B70 /* Pods-DZVideoPlayerViewController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DZVideoPlayerViewController_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		48E0F11C47A6CB14D61D198C /* videoplayer_play@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "videoplayer_play@2x.png"; sourceTree = "<group>"; };
-		50ACCB443B291F0F7F9FF79A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
-		56EA0CA97901E15E78CAC907 /* DZVideoPlayerViewControllerDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DZVideoPlayerViewControllerDelegate.h; sourceTree = "<group>"; };
-		5E3C9A6A11DAD1866A6F951F /* DZVideoPlayerViewController.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DZVideoPlayerViewController.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		67FF6BAA45F9F562C3587AAF /* Pods-DZVideoPlayerViewController_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DZVideoPlayerViewController_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		6D722ADD64C1996A6C521B19 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6E6D276F97206BA170086E83 /* videoplayer_shrink@1x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "videoplayer_shrink@1x.png"; sourceTree = "<group>"; };
-		6F855A0FDF091BE5522C391F /* videoplayer_shrink@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "videoplayer_shrink@2x.png"; sourceTree = "<group>"; };
-		725D282164B96B9FDA7BBCE3 /* DZVideoPlayerViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = DZVideoPlayerViewController.xib; sourceTree = "<group>"; };
-		734C638FBA00A54FD9E0141A /* Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController.xcconfig"; sourceTree = "<group>"; };
-		7E4CDA9B2FF8B67D5182867E /* Pods-DZVideoPlayerViewController_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DZVideoPlayerViewController_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		87739259B97AEE35CB5783EE /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/AudioToolbox.framework; sourceTree = DEVELOPER_DIR; };
-		8F29B5D93F3377E32C62E517 /* Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController-Private.xcconfig"; sourceTree = "<group>"; };
-		8FC7E4FEFB58DC1EDA4BCE50 /* videoplayer_shrink@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "videoplayer_shrink@3x.png"; sourceTree = "<group>"; };
-		90FF537E61417B9B3A0D2B22 /* Pods-DZVideoPlayerViewController_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DZVideoPlayerViewController_Tests-umbrella.h"; sourceTree = "<group>"; };
-		98EB564F14573EFCFEAC492C /* videoplayer_pause@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "videoplayer_pause@2x.png"; sourceTree = "<group>"; };
-		A750ED6AB0C3821963F51F78 /* DZPlayerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DZPlayerView.m; sourceTree = "<group>"; };
-		AD6B9D56A3DB8C7F80BF25C3 /* Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController.modulemap"; sourceTree = "<group>"; };
-		ADB88C01DCBAB2A2256FFB21 /* DZVideoPlayerViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DZVideoPlayerViewController.m; sourceTree = "<group>"; };
-		B0B42F4FDAA20662E15D74B2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B49B11B7C1033800B9CFC996 /* Pods-DZVideoPlayerViewController_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-DZVideoPlayerViewController_Tests.modulemap"; sourceTree = "<group>"; };
-		B49E2B4661827EBBB4071B13 /* DZVideoPlayerViewController_constants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DZVideoPlayerViewController_constants.h; sourceTree = "<group>"; };
-		BD793F2CF4A3D6D976AA756D /* videoplayer_expand@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "videoplayer_expand@3x.png"; sourceTree = "<group>"; };
-		BF3419D84A5BAF2BE3CD3433 /* Pods-DZVideoPlayerViewController_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DZVideoPlayerViewController_Tests-dummy.m"; sourceTree = "<group>"; };
-		C1EDC6913C59DB8AA4F2B18A /* Pods-DZVideoPlayerViewController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DZVideoPlayerViewController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		C420E935905DEEAA06FF3B91 /* Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController-dummy.m"; sourceTree = "<group>"; };
-		C458C427344DDEFC11E36D62 /* DZVideoPlayerViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DZVideoPlayerViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C59A20F9124D599781D259DF /* videoplayer_pause@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "videoplayer_pause@3x.png"; sourceTree = "<group>"; };
-		C5A379B1CE881473025F6F4F /* DZVideoPlayerViewControllerContainerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DZVideoPlayerViewControllerContainerView.m; sourceTree = "<group>"; };
-		C830314B8A6D0EDF5AF9633A /* DZPlayerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DZPlayerView.h; sourceTree = "<group>"; };
-		DA10197C3B0C92945A57E9DD /* Pods-DZVideoPlayerViewController_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DZVideoPlayerViewController_Tests-resources.sh"; sourceTree = "<group>"; };
-		E76FCA4B4518CD2DD52A4B0C /* videoplayer_pause@1x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "videoplayer_pause@1x.png"; sourceTree = "<group>"; };
-		EA0B8750C25F74919C008BB3 /* DZProgressIndicatorSlider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DZProgressIndicatorSlider.h; sourceTree = "<group>"; };
-		EF663758F6F73910696F194C /* DZProgressIndicatorSlider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DZProgressIndicatorSlider.m; sourceTree = "<group>"; };
-		F3E6F9D874923049D7A0588D /* videoplayer_play@1x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "videoplayer_play@1x.png"; sourceTree = "<group>"; };
-		FAA1943BEFB8FBB353A66F85 /* Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController-prefix.pch"; sourceTree = "<group>"; };
+		0118475DB81C8B581E5D5C5A /* Pods-DZVideoPlayerViewController_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DZVideoPlayerViewController_Tests-resources.sh"; sourceTree = "<group>"; };
+		018A0921DBD4146182E33749 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		0280C69506053FFF15ED86B3 /* SPTCompiledExample.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTCompiledExample.h; path = Specta/Specta/SPTCompiledExample.h; sourceTree = "<group>"; };
+		02CA156528AA6EE032D5D219 /* SpectaUtility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SpectaUtility.h; path = Specta/Specta/SpectaUtility.h; sourceTree = "<group>"; };
+		032710AF1A2B75C48BBC01FF /* SPTSharedExampleGroups.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTSharedExampleGroups.m; path = Specta/Specta/SPTSharedExampleGroups.m; sourceTree = "<group>"; };
+		0543A0ED719BB02DF6CEDDB8 /* EXPMatchers+equal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+equal.h"; path = "Expecta/Matchers/EXPMatchers+equal.h"; sourceTree = "<group>"; };
+		07C1FAE1E7E303BBC5FA5E44 /* EXPMatchers+beNil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beNil.m"; path = "Expecta/Matchers/EXPMatchers+beNil.m"; sourceTree = "<group>"; };
+		081BA545DFBFA39F24794F63 /* EXPMatchers+contain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+contain.h"; path = "Expecta/Matchers/EXPMatchers+contain.h"; sourceTree = "<group>"; };
+		0A62DF0596DA748F45DB38D8 /* EXPMatchers+conformTo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+conformTo.h"; path = "Expecta/Matchers/EXPMatchers+conformTo.h"; sourceTree = "<group>"; };
+		0C42B70E5EC326E28A6E864A /* EXPMatchers+endWith.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+endWith.m"; path = "Expecta/Matchers/EXPMatchers+endWith.m"; sourceTree = "<group>"; };
+		0F298551C48602ACF03AE4EB /* Specta.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Specta.h; path = Specta/Specta/Specta.h; sourceTree = "<group>"; };
+		0FF9DA4FE4603BBF6BABA656 /* EXPMatchers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPMatchers.h; path = Expecta/Matchers/EXPMatchers.h; sourceTree = "<group>"; };
+		10EC4452D676741884ED83E6 /* Pods-DZVideoPlayerViewController_Tests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DZVideoPlayerViewController_Tests-environment.h"; sourceTree = "<group>"; };
+		10ECC0BBE9D269B0CC307F13 /* SPTGlobalBeforeAfterEach.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTGlobalBeforeAfterEach.h; path = Specta/Specta/SPTGlobalBeforeAfterEach.h; sourceTree = "<group>"; };
+		1261279B7CE310C9BEA5D914 /* EXPMatchers+beGreaterThan.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beGreaterThan.m"; path = "Expecta/Matchers/EXPMatchers+beGreaterThan.m"; sourceTree = "<group>"; };
+		12E89F1DD451A00711175056 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		1420A61E163767CA85DF4EFA /* XCTestCase+Specta.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "XCTestCase+Specta.m"; path = "Specta/Specta/XCTestCase+Specta.m"; sourceTree = "<group>"; };
+		14738EC4D4CEE38EB2E5C1C1 /* Pods-DZVideoPlayerViewController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DZVideoPlayerViewController_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		1BDA9BD00B090721CC0F68C4 /* Pods-DZVideoPlayerViewController_Tests-Specta.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DZVideoPlayerViewController_Tests-Specta.xcconfig"; sourceTree = "<group>"; };
+		1C3B25A532718F820B2F32C3 /* libPods-DZVideoPlayerViewController_Tests-Expecta.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DZVideoPlayerViewController_Tests-Expecta.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E3B069C9A4325ED9F1EA021 /* NSValue+Expecta.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSValue+Expecta.h"; path = "Expecta/NSValue+Expecta.h"; sourceTree = "<group>"; };
+		1E53E4A77146B5B12583A466 /* SPTCompiledExample.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTCompiledExample.m; path = Specta/Specta/SPTCompiledExample.m; sourceTree = "<group>"; };
+		215D4C46DA00C9BE3769F4AB /* XCTest+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "XCTest+Private.h"; path = "Specta/Specta/XCTest+Private.h"; sourceTree = "<group>"; };
+		21B1FBDFC021D6B49C9CF768 /* SpectaDSL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SpectaDSL.m; path = Specta/Specta/SpectaDSL.m; sourceTree = "<group>"; };
+		276ECEC39C79D15DA8BF9690 /* EXPMatchers+beCloseTo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beCloseTo.h"; path = "Expecta/Matchers/EXPMatchers+beCloseTo.h"; sourceTree = "<group>"; };
+		2928997962587193355FF7F0 /* videoplayer_play@1x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "videoplayer_play@1x.png"; sourceTree = "<group>"; };
+		2A6C1B15ED9C2D5BC461552C /* DZVideoPlayerViewController.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DZVideoPlayerViewController.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B3D634AAEC013BA4C666245 /* Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController.xcconfig"; path = "../Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController/Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController.xcconfig"; sourceTree = "<group>"; };
+		2B5EAFBAD0D7E2B70B52A959 /* EXPMatchers+raise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+raise.h"; path = "Expecta/Matchers/EXPMatchers+raise.h"; sourceTree = "<group>"; };
+		2D054571968BD43A8532D371 /* DZVideoPlayerViewControllerDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DZVideoPlayerViewControllerDelegate.h; sourceTree = "<group>"; };
+		2E07B8A8D090ADAE7147FFC5 /* videoplayer_shrink@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "videoplayer_shrink@3x.png"; sourceTree = "<group>"; };
+		31252A4763A98455586F132B /* SpectaUtility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SpectaUtility.m; path = Specta/Specta/SpectaUtility.m; sourceTree = "<group>"; };
+		33CABE0E915A0E042BE408D8 /* SPTExcludeGlobalBeforeAfterEach.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTExcludeGlobalBeforeAfterEach.h; path = Specta/Specta/SPTExcludeGlobalBeforeAfterEach.h; sourceTree = "<group>"; };
+		340F2C0BA25C62DAF7C00585 /* EXPMatchers+beGreaterThanOrEqualTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beGreaterThanOrEqualTo.m"; path = "Expecta/Matchers/EXPMatchers+beGreaterThanOrEqualTo.m"; sourceTree = "<group>"; };
+		3449256F36EA7EC3346E8F30 /* EXPUnsupportedObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXPUnsupportedObject.m; path = Expecta/EXPUnsupportedObject.m; sourceTree = "<group>"; };
+		351E1557B7CD981382202E9C /* SPTExampleGroup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTExampleGroup.m; path = Specta/Specta/SPTExampleGroup.m; sourceTree = "<group>"; };
+		3AA38EB7E327F98DA40BA167 /* EXPFloatTuple.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXPFloatTuple.m; path = Expecta/EXPFloatTuple.m; sourceTree = "<group>"; };
+		3EBEAE92936EBE3CB346EFB9 /* Pods-DZVideoPlayerViewController_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DZVideoPlayerViewController_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3F2F87D6394B3BF149894334 /* NSValue+Expecta.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSValue+Expecta.m"; path = "Expecta/NSValue+Expecta.m"; sourceTree = "<group>"; };
+		424F136EDC90121A4505D063 /* DZVideoPlayerViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DZVideoPlayerViewController.h; sourceTree = "<group>"; };
+		425F9E028AC3602FE532110A /* videoplayer_expand@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "videoplayer_expand@2x.png"; sourceTree = "<group>"; };
+		436ACA4965765ED6D6A21690 /* EXPMatchers+raiseWithReason.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+raiseWithReason.m"; path = "Expecta/Matchers/EXPMatchers+raiseWithReason.m"; sourceTree = "<group>"; };
+		444CC46A7F44EF0FCD0F82A3 /* videoplayer_shrink@1x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "videoplayer_shrink@1x.png"; sourceTree = "<group>"; };
+		44D50633C598E6929BEF07A1 /* EXPMatchers+beLessThan.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beLessThan.m"; path = "Expecta/Matchers/EXPMatchers+beLessThan.m"; sourceTree = "<group>"; };
+		45A10860AD28FC856D972DBF /* Pods-DZVideoPlayerViewController_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DZVideoPlayerViewController_Tests-dummy.m"; sourceTree = "<group>"; };
+		4769702F3AF16932981EC7C4 /* Pods-DZVideoPlayerViewController_Example-DZVideoPlayerViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DZVideoPlayerViewController_Example-DZVideoPlayerViewController-dummy.m"; sourceTree = "<group>"; };
+		48A23B6E5BE42F8D3F391177 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		494E465CED1508FFF4256CE7 /* EXPMatchers+beTruthy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beTruthy.m"; path = "Expecta/Matchers/EXPMatchers+beTruthy.m"; sourceTree = "<group>"; };
+		4B959B7FBB233A75C4BEB1FE /* Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController-Private.xcconfig"; path = "../Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController/Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController-Private.xcconfig"; sourceTree = "<group>"; };
+		4BA69ECE2247C1A6F51FC261 /* EXPMatchers+haveCountOf.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+haveCountOf.m"; path = "Expecta/Matchers/EXPMatchers+haveCountOf.m"; sourceTree = "<group>"; };
+		4C1444B0149367590AEFE407 /* videoplayer_pause@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "videoplayer_pause@3x.png"; sourceTree = "<group>"; };
+		4EFC9ED626D24F433189403E /* SPTSpec.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTSpec.m; path = Specta/Specta/SPTSpec.m; sourceTree = "<group>"; };
+		5228C84D59BCFFCB03A147E3 /* EXPMatchers+contain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+contain.m"; path = "Expecta/Matchers/EXPMatchers+contain.m"; sourceTree = "<group>"; };
+		52B500C62D2E782D403713A0 /* Pods-DZVideoPlayerViewController_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DZVideoPlayerViewController_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		52D867DE6DC02829A2B76EF7 /* videoplayer_expand@1x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "videoplayer_expand@1x.png"; sourceTree = "<group>"; };
+		54FF7277B50DC33553AF8005 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/AudioToolbox.framework; sourceTree = DEVELOPER_DIR; };
+		56B08306FA75A51ABF26CF6D /* EXPMatchers+beNil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beNil.h"; path = "Expecta/Matchers/EXPMatchers+beNil.h"; sourceTree = "<group>"; };
+		588D8479E1349943B2CA12C1 /* DZVideoPlayerViewController_constants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DZVideoPlayerViewController_constants.h; sourceTree = "<group>"; };
+		589E120F830358034A0AAFA7 /* NSObject+Expecta.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+Expecta.h"; path = "Expecta/NSObject+Expecta.h"; sourceTree = "<group>"; };
+		59EC181B2AC34497416B5333 /* EXPMatchers+beGreaterThan.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beGreaterThan.h"; path = "Expecta/Matchers/EXPMatchers+beGreaterThan.h"; sourceTree = "<group>"; };
+		5ED67272E6D1106DA8F16F4E /* EXPMatchers+beSubclassOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beSubclassOf.h"; path = "Expecta/Matchers/EXPMatchers+beSubclassOf.h"; sourceTree = "<group>"; };
+		5F7D31F4FB141C6DAB214FF7 /* EXPDoubleTuple.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXPDoubleTuple.m; path = Expecta/EXPDoubleTuple.m; sourceTree = "<group>"; };
+		6236A437A1A8125331403AD3 /* EXPMatchers+beIdenticalTo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beIdenticalTo.h"; path = "Expecta/Matchers/EXPMatchers+beIdenticalTo.h"; sourceTree = "<group>"; };
+		628D0D6F84BA37E15F0E5501 /* EXPBlockDefinedMatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPBlockDefinedMatcher.h; path = Expecta/EXPBlockDefinedMatcher.h; sourceTree = "<group>"; };
+		62C44BD1C887269AAAB32E46 /* EXPMatchers+postNotification.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+postNotification.m"; path = "Expecta/Matchers/EXPMatchers+postNotification.m"; sourceTree = "<group>"; };
+		639ADDD7C886D53E915AFB48 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		65645DC14C2B61DC6B174B5B /* Pods-DZVideoPlayerViewController_Example-DZVideoPlayerViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DZVideoPlayerViewController_Example-DZVideoPlayerViewController-prefix.pch"; sourceTree = "<group>"; };
+		667ABD30EE01F12842005DEB /* Pods-DZVideoPlayerViewController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DZVideoPlayerViewController_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		682814DBF2EE6BE87D41A8D9 /* EXPMatchers+raise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+raise.m"; path = "Expecta/Matchers/EXPMatchers+raise.m"; sourceTree = "<group>"; };
+		68953EFDDB8834943D3625A9 /* EXPMatchers+endWith.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+endWith.h"; path = "Expecta/Matchers/EXPMatchers+endWith.h"; sourceTree = "<group>"; };
+		68A4D8D78019D0F7FCB466E3 /* DZPlayerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DZPlayerView.h; sourceTree = "<group>"; };
+		6922DC07F32AB46588381DFC /* DZVideoPlayerViewController.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DZVideoPlayerViewController.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BBA69DE08D13907618C2E73 /* EXPExpect.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXPExpect.m; path = Expecta/EXPExpect.m; sourceTree = "<group>"; };
+		6DDFB4CFC0B3DDB05CA09C6D /* SPTExample.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTExample.h; path = Specta/Specta/SPTExample.h; sourceTree = "<group>"; };
+		70B0D07DF6974A0F41337D46 /* EXPMatchers+beInTheRangeOf.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beInTheRangeOf.m"; path = "Expecta/Matchers/EXPMatchers+beInTheRangeOf.m"; sourceTree = "<group>"; };
+		735CC095FBC8FE8306DA3B2C /* Pods-DZVideoPlayerViewController_Tests-Expecta-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DZVideoPlayerViewController_Tests-Expecta-dummy.m"; sourceTree = "<group>"; };
+		765D83155EF9054BA3582A23 /* EXPMatchers+beCloseTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beCloseTo.m"; path = "Expecta/Matchers/EXPMatchers+beCloseTo.m"; sourceTree = "<group>"; };
+		7826AC28A066BC5D257EE3C8 /* videoplayer_play@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "videoplayer_play@3x.png"; sourceTree = "<group>"; };
+		78C1BBF2A00F031F123D0D64 /* SPTSharedExampleGroups.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTSharedExampleGroups.h; path = Specta/Specta/SPTSharedExampleGroups.h; sourceTree = "<group>"; };
+		791F1FA9380B15071B04EBAD /* libPods-DZVideoPlayerViewController_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DZVideoPlayerViewController_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		797A62556AED9C60DE21B12A /* EXPMatchers+equal.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+equal.m"; path = "Expecta/Matchers/EXPMatchers+equal.m"; sourceTree = "<group>"; };
+		7A610BD18098A4CB46704227 /* videoplayer_play@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "videoplayer_play@2x.png"; sourceTree = "<group>"; };
+		7C14D3BDDFA090D98F11B32C /* Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController-dummy.m"; path = "../Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController/Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController-dummy.m"; sourceTree = "<group>"; };
+		7D7C05D9E6E56E2FDE871010 /* ExpectaObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ExpectaObject.h; path = Expecta/ExpectaObject.h; sourceTree = "<group>"; };
+		7E1E1A7FAB3AFB99861763EA /* DZVideoPlayerViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = DZVideoPlayerViewController.xib; sourceTree = "<group>"; };
+		7FDC1115587C7896D59F7D06 /* videoplayer_expand@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "videoplayer_expand@3x.png"; sourceTree = "<group>"; };
+		7FFDA45923CC205D2714A87C /* EXPMatchers+postNotification.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+postNotification.h"; path = "Expecta/Matchers/EXPMatchers+postNotification.h"; sourceTree = "<group>"; };
+		85573C21876DA903C22C614E /* EXPMatchers+beSupersetOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beSupersetOf.h"; path = "Expecta/Matchers/EXPMatchers+beSupersetOf.h"; sourceTree = "<group>"; };
+		868FB078B0320A6462D39072 /* ExpectaObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ExpectaObject.m; path = Expecta/ExpectaObject.m; sourceTree = "<group>"; };
+		893128B39DEDC347436B3E5B /* Pods-DZVideoPlayerViewController_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DZVideoPlayerViewController_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8A8C0E96D741F4B55ADED97F /* EXPUnsupportedObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPUnsupportedObject.h; path = Expecta/EXPUnsupportedObject.h; sourceTree = "<group>"; };
+		8AF16332852FC7E1652449D8 /* SpectaDSL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SpectaDSL.h; path = Specta/Specta/SpectaDSL.h; sourceTree = "<group>"; };
+		8EDD30CA5FF3EDAD62855479 /* EXPDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPDefines.h; path = Expecta/EXPDefines.h; sourceTree = "<group>"; };
+		8F2FF3AC0090F0B32B9173C5 /* EXPMatchers+match.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+match.m"; path = "Expecta/Matchers/EXPMatchers+match.m"; sourceTree = "<group>"; };
+		914305C5FE53A260BC091032 /* EXPMatchers+beFalsy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beFalsy.h"; path = "Expecta/Matchers/EXPMatchers+beFalsy.h"; sourceTree = "<group>"; };
+		93E6C769F643E7CB26079080 /* Pods-DZVideoPlayerViewController_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DZVideoPlayerViewController_Example-resources.sh"; sourceTree = "<group>"; };
+		94E3E6F8D17FD8CF06EA499F /* EXPExpect.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPExpect.h; path = Expecta/EXPExpect.h; sourceTree = "<group>"; };
+		972E99AF9A8FA861F04F28C6 /* Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController-prefix.pch"; path = "../Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController/Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController-prefix.pch"; sourceTree = "<group>"; };
+		97D82C833BE31497D91F6C63 /* Pods-DZVideoPlayerViewController_Tests-Specta-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DZVideoPlayerViewController_Tests-Specta-dummy.m"; sourceTree = "<group>"; };
+		9866AAE75F1931145C6ADB72 /* EXPBlockDefinedMatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXPBlockDefinedMatcher.m; path = Expecta/EXPBlockDefinedMatcher.m; sourceTree = "<group>"; };
+		9CB183DD1CC521A2CF647C0A /* SPTCallSite.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTCallSite.h; path = Specta/Specta/SPTCallSite.h; sourceTree = "<group>"; };
+		A05617AC42451838B40D9BE9 /* SPTTestSuite.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTTestSuite.h; path = Specta/Specta/SPTTestSuite.h; sourceTree = "<group>"; };
+		A42850FDF64CE618C3E9137C /* libPods-DZVideoPlayerViewController_Tests-Specta.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DZVideoPlayerViewController_Tests-Specta.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A47753DF083C1A081464EF26 /* DZVideoPlayerViewControllerContainerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DZVideoPlayerViewControllerContainerView.m; sourceTree = "<group>"; };
+		A64FBE4A4D504D6203106439 /* EXPMatchers+beginWith.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beginWith.h"; path = "Expecta/Matchers/EXPMatchers+beginWith.h"; sourceTree = "<group>"; };
+		AAE0177A1912E367FF6E5ED3 /* videoplayer_pause@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "videoplayer_pause@2x.png"; sourceTree = "<group>"; };
+		ACBD6FEB0860B4B527DAF997 /* ExpectaSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ExpectaSupport.m; path = Expecta/ExpectaSupport.m; sourceTree = "<group>"; };
+		AEFA9EAA341B04FDA55597C0 /* EXPMatchers+beginWith.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beginWith.m"; path = "Expecta/Matchers/EXPMatchers+beginWith.m"; sourceTree = "<group>"; };
+		B0533EAF6A76503246A26E3D /* libPods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0C94905AB98FE1DFC618FBD /* EXPMatchers+beLessThanOrEqualTo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beLessThanOrEqualTo.h"; path = "Expecta/Matchers/EXPMatchers+beLessThanOrEqualTo.h"; sourceTree = "<group>"; };
+		B0F46B47D853E3F708C07A01 /* SPTSpec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTSpec.h; path = Specta/Specta/SPTSpec.h; sourceTree = "<group>"; };
+		B439ADDEF3EFA8968EA46029 /* EXPMatchers+beSupersetOf.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beSupersetOf.m"; path = "Expecta/Matchers/EXPMatchers+beSupersetOf.m"; sourceTree = "<group>"; };
+		B4E7286B93E7BC51DEE00930 /* EXPMatchers+beLessThan.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beLessThan.h"; path = "Expecta/Matchers/EXPMatchers+beLessThan.h"; sourceTree = "<group>"; };
+		B7ECDC8C77866239ED1A65A9 /* DZProgressIndicatorSlider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DZProgressIndicatorSlider.m; sourceTree = "<group>"; };
+		B94F46AAC5A555DC71E167B1 /* EXPMatchers+beGreaterThanOrEqualTo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beGreaterThanOrEqualTo.h"; path = "Expecta/Matchers/EXPMatchers+beGreaterThanOrEqualTo.h"; sourceTree = "<group>"; };
+		B99049C87EA39C9BAFF8D31F /* EXPFloatTuple.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPFloatTuple.h; path = Expecta/EXPFloatTuple.h; sourceTree = "<group>"; };
+		BB654F7E885E35FF5A592011 /* SpectaTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SpectaTypes.h; path = Specta/Specta/SpectaTypes.h; sourceTree = "<group>"; };
+		BDE37F524C86356A0488C875 /* Pods-DZVideoPlayerViewController_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DZVideoPlayerViewController_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		BF9103AE1FF5A842A63A61DA /* SPTCallSite.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTCallSite.m; path = Specta/Specta/SPTCallSite.m; sourceTree = "<group>"; };
+		C3595EB45E78626D835C5B9C /* DZVideoPlayerViewControllerContainerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DZVideoPlayerViewControllerContainerView.h; sourceTree = "<group>"; };
+		C3EA8EF76B4DF1845E063A8E /* EXPMatchers+beInTheRangeOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beInTheRangeOf.h"; path = "Expecta/Matchers/EXPMatchers+beInTheRangeOf.h"; sourceTree = "<group>"; };
+		C542EFFD7A5BC22CB3D1ED67 /* Expecta.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Expecta.h; path = Expecta/Expecta.h; sourceTree = "<group>"; };
+		C64AB417685811A95DBFCE85 /* Pods-DZVideoPlayerViewController_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DZVideoPlayerViewController_Example-dummy.m"; sourceTree = "<group>"; };
+		C64EBF85E368B6900A3003C6 /* EXPMatchers+match.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+match.h"; path = "Expecta/Matchers/EXPMatchers+match.h"; sourceTree = "<group>"; };
+		C65CEB7530D6A3A7EEF02E2D /* EXPMatchers+beIdenticalTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beIdenticalTo.m"; path = "Expecta/Matchers/EXPMatchers+beIdenticalTo.m"; sourceTree = "<group>"; };
+		C688E7F5DC71CCD29A791C7A /* Pods-DZVideoPlayerViewController_Example-DZVideoPlayerViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DZVideoPlayerViewController_Example-DZVideoPlayerViewController.xcconfig"; sourceTree = "<group>"; };
+		C813E28003A828792E2AB878 /* EXPMatchers+beLessThanOrEqualTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beLessThanOrEqualTo.m"; path = "Expecta/Matchers/EXPMatchers+beLessThanOrEqualTo.m"; sourceTree = "<group>"; };
+		C81671C5CCCCC4F4DC3CACF4 /* EXPMatcherHelpers.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXPMatcherHelpers.m; path = Expecta/Matchers/EXPMatcherHelpers.m; sourceTree = "<group>"; };
+		C839D023D9A93F7CCDE836A8 /* Pods-DZVideoPlayerViewController_Tests-Expecta-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DZVideoPlayerViewController_Tests-Expecta-Private.xcconfig"; sourceTree = "<group>"; };
+		C9E276E30B029D4436F1C344 /* EXPMatchers+respondTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+respondTo.m"; path = "Expecta/Matchers/EXPMatchers+respondTo.m"; sourceTree = "<group>"; };
+		CA6F65C7247A0F84ED68ADE1 /* DZVideoPlayerViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DZVideoPlayerViewController.m; sourceTree = "<group>"; };
+		CB74E02F097929ED1AE75F41 /* Pods-DZVideoPlayerViewController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DZVideoPlayerViewController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		CC59AC75D745883D2D834408 /* EXPMatchers+respondTo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+respondTo.h"; path = "Expecta/Matchers/EXPMatchers+respondTo.h"; sourceTree = "<group>"; };
+		CC87D9473A37714C1D238307 /* DZProgressIndicatorSlider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DZProgressIndicatorSlider.h; sourceTree = "<group>"; };
+		CD850AB6DD43277C01C3AD4F /* Pods-DZVideoPlayerViewController_Tests-Expecta.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DZVideoPlayerViewController_Tests-Expecta.xcconfig"; sourceTree = "<group>"; };
+		CEF4E92294167A53B659CC8F /* SPTExampleGroup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTExampleGroup.h; path = Specta/Specta/SPTExampleGroup.h; sourceTree = "<group>"; };
+		CF415EBCA677C4CAA3D326E3 /* EXPMatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPMatcher.h; path = Expecta/EXPMatcher.h; sourceTree = "<group>"; };
+		D01FFEDFC110ADB20CBA0BBB /* EXPMatchers+beKindOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beKindOf.h"; path = "Expecta/Matchers/EXPMatchers+beKindOf.h"; sourceTree = "<group>"; };
+		D327A7845F7CA85B2532FFA2 /* SPTExample.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTExample.m; path = Specta/Specta/SPTExample.m; sourceTree = "<group>"; };
+		D350053444FCA28980638FBA /* EXPMatchers+haveCountOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+haveCountOf.h"; path = "Expecta/Matchers/EXPMatchers+haveCountOf.h"; sourceTree = "<group>"; };
+		D36A38CB50ED953DC43C785F /* ExpectaSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ExpectaSupport.h; path = Expecta/ExpectaSupport.h; sourceTree = "<group>"; };
+		D3D8F86DE2D81D92E5BC42AF /* EXPMatchers+beFalsy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beFalsy.m"; path = "Expecta/Matchers/EXPMatchers+beFalsy.m"; sourceTree = "<group>"; };
+		D52A178AEC9F573F56F89C3C /* EXPMatchers+beSubclassOf.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beSubclassOf.m"; path = "Expecta/Matchers/EXPMatchers+beSubclassOf.m"; sourceTree = "<group>"; };
+		D55DD9FC9D429A1C912622C1 /* SPTTestSuite.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTTestSuite.m; path = Specta/Specta/SPTTestSuite.m; sourceTree = "<group>"; };
+		D82A14B548B3B3ABB32156A5 /* DZPlayerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DZPlayerView.m; sourceTree = "<group>"; };
+		DC31A9FAA4664EDB25913B90 /* Pods-DZVideoPlayerViewController_Example-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DZVideoPlayerViewController_Example-environment.h"; sourceTree = "<group>"; };
+		DC9E02482EE1BE41CF23C9EC /* EXPMatchers+beInstanceOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beInstanceOf.h"; path = "Expecta/Matchers/EXPMatchers+beInstanceOf.h"; sourceTree = "<group>"; };
+		DE724D8FED7FA211E8CFF1BD /* EXPMatchers+beTruthy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beTruthy.h"; path = "Expecta/Matchers/EXPMatchers+beTruthy.h"; sourceTree = "<group>"; };
+		E06AC5E0CDB4539EA827AE0C /* XCTestCase+Specta.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "XCTestCase+Specta.h"; path = "Specta/Specta/XCTestCase+Specta.h"; sourceTree = "<group>"; };
+		E4BD4E6B605B1F0676E87D67 /* EXPMatchers+beInstanceOf.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beInstanceOf.m"; path = "Expecta/Matchers/EXPMatchers+beInstanceOf.m"; sourceTree = "<group>"; };
+		E6524C6DBE535AD535BD63B9 /* EXPMatchers+conformTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+conformTo.m"; path = "Expecta/Matchers/EXPMatchers+conformTo.m"; sourceTree = "<group>"; };
+		E7C19327EECAAFEEBA21FDEB /* EXPMatchers+beKindOf.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beKindOf.m"; path = "Expecta/Matchers/EXPMatchers+beKindOf.m"; sourceTree = "<group>"; };
+		ED723B30863BE97F083F0A01 /* Pods-DZVideoPlayerViewController_Tests-Specta-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DZVideoPlayerViewController_Tests-Specta-Private.xcconfig"; sourceTree = "<group>"; };
+		F09128034CADFD8B8A5C253B /* Pods-DZVideoPlayerViewController_Example-DZVideoPlayerViewController-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DZVideoPlayerViewController_Example-DZVideoPlayerViewController-Private.xcconfig"; sourceTree = "<group>"; };
+		F242219F3AF99F7EA8B49595 /* libPods-DZVideoPlayerViewController_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DZVideoPlayerViewController_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3445FA9FCCE4001D826DFE3 /* libPods-DZVideoPlayerViewController_Example-DZVideoPlayerViewController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DZVideoPlayerViewController_Example-DZVideoPlayerViewController.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4DFA03A9584DDFFCED0312B /* videoplayer_shrink@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "videoplayer_shrink@2x.png"; sourceTree = "<group>"; };
+		F78DE6A577FAB6954A52240F /* EXPMatcherHelpers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPMatcherHelpers.h; path = Expecta/Matchers/EXPMatcherHelpers.h; sourceTree = "<group>"; };
+		F842CEA7004EB1BCD72EFCCF /* Pods-DZVideoPlayerViewController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DZVideoPlayerViewController_Example.release.xcconfig"; sourceTree = "<group>"; };
+		F87449E2044AB4324E5D8DBE /* Pods-DZVideoPlayerViewController_Tests-Specta-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DZVideoPlayerViewController_Tests-Specta-prefix.pch"; sourceTree = "<group>"; };
+		FB779BCD811D7F372152F6D2 /* EXPMatchers+raiseWithReason.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+raiseWithReason.h"; path = "Expecta/Matchers/EXPMatchers+raiseWithReason.h"; sourceTree = "<group>"; };
+		FBB609338CF2B4718AD589A7 /* Pods-DZVideoPlayerViewController_Tests-Expecta-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DZVideoPlayerViewController_Tests-Expecta-prefix.pch"; sourceTree = "<group>"; };
+		FD3500CFA07043EA9F9DD04B /* videoplayer_pause@1x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "videoplayer_pause@1x.png"; sourceTree = "<group>"; };
+		FDCBCF6A6D86F567C7A32E61 /* EXPDoubleTuple.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPDoubleTuple.h; path = Expecta/EXPDoubleTuple.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1186C3B5D01EFF901340973F /* Frameworks */ = {
+		5BF148187D43772F93E1EAF6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3716366A3CE2B25F52BE56F3 /* Foundation.framework in Frameworks */,
+				BE6D2480F5BE20CDB41E7B2F /* Foundation.framework in Frameworks */,
+				23AF5450CDCDE72FFE42A94E /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5019236F23468FE17CC004F9 /* Frameworks */ = {
+		665E432F6D454FFB23528896 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26408B5364ED8C8D50D0198B /* AVFoundation.framework in Frameworks */,
-				9B1860700B08C6B3498B8C90 /* AudioToolbox.framework in Frameworks */,
-				590FBC9FD323C1F5E7ED5EA6 /* Foundation.framework in Frameworks */,
+				57DA408B90A67DC59AF83A13 /* AVFoundation.framework in Frameworks */,
+				DC9F3F9C1374D2CE55B0FDF9 /* AudioToolbox.framework in Frameworks */,
+				183A3761646337BD98FAE425 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F1EADF3D80C8C9431BDB6E8A /* Frameworks */ = {
+		6F528FBB08A1BB21692B0EC4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9880B947EEA14C7EB2EE7551 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76F958DF5FB551D21CCB897D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7839F7A45C272FD60EA90EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60F923BFED62E3C3B7B64D72 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC09DFAEE582C8C20F424A45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D84340C1CD012DB7690A579 /* AVFoundation.framework in Frameworks */,
+				53E9FB247C6140DFB98C920C /* AudioToolbox.framework in Frameworks */,
+				871FB8C7D5F42FCB5F339D9A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAA38BAE982CC3C3CE59FE47 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E72ABEED9D8DD5083677E372 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F94D12D89C9DC6B5E7A95B49 /* Foundation.framework in Frameworks */,
+				0B014AC3BBD88557B5633EEE /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2456BD2CA7700B329924232E /* Development Pods */ = {
+		03E9DC7CE87B5AC75BFF9382 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				DBDAF338B7024BDCEC15A39E /* DZVideoPlayerViewController */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		326F2027DF610BE3C001B91E /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				B5F5BABA635349D9437759A0 /* Pods-DZVideoPlayerViewController_Tests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		33144D545D4E28DD7F2F677E /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				5E3C9A6A11DAD1866A6F951F /* DZVideoPlayerViewController.bundle */,
-				C458C427344DDEFC11E36D62 /* DZVideoPlayerViewController.framework */,
-				19CEE5CFA81AE5870A8E38D8 /* Pods_DZVideoPlayerViewController_Tests.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		39217F8841A1FCC14DCC8FC9 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				3C4242DA579FCBB88D156ECE /* Pod */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		3977DD0EBA3B141A76B4173C /* Assets */ = {
-			isa = PBXGroup;
-			children = (
-				725D282164B96B9FDA7BBCE3 /* DZVideoPlayerViewController.xib */,
-				08534F480F1413F5060DFD31 /* videoplayer_expand@1x.png */,
-				1C7F7D3E6533EEB0F2FE5711 /* videoplayer_expand@2x.png */,
-				BD793F2CF4A3D6D976AA756D /* videoplayer_expand@3x.png */,
-				E76FCA4B4518CD2DD52A4B0C /* videoplayer_pause@1x.png */,
-				98EB564F14573EFCFEAC492C /* videoplayer_pause@2x.png */,
-				C59A20F9124D599781D259DF /* videoplayer_pause@3x.png */,
-				F3E6F9D874923049D7A0588D /* videoplayer_play@1x.png */,
-				48E0F11C47A6CB14D61D198C /* videoplayer_play@2x.png */,
-				141295004BBD8F140DAB9845 /* videoplayer_play@3x.png */,
-				6E6D276F97206BA170086E83 /* videoplayer_shrink@1x.png */,
-				6F855A0FDF091BE5522C391F /* videoplayer_shrink@2x.png */,
-				8FC7E4FEFB58DC1EDA4BCE50 /* videoplayer_shrink@3x.png */,
-			);
-			path = Assets;
-			sourceTree = "<group>";
-		};
-		3C4242DA579FCBB88D156ECE /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				3977DD0EBA3B141A76B4173C /* Assets */,
-			);
-			path = Pod;
-			sourceTree = "<group>";
-		};
-		3E3CD93FA134C33888E068EF /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				6D722ADD64C1996A6C521B19 /* Info.plist */,
-				AD6B9D56A3DB8C7F80BF25C3 /* Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController.modulemap */,
-				734C638FBA00A54FD9E0141A /* Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController.xcconfig */,
-				8F29B5D93F3377E32C62E517 /* Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController-Private.xcconfig */,
-				C420E935905DEEAA06FF3B91 /* Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController-dummy.m */,
-				FAA1943BEFB8FBB353A66F85 /* Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController-prefix.pch */,
-				0BD275AA568B63BD7208792A /* Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController";
-			sourceTree = "<group>";
-		};
-		3F4DFC9B7210FA0B97F2DF17 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				537C677072806874C8C184F9 /* Classes */,
-			);
-			path = Pod;
-			sourceTree = "<group>";
-		};
-		537C677072806874C8C184F9 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				C830314B8A6D0EDF5AF9633A /* DZPlayerView.h */,
-				A750ED6AB0C3821963F51F78 /* DZPlayerView.m */,
-				EA0B8750C25F74919C008BB3 /* DZProgressIndicatorSlider.h */,
-				EF663758F6F73910696F194C /* DZProgressIndicatorSlider.m */,
-				340F4E7D0F144919284FC92E /* DZVideoPlayerViewController.h */,
-				ADB88C01DCBAB2A2256FFB21 /* DZVideoPlayerViewController.m */,
-				19D2E53FEFD3232D087D360A /* DZVideoPlayerViewControllerContainerView.h */,
-				C5A379B1CE881473025F6F4F /* DZVideoPlayerViewControllerContainerView.m */,
-				56EA0CA97901E15E78CAC907 /* DZVideoPlayerViewControllerDelegate.h */,
-				B49E2B4661827EBBB4071B13 /* DZVideoPlayerViewController_constants.h */,
+				68A4D8D78019D0F7FCB466E3 /* DZPlayerView.h */,
+				D82A14B548B3B3ABB32156A5 /* DZPlayerView.m */,
+				CC87D9473A37714C1D238307 /* DZProgressIndicatorSlider.h */,
+				B7ECDC8C77866239ED1A65A9 /* DZProgressIndicatorSlider.m */,
+				424F136EDC90121A4505D063 /* DZVideoPlayerViewController.h */,
+				CA6F65C7247A0F84ED68ADE1 /* DZVideoPlayerViewController.m */,
+				C3595EB45E78626D835C5B9C /* DZVideoPlayerViewControllerContainerView.h */,
+				A47753DF083C1A081464EF26 /* DZVideoPlayerViewControllerContainerView.m */,
+				2D054571968BD43A8532D371 /* DZVideoPlayerViewControllerDelegate.h */,
+				588D8479E1349943B2CA12C1 /* DZVideoPlayerViewController_constants.h */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
 		};
-		5DB5999C35CCB77F6E4E8DD1 /* iOS */ = {
+		2C724F77A1A6893F5A1E8C24 /* Pods-DZVideoPlayerViewController_Example */ = {
 			isa = PBXGroup;
 			children = (
-				50ACCB443B291F0F7F9FF79A /* AVFoundation.framework */,
-				87739259B97AEE35CB5783EE /* AudioToolbox.framework */,
-				2EB799C06C02F3CEF7264A60 /* Foundation.framework */,
+				3EBEAE92936EBE3CB346EFB9 /* Pods-DZVideoPlayerViewController_Example-acknowledgements.markdown */,
+				BDE37F524C86356A0488C875 /* Pods-DZVideoPlayerViewController_Example-acknowledgements.plist */,
+				C64AB417685811A95DBFCE85 /* Pods-DZVideoPlayerViewController_Example-dummy.m */,
+				DC31A9FAA4664EDB25913B90 /* Pods-DZVideoPlayerViewController_Example-environment.h */,
+				93E6C769F643E7CB26079080 /* Pods-DZVideoPlayerViewController_Example-resources.sh */,
+				667ABD30EE01F12842005DEB /* Pods-DZVideoPlayerViewController_Example.debug.xcconfig */,
+				F842CEA7004EB1BCD72EFCCF /* Pods-DZVideoPlayerViewController_Example.release.xcconfig */,
+			);
+			name = "Pods-DZVideoPlayerViewController_Example";
+			path = "Target Support Files/Pods-DZVideoPlayerViewController_Example";
+			sourceTree = "<group>";
+		};
+		370F5F455B588BA9663A4E50 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				559790A4E5490006FC5BA01B /* Expecta */,
+				B3EFFAF6D2C7C7F407529D5D /* Specta */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3DD7A7723C6EA0671C309A67 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				639ADDD7C886D53E915AFB48 /* AVFoundation.framework */,
+				54FF7277B50DC33553AF8005 /* AudioToolbox.framework */,
+				018A0921DBD4146182E33749 /* Foundation.framework */,
+				12E89F1DD451A00711175056 /* XCTest.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		97738CFDB2B51DECDE0B8435 /* Frameworks */ = {
+		5482D4D43AF3DDB2E03CECD2 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				5DB5999C35CCB77F6E4E8DD1 /* iOS */,
+				03E9DC7CE87B5AC75BFF9382 /* Classes */,
 			);
-			name = Frameworks;
+			path = Pod;
 			sourceTree = "<group>";
 		};
-		B5F5BABA635349D9437759A0 /* Pods-DZVideoPlayerViewController_Tests */ = {
+		559790A4E5490006FC5BA01B /* Expecta */ = {
 			isa = PBXGroup;
 			children = (
-				B0B42F4FDAA20662E15D74B2 /* Info.plist */,
-				B49B11B7C1033800B9CFC996 /* Pods-DZVideoPlayerViewController_Tests.modulemap */,
-				7E4CDA9B2FF8B67D5182867E /* Pods-DZVideoPlayerViewController_Tests-acknowledgements.markdown */,
-				67FF6BAA45F9F562C3587AAF /* Pods-DZVideoPlayerViewController_Tests-acknowledgements.plist */,
-				BF3419D84A5BAF2BE3CD3433 /* Pods-DZVideoPlayerViewController_Tests-dummy.m */,
-				0646144A7AACF08E03AFEE59 /* Pods-DZVideoPlayerViewController_Tests-environment.h */,
-				3A4222330B88C39E6F3FBA0B /* Pods-DZVideoPlayerViewController_Tests-frameworks.sh */,
-				DA10197C3B0C92945A57E9DD /* Pods-DZVideoPlayerViewController_Tests-resources.sh */,
-				90FF537E61417B9B3A0D2B22 /* Pods-DZVideoPlayerViewController_Tests-umbrella.h */,
-				C1EDC6913C59DB8AA4F2B18A /* Pods-DZVideoPlayerViewController_Tests.debug.xcconfig */,
-				47A277B61F95877D73F04B70 /* Pods-DZVideoPlayerViewController_Tests.release.xcconfig */,
+				628D0D6F84BA37E15F0E5501 /* EXPBlockDefinedMatcher.h */,
+				9866AAE75F1931145C6ADB72 /* EXPBlockDefinedMatcher.m */,
+				8EDD30CA5FF3EDAD62855479 /* EXPDefines.h */,
+				FDCBCF6A6D86F567C7A32E61 /* EXPDoubleTuple.h */,
+				5F7D31F4FB141C6DAB214FF7 /* EXPDoubleTuple.m */,
+				94E3E6F8D17FD8CF06EA499F /* EXPExpect.h */,
+				6BBA69DE08D13907618C2E73 /* EXPExpect.m */,
+				B99049C87EA39C9BAFF8D31F /* EXPFloatTuple.h */,
+				3AA38EB7E327F98DA40BA167 /* EXPFloatTuple.m */,
+				CF415EBCA677C4CAA3D326E3 /* EXPMatcher.h */,
+				F78DE6A577FAB6954A52240F /* EXPMatcherHelpers.h */,
+				C81671C5CCCCC4F4DC3CACF4 /* EXPMatcherHelpers.m */,
+				0FF9DA4FE4603BBF6BABA656 /* EXPMatchers.h */,
+				276ECEC39C79D15DA8BF9690 /* EXPMatchers+beCloseTo.h */,
+				765D83155EF9054BA3582A23 /* EXPMatchers+beCloseTo.m */,
+				914305C5FE53A260BC091032 /* EXPMatchers+beFalsy.h */,
+				D3D8F86DE2D81D92E5BC42AF /* EXPMatchers+beFalsy.m */,
+				59EC181B2AC34497416B5333 /* EXPMatchers+beGreaterThan.h */,
+				1261279B7CE310C9BEA5D914 /* EXPMatchers+beGreaterThan.m */,
+				B94F46AAC5A555DC71E167B1 /* EXPMatchers+beGreaterThanOrEqualTo.h */,
+				340F2C0BA25C62DAF7C00585 /* EXPMatchers+beGreaterThanOrEqualTo.m */,
+				6236A437A1A8125331403AD3 /* EXPMatchers+beIdenticalTo.h */,
+				C65CEB7530D6A3A7EEF02E2D /* EXPMatchers+beIdenticalTo.m */,
+				C3EA8EF76B4DF1845E063A8E /* EXPMatchers+beInTheRangeOf.h */,
+				70B0D07DF6974A0F41337D46 /* EXPMatchers+beInTheRangeOf.m */,
+				DC9E02482EE1BE41CF23C9EC /* EXPMatchers+beInstanceOf.h */,
+				E4BD4E6B605B1F0676E87D67 /* EXPMatchers+beInstanceOf.m */,
+				D01FFEDFC110ADB20CBA0BBB /* EXPMatchers+beKindOf.h */,
+				E7C19327EECAAFEEBA21FDEB /* EXPMatchers+beKindOf.m */,
+				B4E7286B93E7BC51DEE00930 /* EXPMatchers+beLessThan.h */,
+				44D50633C598E6929BEF07A1 /* EXPMatchers+beLessThan.m */,
+				B0C94905AB98FE1DFC618FBD /* EXPMatchers+beLessThanOrEqualTo.h */,
+				C813E28003A828792E2AB878 /* EXPMatchers+beLessThanOrEqualTo.m */,
+				56B08306FA75A51ABF26CF6D /* EXPMatchers+beNil.h */,
+				07C1FAE1E7E303BBC5FA5E44 /* EXPMatchers+beNil.m */,
+				5ED67272E6D1106DA8F16F4E /* EXPMatchers+beSubclassOf.h */,
+				D52A178AEC9F573F56F89C3C /* EXPMatchers+beSubclassOf.m */,
+				85573C21876DA903C22C614E /* EXPMatchers+beSupersetOf.h */,
+				B439ADDEF3EFA8968EA46029 /* EXPMatchers+beSupersetOf.m */,
+				DE724D8FED7FA211E8CFF1BD /* EXPMatchers+beTruthy.h */,
+				494E465CED1508FFF4256CE7 /* EXPMatchers+beTruthy.m */,
+				A64FBE4A4D504D6203106439 /* EXPMatchers+beginWith.h */,
+				AEFA9EAA341B04FDA55597C0 /* EXPMatchers+beginWith.m */,
+				0A62DF0596DA748F45DB38D8 /* EXPMatchers+conformTo.h */,
+				E6524C6DBE535AD535BD63B9 /* EXPMatchers+conformTo.m */,
+				081BA545DFBFA39F24794F63 /* EXPMatchers+contain.h */,
+				5228C84D59BCFFCB03A147E3 /* EXPMatchers+contain.m */,
+				68953EFDDB8834943D3625A9 /* EXPMatchers+endWith.h */,
+				0C42B70E5EC326E28A6E864A /* EXPMatchers+endWith.m */,
+				0543A0ED719BB02DF6CEDDB8 /* EXPMatchers+equal.h */,
+				797A62556AED9C60DE21B12A /* EXPMatchers+equal.m */,
+				D350053444FCA28980638FBA /* EXPMatchers+haveCountOf.h */,
+				4BA69ECE2247C1A6F51FC261 /* EXPMatchers+haveCountOf.m */,
+				C64EBF85E368B6900A3003C6 /* EXPMatchers+match.h */,
+				8F2FF3AC0090F0B32B9173C5 /* EXPMatchers+match.m */,
+				7FFDA45923CC205D2714A87C /* EXPMatchers+postNotification.h */,
+				62C44BD1C887269AAAB32E46 /* EXPMatchers+postNotification.m */,
+				2B5EAFBAD0D7E2B70B52A959 /* EXPMatchers+raise.h */,
+				682814DBF2EE6BE87D41A8D9 /* EXPMatchers+raise.m */,
+				FB779BCD811D7F372152F6D2 /* EXPMatchers+raiseWithReason.h */,
+				436ACA4965765ED6D6A21690 /* EXPMatchers+raiseWithReason.m */,
+				CC59AC75D745883D2D834408 /* EXPMatchers+respondTo.h */,
+				C9E276E30B029D4436F1C344 /* EXPMatchers+respondTo.m */,
+				8A8C0E96D741F4B55ADED97F /* EXPUnsupportedObject.h */,
+				3449256F36EA7EC3346E8F30 /* EXPUnsupportedObject.m */,
+				C542EFFD7A5BC22CB3D1ED67 /* Expecta.h */,
+				7D7C05D9E6E56E2FDE871010 /* ExpectaObject.h */,
+				868FB078B0320A6462D39072 /* ExpectaObject.m */,
+				D36A38CB50ED953DC43C785F /* ExpectaSupport.h */,
+				ACBD6FEB0860B4B527DAF997 /* ExpectaSupport.m */,
+				589E120F830358034A0AAFA7 /* NSObject+Expecta.h */,
+				1E3B069C9A4325ED9F1EA021 /* NSValue+Expecta.h */,
+				3F2F87D6394B3BF149894334 /* NSValue+Expecta.m */,
+				A9BA9A19DEE95B831C952D40 /* Support Files */,
 			);
-			name = "Pods-DZVideoPlayerViewController_Tests";
-			path = "Target Support Files/Pods-DZVideoPlayerViewController_Tests";
+			path = Expecta;
 			sourceTree = "<group>";
 		};
-		BEEEE3E347BAE9425848994D = {
+		583902F4EA5373DBAE35D019 = {
 			isa = PBXGroup;
 			children = (
-				07DF179F68482730188EF9A1 /* Podfile */,
-				2456BD2CA7700B329924232E /* Development Pods */,
-				97738CFDB2B51DECDE0B8435 /* Frameworks */,
-				33144D545D4E28DD7F2F677E /* Products */,
-				326F2027DF610BE3C001B91E /* Targets Support Files */,
+				48A23B6E5BE42F8D3F391177 /* Podfile */,
+				C2E1289AC7FBAE2AC9DB039F /* Development Pods */,
+				FCA1557F6306E492F429DB8D /* Frameworks */,
+				370F5F455B588BA9663A4E50 /* Pods */,
+				F66E9611BFD848490F3DA7FF /* Products */,
+				64EAD1743F3C192BD49E60D2 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		DBDAF338B7024BDCEC15A39E /* DZVideoPlayerViewController */ = {
+		5F3F764512706FC65DBEB37E /* DZVideoPlayerViewController */ = {
 			isa = PBXGroup;
 			children = (
-				3F4DFC9B7210FA0B97F2DF17 /* Pod */,
-				39217F8841A1FCC14DCC8FC9 /* Resources */,
-				3E3CD93FA134C33888E068EF /* Support Files */,
+				5482D4D43AF3DDB2E03CECD2 /* Pod */,
+				E847BD0FBBB42AC30F6C9434 /* Resources */,
+				60A10F2DD4699EBDAA09395C /* Support Files */,
 			);
 			name = DZVideoPlayerViewController;
 			path = ../..;
 			sourceTree = "<group>";
 		};
+		60A10F2DD4699EBDAA09395C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C688E7F5DC71CCD29A791C7A /* Pods-DZVideoPlayerViewController_Example-DZVideoPlayerViewController.xcconfig */,
+				F09128034CADFD8B8A5C253B /* Pods-DZVideoPlayerViewController_Example-DZVideoPlayerViewController-Private.xcconfig */,
+				4769702F3AF16932981EC7C4 /* Pods-DZVideoPlayerViewController_Example-DZVideoPlayerViewController-dummy.m */,
+				65645DC14C2B61DC6B174B5B /* Pods-DZVideoPlayerViewController_Example-DZVideoPlayerViewController-prefix.pch */,
+				2B3D634AAEC013BA4C666245 /* Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController.xcconfig */,
+				4B959B7FBB233A75C4BEB1FE /* Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController-Private.xcconfig */,
+				7C14D3BDDFA090D98F11B32C /* Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController-dummy.m */,
+				972E99AF9A8FA861F04F28C6 /* Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/Pods-DZVideoPlayerViewController_Example-DZVideoPlayerViewController";
+			sourceTree = "<group>";
+		};
+		63A9DD73F3ED398450D816D3 /* Pods-DZVideoPlayerViewController_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				893128B39DEDC347436B3E5B /* Pods-DZVideoPlayerViewController_Tests-acknowledgements.markdown */,
+				52B500C62D2E782D403713A0 /* Pods-DZVideoPlayerViewController_Tests-acknowledgements.plist */,
+				45A10860AD28FC856D972DBF /* Pods-DZVideoPlayerViewController_Tests-dummy.m */,
+				10EC4452D676741884ED83E6 /* Pods-DZVideoPlayerViewController_Tests-environment.h */,
+				0118475DB81C8B581E5D5C5A /* Pods-DZVideoPlayerViewController_Tests-resources.sh */,
+				CB74E02F097929ED1AE75F41 /* Pods-DZVideoPlayerViewController_Tests.debug.xcconfig */,
+				14738EC4D4CEE38EB2E5C1C1 /* Pods-DZVideoPlayerViewController_Tests.release.xcconfig */,
+			);
+			name = "Pods-DZVideoPlayerViewController_Tests";
+			path = "Target Support Files/Pods-DZVideoPlayerViewController_Tests";
+			sourceTree = "<group>";
+		};
+		64EAD1743F3C192BD49E60D2 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2C724F77A1A6893F5A1E8C24 /* Pods-DZVideoPlayerViewController_Example */,
+				63A9DD73F3ED398450D816D3 /* Pods-DZVideoPlayerViewController_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7B708E7FC40DD334ED1289D7 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1BDA9BD00B090721CC0F68C4 /* Pods-DZVideoPlayerViewController_Tests-Specta.xcconfig */,
+				ED723B30863BE97F083F0A01 /* Pods-DZVideoPlayerViewController_Tests-Specta-Private.xcconfig */,
+				97D82C833BE31497D91F6C63 /* Pods-DZVideoPlayerViewController_Tests-Specta-dummy.m */,
+				F87449E2044AB4324E5D8DBE /* Pods-DZVideoPlayerViewController_Tests-Specta-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-DZVideoPlayerViewController_Tests-Specta";
+			sourceTree = "<group>";
+		};
+		A7DFCCB723243071AC7A3C39 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				7E1E1A7FAB3AFB99861763EA /* DZVideoPlayerViewController.xib */,
+				52D867DE6DC02829A2B76EF7 /* videoplayer_expand@1x.png */,
+				425F9E028AC3602FE532110A /* videoplayer_expand@2x.png */,
+				7FDC1115587C7896D59F7D06 /* videoplayer_expand@3x.png */,
+				FD3500CFA07043EA9F9DD04B /* videoplayer_pause@1x.png */,
+				AAE0177A1912E367FF6E5ED3 /* videoplayer_pause@2x.png */,
+				4C1444B0149367590AEFE407 /* videoplayer_pause@3x.png */,
+				2928997962587193355FF7F0 /* videoplayer_play@1x.png */,
+				7A610BD18098A4CB46704227 /* videoplayer_play@2x.png */,
+				7826AC28A066BC5D257EE3C8 /* videoplayer_play@3x.png */,
+				444CC46A7F44EF0FCD0F82A3 /* videoplayer_shrink@1x.png */,
+				F4DFA03A9584DDFFCED0312B /* videoplayer_shrink@2x.png */,
+				2E07B8A8D090ADAE7147FFC5 /* videoplayer_shrink@3x.png */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		A9BA9A19DEE95B831C952D40 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CD850AB6DD43277C01C3AD4F /* Pods-DZVideoPlayerViewController_Tests-Expecta.xcconfig */,
+				C839D023D9A93F7CCDE836A8 /* Pods-DZVideoPlayerViewController_Tests-Expecta-Private.xcconfig */,
+				735CC095FBC8FE8306DA3B2C /* Pods-DZVideoPlayerViewController_Tests-Expecta-dummy.m */,
+				FBB609338CF2B4718AD589A7 /* Pods-DZVideoPlayerViewController_Tests-Expecta-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-DZVideoPlayerViewController_Tests-Expecta";
+			sourceTree = "<group>";
+		};
+		B3EFFAF6D2C7C7F407529D5D /* Specta */ = {
+			isa = PBXGroup;
+			children = (
+				9CB183DD1CC521A2CF647C0A /* SPTCallSite.h */,
+				BF9103AE1FF5A842A63A61DA /* SPTCallSite.m */,
+				0280C69506053FFF15ED86B3 /* SPTCompiledExample.h */,
+				1E53E4A77146B5B12583A466 /* SPTCompiledExample.m */,
+				6DDFB4CFC0B3DDB05CA09C6D /* SPTExample.h */,
+				D327A7845F7CA85B2532FFA2 /* SPTExample.m */,
+				CEF4E92294167A53B659CC8F /* SPTExampleGroup.h */,
+				351E1557B7CD981382202E9C /* SPTExampleGroup.m */,
+				33CABE0E915A0E042BE408D8 /* SPTExcludeGlobalBeforeAfterEach.h */,
+				10ECC0BBE9D269B0CC307F13 /* SPTGlobalBeforeAfterEach.h */,
+				78C1BBF2A00F031F123D0D64 /* SPTSharedExampleGroups.h */,
+				032710AF1A2B75C48BBC01FF /* SPTSharedExampleGroups.m */,
+				B0F46B47D853E3F708C07A01 /* SPTSpec.h */,
+				4EFC9ED626D24F433189403E /* SPTSpec.m */,
+				A05617AC42451838B40D9BE9 /* SPTTestSuite.h */,
+				D55DD9FC9D429A1C912622C1 /* SPTTestSuite.m */,
+				0F298551C48602ACF03AE4EB /* Specta.h */,
+				8AF16332852FC7E1652449D8 /* SpectaDSL.h */,
+				21B1FBDFC021D6B49C9CF768 /* SpectaDSL.m */,
+				BB654F7E885E35FF5A592011 /* SpectaTypes.h */,
+				02CA156528AA6EE032D5D219 /* SpectaUtility.h */,
+				31252A4763A98455586F132B /* SpectaUtility.m */,
+				215D4C46DA00C9BE3769F4AB /* XCTest+Private.h */,
+				E06AC5E0CDB4539EA827AE0C /* XCTestCase+Specta.h */,
+				1420A61E163767CA85DF4EFA /* XCTestCase+Specta.m */,
+				7B708E7FC40DD334ED1289D7 /* Support Files */,
+			);
+			path = Specta;
+			sourceTree = "<group>";
+		};
+		C2E1289AC7FBAE2AC9DB039F /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5F3F764512706FC65DBEB37E /* DZVideoPlayerViewController */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		E847BD0FBBB42AC30F6C9434 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F7829C4BCDBF429083CD1DE9 /* Pod */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		F66E9611BFD848490F3DA7FF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6922DC07F32AB46588381DFC /* DZVideoPlayerViewController.bundle */,
+				2A6C1B15ED9C2D5BC461552C /* DZVideoPlayerViewController.bundle */,
+				791F1FA9380B15071B04EBAD /* libPods-DZVideoPlayerViewController_Example.a */,
+				F3445FA9FCCE4001D826DFE3 /* libPods-DZVideoPlayerViewController_Example-DZVideoPlayerViewController.a */,
+				F242219F3AF99F7EA8B49595 /* libPods-DZVideoPlayerViewController_Tests.a */,
+				B0533EAF6A76503246A26E3D /* libPods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController.a */,
+				1C3B25A532718F820B2F32C3 /* libPods-DZVideoPlayerViewController_Tests-Expecta.a */,
+				A42850FDF64CE618C3E9137C /* libPods-DZVideoPlayerViewController_Tests-Specta.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F7829C4BCDBF429083CD1DE9 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				A7DFCCB723243071AC7A3C39 /* Assets */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		FCA1557F6306E492F429DB8D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DD7A7723C6EA0671C309A67 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		44F13BBCAC795BE018C849ED /* Headers */ = {
+		00C5A4F2F430FFFA44EFBD5B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				410E2D39E82EEFDE12AF96A6 /* DZPlayerView.h in Headers */,
-				54186F4E9D8B32CE1FBC836C /* DZProgressIndicatorSlider.h in Headers */,
-				8EFD35F7BAF939CCA7F5956B /* DZVideoPlayerViewController.h in Headers */,
-				E0EFC7E02CFB4316E901C809 /* DZVideoPlayerViewControllerContainerView.h in Headers */,
-				32A3D61216197C122B4CCC09 /* DZVideoPlayerViewControllerDelegate.h in Headers */,
-				FA580848AE18DA46694ABBB6 /* DZVideoPlayerViewController_constants.h in Headers */,
-				6D433FEE2A6DB2FADA38AAC0 /* Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController-umbrella.h in Headers */,
+				CFA80A1C19E1EAB509FF8F36 /* DZPlayerView.h in Headers */,
+				1C315CE6457B7E8E909DD424 /* DZProgressIndicatorSlider.h in Headers */,
+				49F9B5D4A68BF257D60FDB0D /* DZVideoPlayerViewController.h in Headers */,
+				35BE1EE0FA84A14593CE5595 /* DZVideoPlayerViewControllerContainerView.h in Headers */,
+				F56C706BCD3BB641BAC35A99 /* DZVideoPlayerViewControllerDelegate.h in Headers */,
+				17396A5CA63448DED86D614A /* DZVideoPlayerViewController_constants.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		687F0EF05429BB0CA9D633BF /* Headers */ = {
+		288CEFA42C1AFFCF567DFAE0 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B846FD97B28C472A86C1EBC4 /* Pods-DZVideoPlayerViewController_Tests-umbrella.h in Headers */,
+				7E806BB5CAB9952956538E87 /* DZPlayerView.h in Headers */,
+				BA400C54912A105460EDFA51 /* DZProgressIndicatorSlider.h in Headers */,
+				DE9A9E090820BAE0E736F789 /* DZVideoPlayerViewController.h in Headers */,
+				A8AC19CED93A6570CFD177A0 /* DZVideoPlayerViewControllerContainerView.h in Headers */,
+				19D21F27930215621D564D76 /* DZVideoPlayerViewControllerDelegate.h in Headers */,
+				EEDB5014A2AF243D5A05CFDA /* DZVideoPlayerViewController_constants.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A613BFECA27E96CD437C292B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A45FC92116B2C4B566DD6B1A /* SPTCallSite.h in Headers */,
+				A440431E60690CAA0410E816 /* SPTCompiledExample.h in Headers */,
+				DAB1FCAD9F4236FB1BADABCE /* SPTExample.h in Headers */,
+				683207F03ECB7BD183E737F4 /* SPTExampleGroup.h in Headers */,
+				1F9FF8CF3561D8A456906B71 /* SPTExcludeGlobalBeforeAfterEach.h in Headers */,
+				10AA5D05B2205CBCBC6D49F4 /* SPTGlobalBeforeAfterEach.h in Headers */,
+				F2375683B3B8B93F7994132E /* SPTSharedExampleGroups.h in Headers */,
+				B3AC695151A2253A087CF888 /* SPTSpec.h in Headers */,
+				0D69A444F80677B6DB403F7B /* SPTTestSuite.h in Headers */,
+				A82362CEFD894C0DC885ABA0 /* Specta.h in Headers */,
+				EC3A13663333ED5E82644A16 /* SpectaDSL.h in Headers */,
+				58A540821F5F3D2895E27B40 /* SpectaTypes.h in Headers */,
+				1030D3A6FD6380B6FA88EF62 /* SpectaUtility.h in Headers */,
+				ED6440571D4941FF9501C015 /* XCTest+Private.h in Headers */,
+				3E5CAE01B1420AFA2D4D9DB2 /* XCTestCase+Specta.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D78F64DE87102F94D48522E3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F45B4C29F5EB956879E7F73E /* EXPBlockDefinedMatcher.h in Headers */,
+				AE9BF1C70E6010961199CDFF /* EXPDefines.h in Headers */,
+				AE4BD1D219D7EBE560B239ED /* EXPDoubleTuple.h in Headers */,
+				3AE01C226137F144821D77C4 /* EXPExpect.h in Headers */,
+				7A192FF3273EDF751756B845 /* EXPFloatTuple.h in Headers */,
+				602407D36A216D988AE9D07A /* EXPMatcher.h in Headers */,
+				9A6A098B8766C76F71D7E929 /* EXPMatcherHelpers.h in Headers */,
+				640790D0D10893FB9D96BE23 /* EXPMatchers+beCloseTo.h in Headers */,
+				C13E8422F5A3619703A0A9D3 /* EXPMatchers+beFalsy.h in Headers */,
+				FEA7924DCC92ABAE1B5FCC65 /* EXPMatchers+beGreaterThan.h in Headers */,
+				DB8DB2EBDB2AC279F5C520BE /* EXPMatchers+beGreaterThanOrEqualTo.h in Headers */,
+				EA25A9289BA9959A00B1F7EA /* EXPMatchers+beIdenticalTo.h in Headers */,
+				786DE8AD86E1E53AF8BF44FF /* EXPMatchers+beInTheRangeOf.h in Headers */,
+				08E45626EE0CF839A672DF21 /* EXPMatchers+beInstanceOf.h in Headers */,
+				16188F768F94DB336FAFAEB0 /* EXPMatchers+beKindOf.h in Headers */,
+				5CE915657439D17C0A2E3CC2 /* EXPMatchers+beLessThan.h in Headers */,
+				821CD359E56BD7F6DC8A316F /* EXPMatchers+beLessThanOrEqualTo.h in Headers */,
+				015B08842DD8DAFD4DD01644 /* EXPMatchers+beNil.h in Headers */,
+				046A88FF3D18FEC66D263C60 /* EXPMatchers+beSubclassOf.h in Headers */,
+				6355A9D9AEC35321D22FECF8 /* EXPMatchers+beSupersetOf.h in Headers */,
+				B6D0DFC511C1C2A3C1B6EE75 /* EXPMatchers+beTruthy.h in Headers */,
+				8D06290E4EB16EA96C70F051 /* EXPMatchers+beginWith.h in Headers */,
+				212D94C6F599506A36969E1D /* EXPMatchers+conformTo.h in Headers */,
+				434CDFEE1DDE42CB686B3438 /* EXPMatchers+contain.h in Headers */,
+				E5C8D1948DE43ED42878A543 /* EXPMatchers+endWith.h in Headers */,
+				3C972C8E4EF9920E471A85CE /* EXPMatchers+equal.h in Headers */,
+				8C17E54C58CEE025EDB2CE37 /* EXPMatchers+haveCountOf.h in Headers */,
+				38A2CA81EC22773FEC127FD3 /* EXPMatchers+match.h in Headers */,
+				95A3FD57B99574AAB3C5E5D7 /* EXPMatchers+postNotification.h in Headers */,
+				5FFC4968ED9E43CAA7B958E2 /* EXPMatchers+raise.h in Headers */,
+				E7E465BE6D18F4AE22C9E56B /* EXPMatchers+raiseWithReason.h in Headers */,
+				585B75D2003C535A8102FD4C /* EXPMatchers+respondTo.h in Headers */,
+				245A0F5028E2C08EA357367A /* EXPMatchers.h in Headers */,
+				F3CBC02E975C20CD3A70AF9A /* EXPUnsupportedObject.h in Headers */,
+				D8448855A21AB7A2BF99155D /* Expecta.h in Headers */,
+				FE3364ACBBB2AD11C8FFB215 /* ExpectaObject.h in Headers */,
+				49145C0AC0BC457A6C24DE20 /* ExpectaSupport.h in Headers */,
+				045122E8A7BEE807A19474CB /* NSObject+Expecta.h in Headers */,
+				15D0197EBAFF5AE927851B78 /* NSValue+Expecta.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		04538C51A5C446BD53794B99 /* Pods-DZVideoPlayerViewController_Tests */ = {
+		0A6F4F06284609ACF4FBFFC7 /* Pods-DZVideoPlayerViewController_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D3DE686216FF93CF57AF2EF3 /* Build configuration list for PBXNativeTarget "Pods-DZVideoPlayerViewController_Tests" */;
+			buildConfigurationList = D346E9D290032501AD08799F /* Build configuration list for PBXNativeTarget "Pods-DZVideoPlayerViewController_Tests" */;
 			buildPhases = (
-				84D4AC315FE1A8D777D07523 /* Sources */,
-				1186C3B5D01EFF901340973F /* Frameworks */,
-				687F0EF05429BB0CA9D633BF /* Headers */,
+				865EBB65EFA6759287E3D2B5 /* Sources */,
+				9880B947EEA14C7EB2EE7551 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				0C0D3E67E7F9B66CB0A13D19 /* PBXTargetDependency */,
+				2D6CA29B021FFB7FFD1EA3DF /* PBXTargetDependency */,
+				829B1E0CF7C59CBB1811E4A5 /* PBXTargetDependency */,
+				406A8E87B2F34848FC19900F /* PBXTargetDependency */,
 			);
 			name = "Pods-DZVideoPlayerViewController_Tests";
 			productName = "Pods-DZVideoPlayerViewController_Tests";
-			productReference = 19CEE5CFA81AE5870A8E38D8 /* Pods_DZVideoPlayerViewController_Tests.framework */;
-			productType = "com.apple.product-type.framework";
+			productReference = F242219F3AF99F7EA8B49595 /* libPods-DZVideoPlayerViewController_Tests.a */;
+			productType = "com.apple.product-type.library.static";
 		};
-		50695386A2874EE5930AEEAF /* Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController-DZVideoPlayerViewController */ = {
+		4012479967D78FA63D63B095 /* Pods-DZVideoPlayerViewController_Example-DZVideoPlayerViewController */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DEC5A175549665B1DAF04EEE /* Build configuration list for PBXNativeTarget "Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController-DZVideoPlayerViewController" */;
+			buildConfigurationList = 16F6CCB7CFCA363EA7259A4D /* Build configuration list for PBXNativeTarget "Pods-DZVideoPlayerViewController_Example-DZVideoPlayerViewController" */;
 			buildPhases = (
-				A1AB7D072D81A7C4B4295548 /* Sources */,
-				F1EADF3D80C8C9431BDB6E8A /* Frameworks */,
-				9258C859B0A10C8A0622E1A2 /* Resources */,
+				E863EF982234B03A063BBA5F /* Sources */,
+				665E432F6D454FFB23528896 /* Frameworks */,
+				288CEFA42C1AFFCF567DFAE0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A105D552E7B69F4D10A8B55E /* PBXTargetDependency */,
+			);
+			name = "Pods-DZVideoPlayerViewController_Example-DZVideoPlayerViewController";
+			productName = "Pods-DZVideoPlayerViewController_Example-DZVideoPlayerViewController";
+			productReference = F3445FA9FCCE4001D826DFE3 /* libPods-DZVideoPlayerViewController_Example-DZVideoPlayerViewController.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		7A415CDB01B5EE312A49344B /* Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController-DZVideoPlayerViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DA16C4FACE1140EACC29094 /* Build configuration list for PBXNativeTarget "Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController-DZVideoPlayerViewController" */;
+			buildPhases = (
+				E934C85DBE6AC8DAA478E4B7 /* Sources */,
+				6F528FBB08A1BB21692B0EC4 /* Frameworks */,
+				199B678521A66D07B71D5D6B /* Resources */,
 			);
 			buildRules = (
 			);
@@ -359,108 +934,279 @@
 			);
 			name = "Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController-DZVideoPlayerViewController";
 			productName = "Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController-DZVideoPlayerViewController";
-			productReference = 5E3C9A6A11DAD1866A6F951F /* DZVideoPlayerViewController.bundle */;
+			productReference = 6922DC07F32AB46588381DFC /* DZVideoPlayerViewController.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
-		AAC5D09DAFB99D0ADC89971F /* Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController */ = {
+		8ADAAEC07E3D7ED9998EB8F4 /* Pods-DZVideoPlayerViewController_Example-DZVideoPlayerViewController-DZVideoPlayerViewController */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 60355B73559CC0883D1A163B /* Build configuration list for PBXNativeTarget "Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController" */;
+			buildConfigurationList = 9D9148899069C9479DE890C1 /* Build configuration list for PBXNativeTarget "Pods-DZVideoPlayerViewController_Example-DZVideoPlayerViewController-DZVideoPlayerViewController" */;
 			buildPhases = (
-				833A7228B2A70C4A68BC9541 /* Sources */,
-				5019236F23468FE17CC004F9 /* Frameworks */,
-				76886D2BE2B0C0B85B63B49B /* Resources */,
-				44F13BBCAC795BE018C849ED /* Headers */,
+				E78AE1FC9843486BA1059648 /* Sources */,
+				CAA38BAE982CC3C3CE59FE47 /* Frameworks */,
+				9D251EAF1C1A7F5B640FEF8C /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				DA31202C23CE3B40CD257C42 /* PBXTargetDependency */,
+			);
+			name = "Pods-DZVideoPlayerViewController_Example-DZVideoPlayerViewController-DZVideoPlayerViewController";
+			productName = "Pods-DZVideoPlayerViewController_Example-DZVideoPlayerViewController-DZVideoPlayerViewController";
+			productReference = 2A6C1B15ED9C2D5BC461552C /* DZVideoPlayerViewController.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		A9731BCC356848F2DFE50B4C /* Pods-DZVideoPlayerViewController_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAD0973B9A28B828B6358D9D /* Build configuration list for PBXNativeTarget "Pods-DZVideoPlayerViewController_Example" */;
+			buildPhases = (
+				D5BA24679DEF2AE567C554B0 /* Sources */,
+				A7839F7A45C272FD60EA90EE /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1529A122E21FF88A08B83F3E /* PBXTargetDependency */,
+			);
+			name = "Pods-DZVideoPlayerViewController_Example";
+			productName = "Pods-DZVideoPlayerViewController_Example";
+			productReference = 791F1FA9380B15071B04EBAD /* libPods-DZVideoPlayerViewController_Example.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		CD131CEECE0E06AFCDCFB599 /* Pods-DZVideoPlayerViewController_Tests-Expecta */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BBFD348592700D48E7AEEB6 /* Build configuration list for PBXNativeTarget "Pods-DZVideoPlayerViewController_Tests-Expecta" */;
+			buildPhases = (
+				6BF3F1FD746C09FEB5211669 /* Sources */,
+				5BF148187D43772F93E1EAF6 /* Frameworks */,
+				D78F64DE87102F94D48522E3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-DZVideoPlayerViewController_Tests-Expecta";
+			productName = "Pods-DZVideoPlayerViewController_Tests-Expecta";
+			productReference = 1C3B25A532718F820B2F32C3 /* libPods-DZVideoPlayerViewController_Tests-Expecta.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		CF7F63E3AE50E16CDC3B0176 /* Pods-DZVideoPlayerViewController_Tests-Specta */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91ED312CC73E636C317D3FBB /* Build configuration list for PBXNativeTarget "Pods-DZVideoPlayerViewController_Tests-Specta" */;
+			buildPhases = (
+				0B5B874E0AE73DC76F60A314 /* Sources */,
+				E72ABEED9D8DD5083677E372 /* Frameworks */,
+				A613BFECA27E96CD437C292B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-DZVideoPlayerViewController_Tests-Specta";
+			productName = "Pods-DZVideoPlayerViewController_Tests-Specta";
+			productReference = A42850FDF64CE618C3E9137C /* libPods-DZVideoPlayerViewController_Tests-Specta.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		E6FEAC5D2546EF3662E99DC2 /* Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B5AC9892BE39F119D8EECC8 /* Build configuration list for PBXNativeTarget "Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController" */;
+			buildPhases = (
+				A7EDB0FF8760B2BD217C5BE8 /* Sources */,
+				AC09DFAEE582C8C20F424A45 /* Frameworks */,
+				00C5A4F2F430FFFA44EFBD5B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				019D5AAD1F94E9018A34ECBB /* PBXTargetDependency */,
 			);
 			name = "Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController";
 			productName = "Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController";
-			productReference = C458C427344DDEFC11E36D62 /* DZVideoPlayerViewController.framework */;
-			productType = "com.apple.product-type.framework";
+			productReference = B0533EAF6A76503246A26E3D /* libPods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController.a */;
+			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		EAC6F0502B8F5D77DD60CDAB /* Project object */ = {
+		0EC02C5A01B1F02ECDAB7BDE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0640;
 			};
-			buildConfigurationList = 9F4E113400CB832659120887 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = BBD5245AB3A2908088957653 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = BEEEE3E347BAE9425848994D;
-			productRefGroup = 33144D545D4E28DD7F2F677E /* Products */;
+			mainGroup = 583902F4EA5373DBAE35D019;
+			productRefGroup = F66E9611BFD848490F3DA7FF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				04538C51A5C446BD53794B99 /* Pods-DZVideoPlayerViewController_Tests */,
-				AAC5D09DAFB99D0ADC89971F /* Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController */,
-				50695386A2874EE5930AEEAF /* Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController-DZVideoPlayerViewController */,
+				A9731BCC356848F2DFE50B4C /* Pods-DZVideoPlayerViewController_Example */,
+				4012479967D78FA63D63B095 /* Pods-DZVideoPlayerViewController_Example-DZVideoPlayerViewController */,
+				8ADAAEC07E3D7ED9998EB8F4 /* Pods-DZVideoPlayerViewController_Example-DZVideoPlayerViewController-DZVideoPlayerViewController */,
+				0A6F4F06284609ACF4FBFFC7 /* Pods-DZVideoPlayerViewController_Tests */,
+				E6FEAC5D2546EF3662E99DC2 /* Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController */,
+				7A415CDB01B5EE312A49344B /* Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController-DZVideoPlayerViewController */,
+				CD131CEECE0E06AFCDCFB599 /* Pods-DZVideoPlayerViewController_Tests-Expecta */,
+				CF7F63E3AE50E16CDC3B0176 /* Pods-DZVideoPlayerViewController_Tests-Specta */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		76886D2BE2B0C0B85B63B49B /* Resources */ = {
+		199B678521A66D07B71D5D6B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA65F041578B5D2D7CC38F6F /* DZVideoPlayerViewController.bundle in Resources */,
+				AA1436D3A8067B52A07A0180 /* DZVideoPlayerViewController.xib in Resources */,
+				6478850A8120D529CF99633C /* videoplayer_expand@1x.png in Resources */,
+				2D911817BAC8BFD213B3B287 /* videoplayer_expand@2x.png in Resources */,
+				F9E9200A1454E828F2E949F9 /* videoplayer_expand@3x.png in Resources */,
+				86B68888D9DC8D78523B0A97 /* videoplayer_pause@1x.png in Resources */,
+				D1AEE30EDD8B00087B117219 /* videoplayer_pause@2x.png in Resources */,
+				7CD0A8D76DD8243E8F1F2115 /* videoplayer_pause@3x.png in Resources */,
+				2CB413752F6391A5F867A97C /* videoplayer_play@1x.png in Resources */,
+				2EB4042049223591E2DA3126 /* videoplayer_play@2x.png in Resources */,
+				D0E1B76BDEB8A90ACA5F3226 /* videoplayer_play@3x.png in Resources */,
+				34EC8BDD80A9C2F23DBF658D /* videoplayer_shrink@1x.png in Resources */,
+				3B95BBCF2C7A2227D06C00B5 /* videoplayer_shrink@2x.png in Resources */,
+				F85B80FEFAD188EFFFA6234B /* videoplayer_shrink@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9258C859B0A10C8A0622E1A2 /* Resources */ = {
+		9D251EAF1C1A7F5B640FEF8C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD62D987F3D4046D5CDC635E /* DZVideoPlayerViewController.xib in Resources */,
-				9740BCC5CB3878517BB8FAC2 /* videoplayer_expand@1x.png in Resources */,
-				87A1A4FFA2ACD6D9EF1AD861 /* videoplayer_expand@2x.png in Resources */,
-				7AA8B79AC925B0770A55E199 /* videoplayer_expand@3x.png in Resources */,
-				F431E13EDD33A150FA2BE3FE /* videoplayer_pause@1x.png in Resources */,
-				B7A68C10CB3420E75EB5A482 /* videoplayer_pause@2x.png in Resources */,
-				5BA8EB3B0C4881C9074B7EBD /* videoplayer_pause@3x.png in Resources */,
-				E2AD18DFFE6769A36B50567E /* videoplayer_play@1x.png in Resources */,
-				048EC60362C20E8149189F71 /* videoplayer_play@2x.png in Resources */,
-				E6878020EE2D6283F2A2FA74 /* videoplayer_play@3x.png in Resources */,
-				6383637F90C559EC6FAB54DB /* videoplayer_shrink@1x.png in Resources */,
-				2B0CC6AD6E05D6077A03A6F9 /* videoplayer_shrink@2x.png in Resources */,
-				18C2390381E2A16020AD9F29 /* videoplayer_shrink@3x.png in Resources */,
+				3EC1BE23C4709627974C69D8 /* DZVideoPlayerViewController.xib in Resources */,
+				E85C42DAC3F7826E5A9C2FF5 /* videoplayer_expand@1x.png in Resources */,
+				87D4E95AB3FAFE3BC9A34C41 /* videoplayer_expand@2x.png in Resources */,
+				B441FB9543320BD76E7EC511 /* videoplayer_expand@3x.png in Resources */,
+				D480E4DB55FCE2A0FAADB2A4 /* videoplayer_pause@1x.png in Resources */,
+				0C0FC9D3D477AC2BE71EE5E4 /* videoplayer_pause@2x.png in Resources */,
+				D4C70BD145DC6BCD58E04404 /* videoplayer_pause@3x.png in Resources */,
+				CB6489079CCBE8B794F2488E /* videoplayer_play@1x.png in Resources */,
+				48F2D27AD6D0D86A1E266D18 /* videoplayer_play@2x.png in Resources */,
+				C7B6F1FA85144750145AA312 /* videoplayer_play@3x.png in Resources */,
+				FF23D248007778B9DEF8487B /* videoplayer_shrink@1x.png in Resources */,
+				7B494AF9D00E6087F8EBB770 /* videoplayer_shrink@2x.png in Resources */,
+				54DBBA7DC3007387C03195BC /* videoplayer_shrink@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		833A7228B2A70C4A68BC9541 /* Sources */ = {
+		0B5B874E0AE73DC76F60A314 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD7F1D77E1A640D0C10187FF /* DZPlayerView.m in Sources */,
-				B5C70EC4D9C5E82ACC3C26F5 /* DZProgressIndicatorSlider.m in Sources */,
-				D06CB3F1E61CFAE84D837A11 /* DZVideoPlayerViewController.m in Sources */,
-				D7F87516BC4F51C9416B9652 /* DZVideoPlayerViewControllerContainerView.m in Sources */,
-				8EE2831B50465B87BAE70BC6 /* Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController-dummy.m in Sources */,
+				696A27666EFCB847A4E0B020 /* Pods-DZVideoPlayerViewController_Tests-Specta-dummy.m in Sources */,
+				EE709A9C70C87226CAB52015 /* SPTCallSite.m in Sources */,
+				849BA268C143CD19DC64B39B /* SPTCompiledExample.m in Sources */,
+				48BB3C3F39A624DDB312AD19 /* SPTExample.m in Sources */,
+				0B1DF4B4CFA59FFF69779A4A /* SPTExampleGroup.m in Sources */,
+				54FD57D7C9E117EE46DE9F4D /* SPTSharedExampleGroups.m in Sources */,
+				E0A00C234B17BE2FDEBC1647 /* SPTSpec.m in Sources */,
+				CD3B0FD2C91C966F6873CC8C /* SPTTestSuite.m in Sources */,
+				5D5B6420A9291F22F47887EF /* SpectaDSL.m in Sources */,
+				AAF146B32BFA16005FE486AF /* SpectaUtility.m in Sources */,
+				E4F96F707695700E1D8785EF /* XCTestCase+Specta.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		84D4AC315FE1A8D777D07523 /* Sources */ = {
+		6BF3F1FD746C09FEB5211669 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43F49A7BF04F6A9639F9A4A9 /* Pods-DZVideoPlayerViewController_Tests-dummy.m in Sources */,
+				9769D313A82D0EADB74C1DD8 /* EXPBlockDefinedMatcher.m in Sources */,
+				1604CE72638AA82EFAEE0D16 /* EXPDoubleTuple.m in Sources */,
+				FD9C028F9403198E52BBBB2F /* EXPExpect.m in Sources */,
+				A0983ADE90F337CC20F4ACE7 /* EXPFloatTuple.m in Sources */,
+				AE97E4473D69D0EEF4FC3310 /* EXPMatcherHelpers.m in Sources */,
+				D09DF29C9E7CAE411D6B9B7E /* EXPMatchers+beCloseTo.m in Sources */,
+				21DF8C25CF59DC4FAA9E9973 /* EXPMatchers+beFalsy.m in Sources */,
+				D7FC5770DE0D92F07C733262 /* EXPMatchers+beGreaterThan.m in Sources */,
+				8A8A93D9FB4B368EDE8A2944 /* EXPMatchers+beGreaterThanOrEqualTo.m in Sources */,
+				6685655964404B53ED303997 /* EXPMatchers+beIdenticalTo.m in Sources */,
+				DE00075FA93D22E066DB1DC7 /* EXPMatchers+beInTheRangeOf.m in Sources */,
+				94862AC9901AEEA71F441FB0 /* EXPMatchers+beInstanceOf.m in Sources */,
+				50DC0B8D2E078D8AC9653052 /* EXPMatchers+beKindOf.m in Sources */,
+				E31B24B898AD118B6DE765E8 /* EXPMatchers+beLessThan.m in Sources */,
+				C97E73CB507B4C95ED379A37 /* EXPMatchers+beLessThanOrEqualTo.m in Sources */,
+				03D79CE87E487C6E0F4346D4 /* EXPMatchers+beNil.m in Sources */,
+				91DE7229D0E0F296FA9D14D3 /* EXPMatchers+beSubclassOf.m in Sources */,
+				FBD8CA0C3FCD1922AA270695 /* EXPMatchers+beSupersetOf.m in Sources */,
+				D23FA6A8FF040147BEF15BF7 /* EXPMatchers+beTruthy.m in Sources */,
+				4745EAB00AF7C4FBD769AD80 /* EXPMatchers+beginWith.m in Sources */,
+				3673721995C1076AE6B1D9B6 /* EXPMatchers+conformTo.m in Sources */,
+				806281B9CEE6C214504BE527 /* EXPMatchers+contain.m in Sources */,
+				755FF4931761E18540CEDA3F /* EXPMatchers+endWith.m in Sources */,
+				19E4620B394248239B2B36CC /* EXPMatchers+equal.m in Sources */,
+				B67D60445D682EB74D0383F8 /* EXPMatchers+haveCountOf.m in Sources */,
+				DE2CC95CFCF7E26538AB89EC /* EXPMatchers+match.m in Sources */,
+				47494B2BF1BD268B0BAD68C5 /* EXPMatchers+postNotification.m in Sources */,
+				4DA1983944FB8DF8481103C5 /* EXPMatchers+raise.m in Sources */,
+				31B8CE2C2028FC1924BDC10B /* EXPMatchers+raiseWithReason.m in Sources */,
+				E8F2B4DDDD936E0933DFC96F /* EXPMatchers+respondTo.m in Sources */,
+				ED041D9CDA543E660DF44748 /* EXPUnsupportedObject.m in Sources */,
+				9AF942B294F8DA6EB10D7410 /* ExpectaObject.m in Sources */,
+				513C25183E2B38CDA66E2D7C /* ExpectaSupport.m in Sources */,
+				E94724DCC3557310A005BBF3 /* NSValue+Expecta.m in Sources */,
+				36E3155BECE3C9A847206D8B /* Pods-DZVideoPlayerViewController_Tests-Expecta-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A1AB7D072D81A7C4B4295548 /* Sources */ = {
+		865EBB65EFA6759287E3D2B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C20D6D220B3831F2AEFD14AF /* Pods-DZVideoPlayerViewController_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7EDB0FF8760B2BD217C5BE8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BEBA66B6E0FF7309C8788D3 /* DZPlayerView.m in Sources */,
+				257ACD40CE726DEA64AA1030 /* DZProgressIndicatorSlider.m in Sources */,
+				22FADE8B9029D71B60973785 /* DZVideoPlayerViewController.m in Sources */,
+				D5AB8EB17EC71ABF6C54214F /* DZVideoPlayerViewControllerContainerView.m in Sources */,
+				A41D05C18B0022ED89E2A17D /* Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5BA24679DEF2AE567C554B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C184CA04F67ED63F9D20EFF /* Pods-DZVideoPlayerViewController_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E78AE1FC9843486BA1059648 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E863EF982234B03A063BBA5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5798BC909E4D6E7B25CEDFF /* DZPlayerView.m in Sources */,
+				5C302F68F01E7D5D248ACFB3 /* DZProgressIndicatorSlider.m in Sources */,
+				945977BA4780502B8BF17A9E /* DZVideoPlayerViewController.m in Sources */,
+				530BEA1CD153ACCB3780F49C /* DZVideoPlayerViewControllerContainerView.m in Sources */,
+				016C80FB77540B46B089FC2F /* Pods-DZVideoPlayerViewController_Example-DZVideoPlayerViewController-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E934C85DBE6AC8DAA478E4B7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -470,22 +1216,308 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0C0D3E67E7F9B66CB0A13D19 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController";
-			target = AAC5D09DAFB99D0ADC89971F /* Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController */;
-			targetProxy = AF1E8E28217B27F7B0F2105D /* PBXContainerItemProxy */;
-		};
-		DA31202C23CE3B40CD257C42 /* PBXTargetDependency */ = {
+		019D5AAD1F94E9018A34ECBB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController-DZVideoPlayerViewController";
-			target = 50695386A2874EE5930AEEAF /* Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController-DZVideoPlayerViewController */;
-			targetProxy = A5B15451CD2F9C16EC7E8901 /* PBXContainerItemProxy */;
+			target = 7A415CDB01B5EE312A49344B /* Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController-DZVideoPlayerViewController */;
+			targetProxy = 77A07A02D3C1A6559365EE2D /* PBXContainerItemProxy */;
+		};
+		1529A122E21FF88A08B83F3E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-DZVideoPlayerViewController_Example-DZVideoPlayerViewController";
+			target = 4012479967D78FA63D63B095 /* Pods-DZVideoPlayerViewController_Example-DZVideoPlayerViewController */;
+			targetProxy = 705F730E602845422B93149D /* PBXContainerItemProxy */;
+		};
+		2D6CA29B021FFB7FFD1EA3DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController";
+			target = E6FEAC5D2546EF3662E99DC2 /* Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController */;
+			targetProxy = 8057A0599FC9908A2FBF5A16 /* PBXContainerItemProxy */;
+		};
+		406A8E87B2F34848FC19900F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-DZVideoPlayerViewController_Tests-Specta";
+			target = CF7F63E3AE50E16CDC3B0176 /* Pods-DZVideoPlayerViewController_Tests-Specta */;
+			targetProxy = AE2D01D99ADCE7D1D5F86151 /* PBXContainerItemProxy */;
+		};
+		829B1E0CF7C59CBB1811E4A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-DZVideoPlayerViewController_Tests-Expecta";
+			target = CD131CEECE0E06AFCDCFB599 /* Pods-DZVideoPlayerViewController_Tests-Expecta */;
+			targetProxy = A2634BC410189D4B2362DEA0 /* PBXContainerItemProxy */;
+		};
+		A105D552E7B69F4D10A8B55E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-DZVideoPlayerViewController_Example-DZVideoPlayerViewController-DZVideoPlayerViewController";
+			target = 8ADAAEC07E3D7ED9998EB8F4 /* Pods-DZVideoPlayerViewController_Example-DZVideoPlayerViewController-DZVideoPlayerViewController */;
+			targetProxy = F894864BB1107574FB119AE7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		033B1DCA9F575CA308FD2877 /* Debug */ = {
+		018362771D508E0F19B596A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B959B7FBB233A75C4BEB1FE /* Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = DZVideoPlayerViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		03B73BC9AD31D22E587928E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B959B7FBB233A75C4BEB1FE /* Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController/Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		17D3BED64F042F7BB27A6664 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1CE1ACFE1FF7425696E3E7A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B959B7FBB233A75C4BEB1FE /* Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = DZVideoPlayerViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		3F4239BD013614DA46FD5487 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F09128034CADFD8B8A5C253B /* Pods-DZVideoPlayerViewController_Example-DZVideoPlayerViewController-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = DZVideoPlayerViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		416297AF34F1156F751536EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F842CEA7004EB1BCD72EFCCF /* Pods-DZVideoPlayerViewController_Example.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		465E20EC121C199EB388BA26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F09128034CADFD8B8A5C253B /* Pods-DZVideoPlayerViewController_Example-DZVideoPlayerViewController-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-DZVideoPlayerViewController_Example-DZVideoPlayerViewController/Pods-DZVideoPlayerViewController_Example-DZVideoPlayerViewController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		4A3BD32016DC6BE4EA64C079 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED723B30863BE97F083F0A01 /* Pods-DZVideoPlayerViewController_Tests-Specta-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-DZVideoPlayerViewController_Tests-Specta/Pods-DZVideoPlayerViewController_Tests-Specta-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		4C4D6BC59BCAC3404B8D0B2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C839D023D9A93F7CCDE836A8 /* Pods-DZVideoPlayerViewController_Tests-Expecta-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-DZVideoPlayerViewController_Tests-Expecta/Pods-DZVideoPlayerViewController_Tests-Expecta-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		61DC6ED4FC0C5AB872665563 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB74E02F097929ED1AE75F41 /* Pods-DZVideoPlayerViewController_Tests.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		62C557984B20954E15D07D23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 667ABD30EE01F12842005DEB /* Pods-DZVideoPlayerViewController_Example.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		8814A8255CE2C8848636BBC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F09128034CADFD8B8A5C253B /* Pods-DZVideoPlayerViewController_Example-DZVideoPlayerViewController-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-DZVideoPlayerViewController_Example-DZVideoPlayerViewController/Pods-DZVideoPlayerViewController_Example-DZVideoPlayerViewController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		AAA8EE516AEB0BBD5EA4C7A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14738EC4D4CEE38EB2E5C1C1 /* Pods-DZVideoPlayerViewController_Tests.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		C00B19875DB3F20188D10210 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED723B30863BE97F083F0A01 /* Pods-DZVideoPlayerViewController_Tests-Specta-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-DZVideoPlayerViewController_Tests-Specta/Pods-DZVideoPlayerViewController_Tests-Specta-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		C375E725818A8F3B905B888B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B959B7FBB233A75C4BEB1FE /* Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController/Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		C510982B3759C8A7C103B4AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C839D023D9A93F7CCDE836A8 /* Pods-DZVideoPlayerViewController_Tests-Expecta-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-DZVideoPlayerViewController_Tests-Expecta/Pods-DZVideoPlayerViewController_Tests-Expecta-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		CC60221E93B9804E39B1305E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -517,45 +1549,17 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				ONLY_ACTIVE_ARCH = YES;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		0A7BA876D30D6B1B2D629977 /* Debug */ = {
+		F8E58BCB6CC3D0EAF8DA3B35 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8F29B5D93F3377E32C62E517 /* Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController-Private.xcconfig */;
+			baseConfigurationReference = F09128034CADFD8B8A5C253B /* Pods-DZVideoPlayerViewController_Example-DZVideoPlayerViewController-Private.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController/Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController/Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = DZVideoPlayerViewController;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		29678987CA8A75FD575982AE /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8F29B5D93F3377E32C62E517 /* Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController-Private.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-DZVideoPlayerViewController_Tests";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				PRODUCT_NAME = DZVideoPlayerViewController;
 				SDKROOT = iphoneos;
@@ -563,179 +1567,92 @@
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
-		};
-		2EDFCD3F322E11DC4778B0AF /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 47A277B61F95877D73F04B70 /* Pods-DZVideoPlayerViewController_Tests.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-DZVideoPlayerViewController_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-DZVideoPlayerViewController_Tests/Pods-DZVideoPlayerViewController_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_DZVideoPlayerViewController_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		62948401F30F943D129B14B2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8F29B5D93F3377E32C62E517 /* Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController/Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController/Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = DZVideoPlayerViewController;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		B8082D51CEBEE5CCDDE03E30 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C1EDC6913C59DB8AA4F2B18A /* Pods-DZVideoPlayerViewController_Tests.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-DZVideoPlayerViewController_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-DZVideoPlayerViewController_Tests/Pods-DZVideoPlayerViewController_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_DZVideoPlayerViewController_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		DB9E17844C8C32D4139E8711 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		E05DB60DEC37BFFAFAD87EE1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8F29B5D93F3377E32C62E517 /* Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController-Private.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-DZVideoPlayerViewController_Tests";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = DZVideoPlayerViewController;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		60355B73559CC0883D1A163B /* Build configuration list for PBXNativeTarget "Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController" */ = {
+		16F6CCB7CFCA363EA7259A4D /* Build configuration list for PBXNativeTarget "Pods-DZVideoPlayerViewController_Example-DZVideoPlayerViewController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0A7BA876D30D6B1B2D629977 /* Debug */,
-				62948401F30F943D129B14B2 /* Release */,
+				8814A8255CE2C8848636BBC4 /* Debug */,
+				465E20EC121C199EB388BA26 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9F4E113400CB832659120887 /* Build configuration list for PBXProject "Pods" */ = {
+		5B5AC9892BE39F119D8EECC8 /* Build configuration list for PBXNativeTarget "Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				033B1DCA9F575CA308FD2877 /* Debug */,
-				DB9E17844C8C32D4139E8711 /* Release */,
+				C375E725818A8F3B905B888B /* Debug */,
+				03B73BC9AD31D22E587928E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D3DE686216FF93CF57AF2EF3 /* Build configuration list for PBXNativeTarget "Pods-DZVideoPlayerViewController_Tests" */ = {
+		5DA16C4FACE1140EACC29094 /* Build configuration list for PBXNativeTarget "Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController-DZVideoPlayerViewController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B8082D51CEBEE5CCDDE03E30 /* Debug */,
-				2EDFCD3F322E11DC4778B0AF /* Release */,
+				1CE1ACFE1FF7425696E3E7A1 /* Debug */,
+				018362771D508E0F19B596A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DEC5A175549665B1DAF04EEE /* Build configuration list for PBXNativeTarget "Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController-DZVideoPlayerViewController" */ = {
+		7BBFD348592700D48E7AEEB6 /* Build configuration list for PBXNativeTarget "Pods-DZVideoPlayerViewController_Tests-Expecta" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E05DB60DEC37BFFAFAD87EE1 /* Debug */,
-				29678987CA8A75FD575982AE /* Release */,
+				4C4D6BC59BCAC3404B8D0B2B /* Debug */,
+				C510982B3759C8A7C103B4AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		91ED312CC73E636C317D3FBB /* Build configuration list for PBXNativeTarget "Pods-DZVideoPlayerViewController_Tests-Specta" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C00B19875DB3F20188D10210 /* Debug */,
+				4A3BD32016DC6BE4EA64C079 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D9148899069C9479DE890C1 /* Build configuration list for PBXNativeTarget "Pods-DZVideoPlayerViewController_Example-DZVideoPlayerViewController-DZVideoPlayerViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F4239BD013614DA46FD5487 /* Debug */,
+				F8E58BCB6CC3D0EAF8DA3B35 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BBD5245AB3A2908088957653 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC60221E93B9804E39B1305E /* Debug */,
+				17D3BED64F042F7BB27A6664 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D346E9D290032501AD08799F /* Build configuration list for PBXNativeTarget "Pods-DZVideoPlayerViewController_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61DC6ED4FC0C5AB872665563 /* Debug */,
+				AAA8EE516AEB0BBD5EA4C7A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAD0973B9A28B828B6358D9D /* Build configuration list for PBXNativeTarget "Pods-DZVideoPlayerViewController_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62C557984B20954E15D07D23 /* Debug */,
+				416297AF34F1156F751536EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = EAC6F0502B8F5D77DD60CDAB /* Project object */;
+	rootObject = 0EC02C5A01B1F02ECDAB7BDE /* Project object */;
 }

@@ -1,9 +1,12 @@
 source 'https://github.com/CocoaPods/Specs.git'
-use_frameworks!
 
+target 'DZVideoPlayerViewController_Example', :exclusive => true do
+  pod "DZVideoPlayerViewController", :path => "../"
+end
 
 target 'DZVideoPlayerViewController_Tests', :exclusive => true do
   pod "DZVideoPlayerViewController", :path => "../"
 
-  
+  pod 'Specta'
+  pod 'Expecta'
 end

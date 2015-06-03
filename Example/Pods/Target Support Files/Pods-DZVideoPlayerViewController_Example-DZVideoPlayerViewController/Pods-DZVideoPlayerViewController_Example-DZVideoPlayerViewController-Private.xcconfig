@@ -1,0 +1,6 @@
+#include "Pods-DZVideoPlayerViewController_Example-DZVideoPlayerViewController.xcconfig"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Private" "${PODS_ROOT}/Headers/Private/DZVideoPlayerViewController" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/DZVideoPlayerViewController" "${PODS_ROOT}/Headers/Public/Expecta" "${PODS_ROOT}/Headers/Public/Specta"
+OTHER_LDFLAGS = ${PODS_DZVIDEOPLAYERVIEWCONTROLLER_EXAMPLE_DZVIDEOPLAYERVIEWCONTROLLER_OTHER_LDFLAGS} -ObjC
+PODS_ROOT = ${SRCROOT}
+SKIP_INSTALL = YES

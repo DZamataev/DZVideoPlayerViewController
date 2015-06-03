@@ -10,5 +10,17 @@
 #define COCOAPODS_POD_AVAILABLE_DZVideoPlayerViewController
 #define COCOAPODS_VERSION_MAJOR_DZVideoPlayerViewController 0
 #define COCOAPODS_VERSION_MINOR_DZVideoPlayerViewController 1
-#define COCOAPODS_VERSION_PATCH_DZVideoPlayerViewController 3
+#define COCOAPODS_VERSION_PATCH_DZVideoPlayerViewController 6
+
+// Expecta
+#define COCOAPODS_POD_AVAILABLE_Expecta
+#define COCOAPODS_VERSION_MAJOR_Expecta 1
+#define COCOAPODS_VERSION_MINOR_Expecta 0
+#define COCOAPODS_VERSION_PATCH_Expecta 0
+
+// Specta
+#define COCOAPODS_POD_AVAILABLE_Specta
+#define COCOAPODS_VERSION_MAJOR_Specta 1
+#define COCOAPODS_VERSION_MINOR_Specta 0
+#define COCOAPODS_VERSION_PATCH_Specta 1
 

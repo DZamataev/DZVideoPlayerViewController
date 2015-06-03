@@ -2,6 +2,7 @@
 
 #ifdef __OBJC__
 
-  
+  @import Specta;
+  @import Expecta;
 
 #endif
