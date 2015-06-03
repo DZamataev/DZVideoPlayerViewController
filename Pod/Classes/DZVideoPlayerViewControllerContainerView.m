@@ -36,6 +36,15 @@
     return self;
 }
 
+- (instancetype)initWithNibNameToInitControllerWith:(NSString *)nibNameToInitControllerWith {
+    self = [super init];
+    if (self) {
+        self.nibNameToInitControllerWith = nibNameToInitControllerWith;
+        [self commonInit];
+    }
+    return self;
+}
+
 - (void)awakeFromNib {
     [super awakeFromNib];
     [self commonInit];
@@ -43,7 +52,15 @@
 
 - (void)commonInit {
     NSBundle *bundle = [DZVideoPlayerViewController bundle];
-    NSString *nibName = [DZVideoPlayerViewController nibNameForStyle:self.style];
+    
+    NSString *nibName;
+    if (self.nibNameToInitControllerWith != nil) {
+        nibName = self.nibNameToInitControllerWith;
+    }
+    else {
+        nibName = [DZVideoPlayerViewController nibNameForStyle:self.style];
+    }
+    
     self.videoPlayerViewController = [[DZVideoPlayerViewController alloc] initWithNibName:nibName
                                                                                    bundle:bundle];
     self.translatesAutoresizingMaskIntoConstraints = NO;

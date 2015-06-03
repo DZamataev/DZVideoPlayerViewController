@@ -50,7 +50,12 @@ static const NSString *PlayerStatusContext;
             nibName = classString;
             break;
             
+        case DZVideoPlayerViewControllerStyleSimple:
+            nibName = [NSString stringWithFormat:@"%@_%@", classString, @"simple"];
+            break;
+            
         default:
+            nibName = classString;
             break;
     }
     return nibName;
@@ -78,16 +83,21 @@ static const NSString *PlayerStatusContext;
 }
 
 - (void)commonInit {
-    
+    self.viewsToHideOnIdle = [NSMutableArray new];
+    self.delayBeforeHidingViewsOnIdle = 3.0;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    if (self.topToolbarView) {
+        [self.viewsToHideOnIdle addObject:self.topToolbarView];
+    }
+    if (self.bottomToolbarView) {
+        [self.viewsToHideOnIdle addObject:self.bottomToolbarView];
+    }
+    
     self.initialFrame = self.view.frame;
-    self.viewsToHideOnIdle = [NSMutableArray new];
-    [self.viewsToHideOnIdle addObject:self.toolbarView];
-    self.delayBeforeHidingViewsOnIdle = 3.0;
     
     [self setupActions];
     [self setupNotifications];

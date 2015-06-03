@@ -24,6 +24,7 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		92F8395F1B1F28F2006BC177 /* Star Wars  Episode VII - The Force Awakens Official Teaser Trailer #1 (2015) - J.J. Abrams Movie HD.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 92F8395E1B1F28F2006BC177 /* Star Wars  Episode VII - The Force Awakens Official Teaser Trailer #1 (2015) - J.J. Abrams Movie HD.mp4 */; };
+		92F839611B1F3181006BC177 /* mpmovieplayer_screenshot.png in Resources */ = {isa = PBXBuildFile; fileRef = 92F839601B1F3181006BC177 /* mpmovieplayer_screenshot.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		8524FDEACA8384F4EA58052D /* Pods-DZVideoPlayerViewController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DZVideoPlayerViewController_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DZVideoPlayerViewController_Example/Pods-DZVideoPlayerViewController_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		92F8395E1B1F28F2006BC177 /* Star Wars  Episode VII - The Force Awakens Official Teaser Trailer #1 (2015) - J.J. Abrams Movie HD.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Star Wars  Episode VII - The Force Awakens Official Teaser Trailer #1 (2015) - J.J. Abrams Movie HD.mp4"; sourceTree = "<group>"; };
+		92F839601B1F3181006BC177 /* mpmovieplayer_screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mpmovieplayer_screenshot.png; sourceTree = "<group>"; };
 		AFC98096D958F3DA29F51C05 /* Pods-DZVideoPlayerViewController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DZVideoPlayerViewController_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-DZVideoPlayerViewController_Example/Pods-DZVideoPlayerViewController_Example.release.xcconfig"; sourceTree = "<group>"; };
 		B60A6FE75BF5211E9C206783 /* Pods-DZVideoPlayerViewController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DZVideoPlayerViewController_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DZVideoPlayerViewController_Tests/Pods-DZVideoPlayerViewController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		EEB5D1E99554DA4389B5E5EE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 		6003F593195388D20070C39A /* Example for DZVideoPlayerViewController */ = {
 			isa = PBXGroup;
 			children = (
+				92F839601B1F3181006BC177 /* mpmovieplayer_screenshot.png */,
 				92F8395E1B1F28F2006BC177 /* Star Wars  Episode VII - The Force Awakens Official Teaser Trailer #1 (2015) - J.J. Abrams Movie HD.mp4 */,
 				6003F59C195388D20070C39A /* DZAppDelegate.h */,
 				6003F59D195388D20070C39A /* DZAppDelegate.m */,
@@ -277,6 +280,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92F839611B1F3181006BC177 /* mpmovieplayer_screenshot.png in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				92F8395F1B1F28F2006BC177 /* Star Wars  Episode VII - The Force Awakens Official Teaser Trailer #1 (2015) - J.J. Abrams Movie HD.mp4 in Resources */,
 				6003F5A1195388D20070C39A /* Main.storyboard in Resources */,

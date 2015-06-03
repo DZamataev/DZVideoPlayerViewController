@@ -43,11 +43,6 @@
     CGFloat hue, sat, bri;
     [[self tintColor] getHue:&hue saturation:&sat brightness:&bri alpha:nil];
     [self.progressView setTintColor:[UIColor colorWithHue:hue saturation:(sat * 0.6f) brightness:bri alpha:1]];
-
-}
-
-- (void)setSecondaryValue:(float)value {
-    [self.progressView setProgress:value];
 }
 
 - (void)setTintColor:(UIColor *)tintColor {
@@ -56,6 +51,10 @@
     CGFloat hue, sat, bri;
     [[self tintColor] getHue:&hue saturation:&sat brightness:&bri alpha:nil];
     [self.progressView setTintColor:[UIColor colorWithHue:hue saturation:(sat * 0.6f) brightness:bri alpha:1]];
+}
+
+- (void)setSecondaryValue:(float)value {
+    [self.progressView setProgress:value];
 }
 
 - (void)setSecondaryTintColor:(UIColor *)tintColor {
