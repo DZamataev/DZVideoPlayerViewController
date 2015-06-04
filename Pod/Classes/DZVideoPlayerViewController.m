@@ -85,7 +85,8 @@ static const NSString *PlayerStatusContext;
 - (void)commonInit {
     _viewsToHideOnIdle = [NSMutableArray new];
     _delayBeforeHidingViewsOnIdle = 3.0;
-    _shouldShowFullscreenExpandAndShrinkButtons = YES;
+    _isShowFullscreenExpandAndShrinkButtonsEnabled = YES;
+    _isHideControlsOnIdleEnabled = YES;
 }
 
 - (void)viewDidLoad {
@@ -126,8 +127,8 @@ static const NSString *PlayerStatusContext;
 
 #pragma mark - Properties
 
-- (void)setShouldShowFullscreenExpandAndShrinkButtons:(BOOL)shouldShowFullscreenExpandAndShrinkButtons {
-    _shouldShowFullscreenExpandAndShrinkButtons = shouldShowFullscreenExpandAndShrinkButtons;
+- (void)setIsShowFullscreenExpandAndShrinkButtonsEnabled:(BOOL)shouldShowFullscreenExpandAndShrinkButtons {
+    _isShowFullscreenExpandAndShrinkButtonsEnabled = shouldShowFullscreenExpandAndShrinkButtons;
     [self syncUI];
 }
 
@@ -254,7 +255,7 @@ static const NSString *PlayerStatusContext;
         self.pauseButton.enabled = NO;
     }
     
-    if (self.shouldShowFullscreenExpandAndShrinkButtons) {
+    if (self.isShowFullscreenExpandAndShrinkButtonsEnabled) {
         if (self.isFullscreen) {
             self.fullscreenExpandButton.hidden = YES;
             self.fullscreenExpandButton.enabled = NO;
@@ -341,14 +342,20 @@ static const NSString *PlayerStatusContext;
 }
 
 - (void)startIdleCountdown {
-    [self.idleTimer invalidate];
-    self.idleTimer = [NSTimer scheduledTimerWithTimeInterval:self.delayBeforeHidingViewsOnIdle
-                                                      target:self selector:@selector(hideControls)
-                                                    userInfo:nil repeats:NO];
+    if (self.idleTimer) {
+        [self.idleTimer invalidate];
+    }
+    if (self.isHideControlsOnIdleEnabled) {
+        self.idleTimer = [NSTimer scheduledTimerWithTimeInterval:self.delayBeforeHidingViewsOnIdle
+                                                          target:self selector:@selector(hideControls)
+                                                        userInfo:nil repeats:NO];
+    }
 }
 
 - (void)stopIdleCountdown {
-    [self.idleTimer invalidate];
+    if (self.idleTimer) {
+        [self.idleTimer invalidate];
+    }
 }
 
 - (void)hideControls {
