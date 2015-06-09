@@ -61,6 +61,8 @@ static const NSString *PlayerStatusContext;
     return nibName;
 }
 
+#pragma mark - Lifecycle
+
 - (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
@@ -109,6 +111,15 @@ static const NSString *PlayerStatusContext;
     [self syncUI];
 }
 
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    [self setupRemoteControlEvents];
+}
+
+- (void)viewWillLayoutSubviews {
+    [super viewWillLayoutSubviews];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -119,10 +130,7 @@ static const NSString *PlayerStatusContext;
     [self resignKVO];
     [self resignRemoteCommandCenter];
     [self resignPlayer];
-}
-
--(void)viewWillLayoutSubviews {
-    [super viewWillLayoutSubviews];
+    [self resetNowPlayingInfo];
 }
 
 #pragma mark - Properties
@@ -160,6 +168,10 @@ static const NSString *PlayerStatusContext;
 
 - (BOOL)isFullscreen {
     return _isFullscreen;
+}
+
+- (BOOL)canBecomeFirstResponder {
+    return YES;
 }
 
 #pragma mark - Navigation
@@ -228,6 +240,15 @@ static const NSString *PlayerStatusContext;
     [self syncUI];
     [self onPause];
     [self updateNowPlayingInfo];
+}
+
+- (void)togglePlayPause {
+    if ([self isPlaying]) {
+        [self pause];
+    }
+    else {
+        [self play];
+    }
 }
 
 - (void)stop {
@@ -388,10 +409,13 @@ static const NSString *PlayerStatusContext;
     [self stopIdleCountdown];
 }
 
-- (void)updateNowPlayingInfo
-{
+- (void)updateNowPlayingInfo {
     NSMutableDictionary *nowPlayingInfo = [self gatherNowPlayingInfo];
     [MPNowPlayingInfoCenter defaultCenter].nowPlayingInfo = nowPlayingInfo;
+}
+
+- (void)resetNowPlayingInfo {
+    [MPNowPlayingInfoCenter defaultCenter].nowPlayingInfo = nil;
 }
 
 - (NSMutableDictionary *)gatherNowPlayingInfo {
@@ -416,6 +440,7 @@ static const NSString *PlayerStatusContext;
     DZVideoPlayerViewController __weak *welf = self;
     self.playerTimeObservationTarget = [self.player addPeriodicTimeObserverForInterval:CMTimeMake(1, 1)  queue:nil usingBlock:^(CMTime time) {
         [welf updateProgressIndicator:welf];
+        [welf syncUI];
     }];
     
     self.playerView.player = self.player;
@@ -438,6 +463,28 @@ static const NSString *PlayerStatusContext;
     NSError *activationError = nil;
     success = [audioSession setActive:YES error:&activationError];
     if (!success) { /* handle the error condition */ }
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(handleAVAudioSessionInterruptionNotification:)
+                                                 name:AVAudioSessionInterruptionNotification
+                                               object:audioSession];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(handleAVAudioSessionRouteChangeNotification:)
+                                                 name:AVAudioSessionRouteChangeNotification
+                                               object:audioSession];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(handleAVAudioSessionMediaServicesWereLostNotification:)
+                                                 name:AVAudioSessionMediaServicesWereLostNotification
+                                               object:audioSession];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(handleAVAudioSessionMediaServicesWereResetNotification:)
+                                                 name:AVAudioSessionMediaServicesWereResetNotification
+                                               object:audioSession];
+}
+
+- (void)setupRemoteControlEvents {
+    [[UIApplication sharedApplication] beginReceivingRemoteControlEvents];
+    [self becomeFirstResponder];
 }
 
 - (void)setupActions {
@@ -506,6 +553,7 @@ static const NSString *PlayerStatusContext;
     [[NSNotificationCenter defaultCenter] removeObserver:self name:AVPlayerItemFailedToPlayToEndTimeNotification object:nil];
     [[NSNotificationCenter defaultCenter] removeObserver:self name:AVPlayerItemPlaybackStalledNotification object:nil];
     [[NSNotificationCenter defaultCenter] removeObserver:self name:UIApplicationDidEnterBackgroundNotification object:nil];
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:UIApplicationDidBecomeActiveNotification object:nil];
 }
 
 #pragma mark - Helpers
@@ -554,6 +602,42 @@ static const NSString *PlayerStatusContext;
         self.playerView.player = self.player;
     }
 }
+
+- (void)handleAVAudioSessionInterruptionNotification:(NSNotification *)notification {
+    
+}
+
+- (void)handleAVAudioSessionRouteChangeNotification:(NSNotification *)notification {
+    
+}
+
+- (void)handleAVAudioSessionMediaServicesWereLostNotification:(NSNotification *)notification {
+    
+}
+
+- (void)handleAVAudioSessionMediaServicesWereResetNotification:(NSNotification *)notification {
+    
+}
+
+#pragma mark - Remote Control Events
+
+- (void)remoteControlReceivedWithEvent:(UIEvent *)event {
+    //if it is a remote control event handle it correctly
+    if (event.type == UIEventTypeRemoteControl) {
+        if (event.subtype == UIEventSubtypeRemoteControlPlay) {
+            [self play];
+        } else if (event.subtype == UIEventSubtypeRemoteControlPause) {
+            [self pause];
+        } else if (event.subtype == UIEventSubtypeRemoteControlTogglePlayPause) {
+            [self togglePlayPause];
+        } else if (event.subtype == UIEventSubtypeRemoteControlNextTrack) {
+            [self onRequireNextTrack];
+        } else if (event.subtype == UIEventSubtypeRemoteControlPreviousTrack) {
+            [self onRequirePreviousTrack];
+        }
+    }
+}
+
 #pragma mark - KVO
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
@@ -622,6 +706,18 @@ static const NSString *PlayerStatusContext;
 - (void)onFailedToPlayToEndTime {
     if ([self.delegate respondsToSelector:@selector(playerFailedToPlayToEndTime)]) {
         [self.delegate playerFailedToPlayToEndTime];
+    }
+}
+
+- (void)onRequireNextTrack {
+    if ([self.delegate respondsToSelector:@selector(playerRequireNextTrack)]) {
+        [self.delegate playerRequireNextTrack];
+    }
+}
+
+- (void)onRequirePreviousTrack {
+    if ([self.delegate respondsToSelector:@selector(playerRequirePreviousTrack)]) {
+        [self.delegate playerRequirePreviousTrack];
     }
 }
 

@@ -61,6 +61,8 @@
 
 - (void)pause;
 
+- (void)togglePlayPause;
+
 - (void)stop;
 
 - (void)syncUI;
@@ -84,6 +86,8 @@
 - (void)showControls;
 
 - (void)updateNowPlayingInfo;
+
+- (void)resetNowPlayingInfo;
 
 - (NSMutableDictionary *)gatherNowPlayingInfo;
 @end
