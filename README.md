@@ -90,7 +90,8 @@ Implement DZVideoPlayerViewControllerDelegate
 
 ## Requirements
 
-Runs on iOS 7.0 and later
+Version 0.2.* and above runs on iOS 8.0 and later.
+Version 0.1.* - 0.2.* runs on iOS 7.0 and later.
 
 ## Customization
 
