@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "845F8AC5665114A0104A14E7"
+               BlueprintIdentifier = "A5F30276CD9508BB862E9BD4"
                BuildableName = "DZVideoPlayerViewController.bundle"
                BlueprintName = "Pods-DZVideoPlayerViewController_Tests-DZVideoPlayerViewController-DZVideoPlayerViewController"
                ReferencedContainer = "container:Pods.xcodeproj">

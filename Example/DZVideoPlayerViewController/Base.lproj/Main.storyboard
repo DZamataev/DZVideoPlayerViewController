@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,46 +18,47 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cOP-1J-bFa" customClass="DZVideoPlayerViewControllerContainerView">
-                                <rect key="frame" x="0.0" y="20" width="600" height="338"/>
-                                <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SV7-AG-1bU" userLabel="Content view">
+                                <rect key="frame" x="0.0" y="20" width="600" height="337"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cOP-1J-bFa" customClass="DZVideoPlayerViewControllerContainerView">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="337"/>
+                                        <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="style">
+                                                <integer key="value" value="0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="cOP-1J-bFa" secondAttribute="height" multiplier="16:9" id="TZc-gK-m65"/>
+                                    <constraint firstItem="cOP-1J-bFa" firstAttribute="top" secondItem="SV7-AG-1bU" secondAttribute="top" id="1Ja-kK-rmN"/>
+                                    <constraint firstAttribute="bottom" secondItem="cOP-1J-bFa" secondAttribute="bottom" id="DTP-l4-OIC"/>
+                                    <constraint firstAttribute="trailing" secondItem="cOP-1J-bFa" secondAttribute="trailing" id="gXE-5R-bIt"/>
+                                    <constraint firstItem="cOP-1J-bFa" firstAttribute="leading" secondItem="SV7-AG-1bU" secondAttribute="leading" id="ryl-wD-C8e"/>
+                                    <constraint firstAttribute="width" secondItem="SV7-AG-1bU" secondAttribute="height" multiplier="16:9" priority="750" constant="1" id="wGN-WY-i8t"/>
                                 </constraints>
-                                <variation key="heightClass=compact">
-                                    <mask key="constraints">
-                                        <exclude reference="TZc-gK-m65"/>
-                                    </mask>
-                                </variation>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="cOP-1J-bFa" secondAttribute="bottom" constant="-33" id="1LJ-ji-PDl">
-                                <variation key="heightClass=compact" constant="0.0"/>
-                            </constraint>
-                            <constraint firstAttribute="trailing" secondItem="cOP-1J-bFa" secondAttribute="trailing" id="56T-fU-vpj"/>
-                            <constraint firstItem="cOP-1J-bFa" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="e5B-Yz-aYS"/>
-                            <constraint firstItem="cOP-1J-bFa" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="fCS-WC-7t1"/>
+                            <constraint firstItem="SV7-AG-1bU" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="Yf5-Xe-yJF"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="SV7-AG-1bU" secondAttribute="bottom" priority="250" id="kA9-tt-zHj"/>
+                            <constraint firstItem="SV7-AG-1bU" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="pXy-7b-lrz"/>
+                            <constraint firstAttribute="trailing" secondItem="SV7-AG-1bU" secondAttribute="trailing" id="wtX-tv-xiY"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="1LJ-ji-PDl"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=compact">
-                            <mask key="constraints">
-                                <include reference="1LJ-ji-PDl"/>
-                            </mask>
-                        </variation>
                     </view>
                     <connections>
+                        <outlet property="contentView" destination="SV7-AG-1bU" id="qgY-lt-QTl"/>
+                        <outlet property="contentViewAspectRatioConstraint" destination="wGN-WY-i8t" id="TCL-Od-IfW"/>
+                        <outlet property="contentViewBottomSpaceConstraint" destination="kA9-tt-zHj" id="3F3-HL-fhj"/>
                         <outlet property="videoContainerView" destination="cOP-1J-bFa" id="1ev-pg-muP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="727.5" y="490.14084507042253"/>
+            <point key="canvasLocation" x="727" y="490"/>
         </scene>
     </scenes>
 </document>

@@ -61,6 +61,16 @@ static const NSString *PlayerStatusContext;
     return nibName;
 }
 
++ (DZVideoPlayerViewControllerConfiguration *)defaultConfiguration {
+    DZVideoPlayerViewControllerConfiguration *configuration = [[DZVideoPlayerViewControllerConfiguration alloc] init];
+    configuration.viewsToHideOnIdle = [NSMutableArray new];
+    configuration.delayBeforeHidingViewsOnIdle = 3.0;
+    configuration.isShowFullscreenExpandAndShrinkButtonsEnabled = YES;
+    configuration.isHideControlsOnIdleEnabled = YES;
+    configuration.isBackgroundPlaybackEnabled = YES;
+    return configuration;
+}
+
 #pragma mark - Lifecycle
 
 - (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
@@ -85,20 +95,17 @@ static const NSString *PlayerStatusContext;
 }
 
 - (void)commonInit {
-    _viewsToHideOnIdle = [NSMutableArray new];
-    _delayBeforeHidingViewsOnIdle = 3.0;
-    _isShowFullscreenExpandAndShrinkButtonsEnabled = YES;
-    _isHideControlsOnIdleEnabled = YES;
+    self.configuration = [[self class] defaultConfiguration];
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     if (self.topToolbarView) {
-        [self.viewsToHideOnIdle addObject:self.topToolbarView];
+        [self.configuration.viewsToHideOnIdle addObject:self.topToolbarView];
     }
     if (self.bottomToolbarView) {
-        [self.viewsToHideOnIdle addObject:self.bottomToolbarView];
+        [self.configuration.viewsToHideOnIdle addObject:self.bottomToolbarView];
     }
     
     self.initialFrame = self.view.frame;
@@ -134,11 +141,6 @@ static const NSString *PlayerStatusContext;
 }
 
 #pragma mark - Properties
-
-- (void)setIsShowFullscreenExpandAndShrinkButtonsEnabled:(BOOL)shouldShowFullscreenExpandAndShrinkButtons {
-    _isShowFullscreenExpandAndShrinkButtonsEnabled = shouldShowFullscreenExpandAndShrinkButtons;
-    [self syncUI];
-}
 
 - (NSTimeInterval)availableDuration {
     NSTimeInterval result = 0;
@@ -276,7 +278,7 @@ static const NSString *PlayerStatusContext;
         self.pauseButton.enabled = NO;
     }
     
-    if (self.isShowFullscreenExpandAndShrinkButtonsEnabled) {
+    if (self.configuration.isShowFullscreenExpandAndShrinkButtonsEnabled) {
         if (self.isFullscreen) {
             self.fullscreenExpandButton.hidden = YES;
             self.fullscreenExpandButton.enabled = NO;
@@ -366,8 +368,8 @@ static const NSString *PlayerStatusContext;
     if (self.idleTimer) {
         [self.idleTimer invalidate];
     }
-    if (self.isHideControlsOnIdleEnabled) {
-        self.idleTimer = [NSTimer scheduledTimerWithTimeInterval:self.delayBeforeHidingViewsOnIdle
+    if (self.configuration.isHideControlsOnIdleEnabled) {
+        self.idleTimer = [NSTimer scheduledTimerWithTimeInterval:self.configuration.delayBeforeHidingViewsOnIdle
                                                           target:self selector:@selector(hideControls)
                                                         userInfo:nil repeats:NO];
     }
@@ -380,7 +382,7 @@ static const NSString *PlayerStatusContext;
 }
 
 - (void)hideControls {
-    NSArray *views = self.viewsToHideOnIdle;
+    NSArray *views = self.configuration.viewsToHideOnIdle;
     [UIView animateWithDuration:0.3f animations:^{
         for (UIView *view in views) {
             view.alpha = 0.0;
@@ -390,7 +392,7 @@ static const NSString *PlayerStatusContext;
 }
 
 - (void)showControls {
-    NSArray *views = self.viewsToHideOnIdle;
+    NSArray *views = self.configuration.viewsToHideOnIdle;
     [UIView animateWithDuration:0.3f animations:^{
         for (UIView *view in views) {
             view.alpha = 1.0;
@@ -592,13 +594,13 @@ static const NSString *PlayerStatusContext;
 }
 
 - (void)handleApplicationDidEnterBackground:(NSNotification *)notification {
-    if (self.isBackgroundPlaybackEnabled) {
+    if (self.configuration.isBackgroundPlaybackEnabled) {
         self.playerView.player = nil;
     }
 }
 
 - (void)handleApplicationDidBecomeActive:(NSNotification *)notification {
-    if (self.isBackgroundPlaybackEnabled) {
+    if (self.configuration.isBackgroundPlaybackEnabled) {
         self.playerView.player = self.player;
     }
 }

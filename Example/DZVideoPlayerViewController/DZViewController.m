@@ -13,9 +13,12 @@ NSString *const kVideoFileExtension = @"mp4";
 
 @interface DZViewController () <DZVideoPlayerViewControllerDelegate>
 
-@property (strong, nonatomic) DZVideoPlayerViewController *videoPlayerViewController;
+@property (strong, nonatomic) IBOutlet UIView *contentView;
+@property (strong, nonatomic) IBOutlet NSLayoutConstraint *contentViewAspectRatioConstraint;
+@property (strong, nonatomic) IBOutlet NSLayoutConstraint *contentViewBottomSpaceConstraint;
 
-@property (weak, nonatomic) IBOutlet DZVideoPlayerViewControllerContainerView *videoContainerView;
+@property (strong, nonatomic) IBOutlet DZVideoPlayerViewControllerContainerView *videoContainerView;
+@property (strong, nonatomic) DZVideoPlayerViewController *videoPlayerViewController;
 
 @end
 
@@ -26,9 +29,9 @@ NSString *const kVideoFileExtension = @"mp4";
     [super viewDidLoad];
     self.videoPlayerViewController = self.videoContainerView.videoPlayerViewController;
     self.videoPlayerViewController.delegate = self;
-    self.videoPlayerViewController.isBackgroundPlaybackEnabled = YES;
-    self.videoPlayerViewController.isShowFullscreenExpandAndShrinkButtonsEnabled = NO;
-//    self.videoPlayerViewController.isHideControlsOnIdleEnabled = NO;
+//    self.videoPlayerViewController.configuration.isBackgroundPlaybackEnabled = NO;
+//    self.videoPlayerViewController.configuration.isShowFullscreenExpandAndShrinkButtonsEnabled = NO;
+//    self.videoPlayerViewController.configuration.isHideControlsOnIdleEnabled = NO;
     
     NSURL *fileURL = [[NSBundle mainBundle] URLForResource:kVideoFileName withExtension:kVideoFileExtension];
     self.videoPlayerViewController.videoURL = fileURL;
@@ -39,6 +42,18 @@ NSString *const kVideoFileExtension = @"mp4";
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (BOOL)prefersStatusBarHidden {
+    return self.videoPlayerViewController.isFullscreen;
+}
+
+- (UIStatusBarAnimation)preferredStatusBarUpdateAnimation {
+    return UIStatusBarAnimationSlide;
+}
+
+- (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator {
+    [super viewWillTransitionToSize:size withTransitionCoordinator:coordinator];
 }
 
 #pragma mark - <DZVideoPlayerViewControllerDelegate>
@@ -62,13 +77,28 @@ NSString *const kVideoFileExtension = @"mp4";
 - (void)playerDidToggleFullscreen {
     if (self.videoPlayerViewController.isFullscreen) {
         // expand videoPlayerViewController to fullscreen
+        self.contentViewAspectRatioConstraint.priority = UILayoutPriorityDefaultLow;
+        self.contentViewBottomSpaceConstraint.priority = UILayoutPriorityDefaultHigh;
         
+        [UIView animateWithDuration:0.5 animations:^{
+            [self.contentView layoutIfNeeded];
+            [self setNeedsStatusBarAppearanceUpdate];
+        } completion:^(BOOL finished) {
+            
+        }];
     }
     else {
         // shrink videoPlayerViewController from fullscreen
+        self.contentViewBottomSpaceConstraint.priority = UILayoutPriorityDefaultLow;
+        self.contentViewAspectRatioConstraint.priority = UILayoutPriorityDefaultHigh;
         
+        [UIView animateWithDuration:0.5 animations:^{
+            [self.contentView layoutIfNeeded];
+            [self setNeedsStatusBarAppearanceUpdate];
+        } completion:^(BOOL finished) {
+            
+        }];
     }
-    [self.videoPlayerViewController syncUI];
 }
 
 - (void)playerDidPlayToEndTime {

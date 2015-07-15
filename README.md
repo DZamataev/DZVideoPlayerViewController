@@ -11,9 +11,12 @@ iOS Video Player control, implemented with AVPlayer.
 
 ##Screenshots
 
-![image](https://raw.githubusercontent.com/DZamataev/DZVideoPlayerViewController/master/Screenshots/screenshot1.1.png)
 
-![image](https://raw.githubusercontent.com/DZamataev/DZVideoPlayerViewController/master/Screenshots/screenshot2.1.png)
+![image](https://raw.githubusercontent.com/DZamataev/DZVideoPlayerViewController/master/Screenshots/demo1(0.3.0).gif)
+
+![image](https://raw.githubusercontent.com/DZamataev/DZVideoPlayerViewController/master/Screenshots/screenshot1(0.3.0).png)
+![image](https://raw.githubusercontent.com/DZamataev/DZVideoPlayerViewController/master/Screenshots/screenshot2(0.3.0).png)
+![image](https://raw.githubusercontent.com/DZamataev/DZVideoPlayerViewController/master/Screenshots/screenshot3(0.3.0).png)
 
 ##About
 
@@ -26,10 +29,15 @@ iOS Video Player control that features
 * background playback
 * now playing info updates
 * easy customization with Interface Builder 
+* has several styles to choose from
+* default style is similiar to MPMoviePlayerViewController
 
 ## Usage
 
-This pod contains no Example project. You can find example usage of this control here at [OhMyTube github page.](https://github.com/DZamataev/OhMyTube)
+This pod contains an Example project showing how to play local file and implement fullscreen expand and shrink transitioning.
+
+
+You can find more example usage of this control here at [OhMyTube github page.](https://github.com/DZamataev/OhMyTube)
 
 Basic snippet to start with:
 
@@ -91,7 +99,7 @@ Implement DZVideoPlayerViewControllerDelegate
 ## Requirements
 
 Version 0.2.* and above runs on iOS 8.0 and later.
-Version 0.1.* - 0.2.* runs on iOS 7.0 and later.
+Version 0.1.* runs on iOS 7.0 and later.
 
 ## Customization
 
