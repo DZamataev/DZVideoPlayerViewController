@@ -317,6 +317,11 @@ static const NSString *PlayerStatusContext;
     [self.player seekToTime:CMTimeMakeWithSeconds(time, timescale)];
 }
 
+- (void)seekToTime:(NSTimeInterval)newPlaybackTime {
+    int timescale = self.playerItem.asset.duration.timescale;
+    [self.player seekToTime:CMTimeMakeWithSeconds(newPlaybackTime, timescale)];
+}
+
 - (void)startSeeking:(id)sender {
     [self stopIdleCountdown];
     self.isSeeking = YES;

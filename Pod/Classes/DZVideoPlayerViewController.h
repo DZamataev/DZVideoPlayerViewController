@@ -69,6 +69,8 @@
 
 - (void)seek:(UISlider *)slider;
 
+- (void)seekToTime:(NSTimeInterval)newPlaybackTime;
+
 - (void)startSeeking:(id)sender;
 
 - (void)endSeeking:(id)sender;
