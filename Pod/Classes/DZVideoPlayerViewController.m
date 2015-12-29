@@ -387,22 +387,46 @@ static const NSString *PlayerStatusContext;
 }
 
 - (void)hideControls {
+    [self hideControlsWithAnimationDuration:0.3f];
+}
+- (void)hideControlsWithAnimationDuration:(NSTimeInterval)animationDuration {
     NSArray *views = self.configuration.viewsToHideOnIdle;
-    [UIView animateWithDuration:0.3f animations:^{
+    if( animationDuration <= 0 )
+    {
         for (UIView *view in views) {
             view.alpha = 0.0;
         }
-    }];
+    }
+    else
+    {
+        [UIView animateWithDuration:0.3f animations:^{
+            for (UIView *view in views) {
+                view.alpha = 0.0;
+            }
+        }];
+    }
     self.isControlsHidden = YES;
 }
 
 - (void)showControls {
+    [self showControlsWithAnimationDuration:0.3f];
+}
+- (void)showControlsWithAnimationDuration:(NSTimeInterval)animationDuration {
     NSArray *views = self.configuration.viewsToHideOnIdle;
-    [UIView animateWithDuration:0.3f animations:^{
+    if( animationDuration <= 0 )
+    {
         for (UIView *view in views) {
             view.alpha = 1.0;
         }
-    }];
+    }
+    else
+    {
+        [UIView animateWithDuration:animationDuration animations:^{
+            for (UIView *view in views) {
+                view.alpha = 1.0;
+            }
+        }];
+    }
     self.isControlsHidden = NO;
 }
 

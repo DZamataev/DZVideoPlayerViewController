@@ -83,7 +83,11 @@
 
 - (void)hideControls;
 
+- (void)hideControlsWithAnimationDuration:(NSTimeInterval)animationDuration;
+
 - (void)showControls;
+
+- (void)showControlsWithAnimationDuration:(NSTimeInterval)animationDuration;
 
 - (void)updateNowPlayingInfo;
 
