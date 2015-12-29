@@ -328,6 +328,7 @@ static const NSString *PlayerStatusContext;
 }
 
 - (void)endSeeking:(id)sender {
+    [self updateNowPlayingInfo];
     [self startIdleCountdown];
     self.isSeeking = NO;
 }
