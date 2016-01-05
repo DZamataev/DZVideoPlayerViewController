@@ -173,7 +173,7 @@ static const NSString *PlayerStatusContext;
     NSTimeInterval currentPlayerItemDuration = 0.0;
     if (self.playerItem) {
         CMTime duration = self.playerItem.duration;
-        if (CMTIME_IS_VALID(duration)) {
+        if (CMTIME_IS_VALID(duration) && duration.timescale>0) {
             currentPlayerItemDuration = duration.value / duration.timescale;
         }
     }
