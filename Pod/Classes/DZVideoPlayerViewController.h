@@ -66,6 +66,10 @@
 
 - (void)syncUI;
 
+- (void)setMuted:(BOOL)muted;
+
+- (BOOL)isMuted;
+
 - (void)toggleFullscreen:(id)sender;
 
 - (void)seek:(UISlider *)slider;

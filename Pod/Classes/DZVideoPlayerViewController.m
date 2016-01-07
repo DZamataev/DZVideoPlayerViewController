@@ -15,6 +15,7 @@ static const NSString *PlayerStatusContext;
 @interface DZVideoPlayerViewController ()
 {
     BOOL _isFullscreen;
+    BOOL _isMuted;
 }
 @property (strong, nonatomic) AVPlayer *player;
 @property (strong, nonatomic) AVPlayerItem *playerItem;
@@ -195,6 +196,21 @@ static const NSString *PlayerStatusContext;
 
 - (BOOL)canBecomeFirstResponder {
     return YES;
+}
+
+- (BOOL)isMuted {
+    if( self.player != nil ) {
+        _isMuted = self.player.muted;
+    }
+    return _isMuted;
+}
+
+- (void)setMuted:(BOOL)muted {
+    _isMuted = muted;
+    if( self.player != nil ) {
+        self.player.muted = _isMuted;
+        _isMuted = self.player.muted;
+    }
 }
 
 #pragma mark - Navigation
@@ -527,6 +543,8 @@ static const NSString *PlayerStatusContext;
         self.player = [[AVPlayer alloc] initWithPlayerItem:nil];
         // self.player = [[AVQueuePlayer alloc] initWithPlayerItem:nil];
     }
+    
+    [self setMuted:_isMuted];
     
     [self.player addObserver:self forKeyPath:@"rate"
                      options:NSKeyValueObservingOptionInitial|NSKeyValueObservingOptionNew context:&PlayerRateContext];
