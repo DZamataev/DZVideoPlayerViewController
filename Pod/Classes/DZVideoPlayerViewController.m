@@ -15,6 +15,7 @@ static const NSString *PlayerStatusContext;
 @interface DZVideoPlayerViewController ()
 {
     BOOL _isFullscreen;
+    BOOL _isMuted;
 }
 @property (strong, nonatomic) AVPlayer *player;
 @property (strong, nonatomic) AVPlayerItem *playerItem;
@@ -113,7 +114,7 @@ static const NSString *PlayerStatusContext;
     [self setupActions];
     [self setupNotifications];
     [self setupAudioSession];
-    [self setupPlayer];
+    // [self setupPlayer];
     [self setupRemoteCommandCenter];
     [self syncUI];
 }
@@ -144,28 +145,49 @@ static const NSString *PlayerStatusContext;
 
 - (NSTimeInterval)availableDuration {
     NSTimeInterval result = 0;
-    NSArray *loadedTimeRanges = self.player.currentItem.loadedTimeRanges;
-    
-    if ([loadedTimeRanges count] > 0) {
-        CMTimeRange timeRange = [[loadedTimeRanges objectAtIndex:0] CMTimeRangeValue];
-        Float64 startSeconds = CMTimeGetSeconds(timeRange.start);
-        Float64 durationSeconds = CMTimeGetSeconds(timeRange.duration);
-        result = startSeconds + durationSeconds;
+    if( self.player != nil ) {
+        NSArray *loadedTimeRanges = self.player.currentItem.loadedTimeRanges;
+        
+        if ([loadedTimeRanges count] > 0) {
+            CMTimeRange timeRange = [[loadedTimeRanges objectAtIndex:0] CMTimeRangeValue];
+            Float64 startSeconds = CMTimeGetSeconds(timeRange.start);
+            Float64 durationSeconds = CMTimeGetSeconds(timeRange.duration);
+            result = startSeconds + durationSeconds;
+        }
     }
     
     return result;
 }
 
 - (NSTimeInterval)currentPlaybackTime {
-    CMTime time = self.player.currentTime;
-    if (CMTIME_IS_VALID(time)) {
-        return time.value / time.timescale;
+    if( self.player != nil ) {
+        CMTime time = self.player.currentTime;
+        if (CMTIME_IS_VALID(time)) {
+            return time.value / time.timescale;
+        }
     }
     return 0;
 }
 
+- (NSTimeInterval)currentPlayerItemDuration
+{
+    NSTimeInterval currentPlayerItemDuration = 0.0;
+    if (self.playerItem) {
+        CMTime duration = self.playerItem.duration;
+        if (CMTIME_IS_VALID(duration) && duration.timescale>0) {
+            currentPlayerItemDuration = duration.value / duration.timescale;
+        }
+    }
+    return currentPlayerItemDuration;
+}
+
 - (BOOL)isPlaying {
-    return [self.player rate] > 0.0f;
+    if( self.player != nil ) {
+        return [self.player rate] > 0.0f;
+    }
+    else {
+        return NO;
+    }
 }
 
 - (BOOL)isFullscreen {
@@ -174,6 +196,21 @@ static const NSString *PlayerStatusContext;
 
 - (BOOL)canBecomeFirstResponder {
     return YES;
+}
+
+- (BOOL)isMuted {
+    if( self.player != nil ) {
+        _isMuted = self.player.muted;
+    }
+    return _isMuted;
+}
+
+- (void)setMuted:(BOOL)muted {
+    _isMuted = muted;
+    if( self.player != nil ) {
+        self.player.muted = _isMuted;
+        _isMuted = self.player.muted;
+    }
 }
 
 #pragma mark - Navigation
@@ -212,7 +249,12 @@ static const NSString *PlayerStatusContext;
                                      options:NSKeyValueObservingOptionInitial|NSKeyValueObservingOptionNew
                                      context:&ItemStatusContext];
                 
-                [self.player replaceCurrentItemWithPlayerItem:self.playerItem];
+                if( self.player != nil ) {
+                    [self.player replaceCurrentItemWithPlayerItem:self.playerItem];
+                }
+                else {
+                    [self setupPlayer];
+                }
                 
                 if (playAutomatically) {
                     [self play];
@@ -229,7 +271,9 @@ static const NSString *PlayerStatusContext;
 }
 
 - (void)play {
-    [self.player play];
+    if( self.player != nil ) {
+        [self.player play];
+    }
     [self startIdleCountdown];
     [self syncUI];
     [self onPlay];
@@ -237,7 +281,9 @@ static const NSString *PlayerStatusContext;
 }
 
 - (void)pause {
-    [self.player pause];
+    if( self.player != nil ) {
+        [self.player pause];
+    }
     [self stopIdleCountdown];
     [self syncUI];
     [self onPause];
@@ -254,8 +300,10 @@ static const NSString *PlayerStatusContext;
 }
 
 - (void)stop {
-    [self.player pause];
-    [self.player seekToTime:kCMTimeZero];
+    if( self.player != nil ) {
+        [self.player pause];
+        [self.player seekToTime:kCMTimeZero];
+    }
     [self stopIdleCountdown];
     [self syncUI];
     [self onStop];
@@ -312,9 +360,31 @@ static const NSString *PlayerStatusContext;
 }
 
 - (void)seek:(UISlider *)slider {
-    int timescale = self.playerItem.asset.duration.timescale;
-    float time = slider.value * (self.playerItem.asset.duration.value / timescale);
-    [self.player seekToTime:CMTimeMakeWithSeconds(time, timescale)];
+    if( self.playerItem != nil ) {
+        int timescale = self.playerItem.asset.duration.timescale;
+        if( timescale > 0 ) {
+            float time = slider.value * (self.playerItem.asset.duration.value / timescale);
+            if( self.player != nil ) {
+                [self.player seekToTime:CMTimeMakeWithSeconds(time, timescale)];
+            }
+        }
+    }
+}
+
+- (void)seekToTime:(NSTimeInterval)newPlaybackTime {
+    if( self.playerItem != nil ) {
+        int timescale = 1;
+        if(
+           [self playerItem] != nil
+           && [[self playerItem] asset] != nil
+           )
+        {
+            timescale = self.playerItem.asset.duration.timescale;
+        }
+        if( self.player != nil ) {
+            [self.player seekToTime:CMTimeMakeWithSeconds(newPlaybackTime, timescale)];
+        }
+    }
 }
 
 - (void)startSeeking:(id)sender {
@@ -323,6 +393,7 @@ static const NSString *PlayerStatusContext;
 }
 
 - (void)endSeeking:(id)sender {
+    [self updateNowPlayingInfo];
     [self startIdleCountdown];
     self.isSeeking = NO;
 }
@@ -340,12 +411,15 @@ static const NSString *PlayerStatusContext;
         self.progressIndicator.hidden = NO;
         
         CGFloat current;
-        if (self.isSeeking) {
+        if ( self.isSeeking ) {
             current = self.progressIndicator.value * duration;
         }
-        else {
+        else if( self.player != nil ) {
             // Otherwise, use the actual video position
             current = CMTimeGetSeconds(self.player.currentTime);
+        }
+        else {
+            current = self.progressIndicator.value * duration;
         }
         
         CGFloat left = duration - current;
@@ -382,22 +456,46 @@ static const NSString *PlayerStatusContext;
 }
 
 - (void)hideControls {
+    [self hideControlsWithAnimationDuration:0.3f];
+}
+- (void)hideControlsWithAnimationDuration:(NSTimeInterval)animationDuration {
     NSArray *views = self.configuration.viewsToHideOnIdle;
-    [UIView animateWithDuration:0.3f animations:^{
+    if( animationDuration <= 0 )
+    {
         for (UIView *view in views) {
             view.alpha = 0.0;
         }
-    }];
+    }
+    else
+    {
+        [UIView animateWithDuration:0.3f animations:^{
+            for (UIView *view in views) {
+                view.alpha = 0.0;
+            }
+        }];
+    }
     self.isControlsHidden = YES;
 }
 
 - (void)showControls {
+    [self showControlsWithAnimationDuration:0.3f];
+}
+- (void)showControlsWithAnimationDuration:(NSTimeInterval)animationDuration {
     NSArray *views = self.configuration.viewsToHideOnIdle;
-    [UIView animateWithDuration:0.3f animations:^{
+    if( animationDuration <= 0 )
+    {
         for (UIView *view in views) {
             view.alpha = 1.0;
         }
-    }];
+    }
+    else
+    {
+        [UIView animateWithDuration:animationDuration animations:^{
+            for (UIView *view in views) {
+                view.alpha = 1.0;
+            }
+        }];
+    }
     self.isControlsHidden = NO;
 }
 
@@ -422,7 +520,13 @@ static const NSString *PlayerStatusContext;
 
 - (NSMutableDictionary *)gatherNowPlayingInfo {
     NSMutableDictionary *nowPlayingInfo = [[NSMutableDictionary alloc] init];
-    [nowPlayingInfo setObject:[NSNumber numberWithDouble:self.player.rate] forKey:MPNowPlayingInfoPropertyPlaybackRate];
+    if( self.player != nil ) {
+        [nowPlayingInfo setObject:[NSNumber numberWithDouble:self.player.rate] forKey:MPNowPlayingInfoPropertyPlaybackRate];
+    }
+    else
+    {
+        [nowPlayingInfo setObject:[NSNumber numberWithDouble:(self.isPlaying?1.0:0.0)] forKey:MPNowPlayingInfoPropertyPlaybackRate];
+    }
     [nowPlayingInfo setObject:[NSNumber numberWithDouble:self.currentPlaybackTime] forKey:MPNowPlayingInfoPropertyElapsedPlaybackTime];
     [self onGatherNowPlayingInfo:nowPlayingInfo];
     return nowPlayingInfo;
@@ -431,7 +535,16 @@ static const NSString *PlayerStatusContext;
 #pragma mark - Private Actions
 
 - (void)setupPlayer {
-    self.player = [[AVPlayer alloc] initWithPlayerItem:nil];
+    if ( self.playerItem != nil ) {
+        self.player = [[AVPlayer alloc] initWithPlayerItem:self.playerItem];
+        // self.player = [[AVQueuePlayer alloc] initWithItems:@[self.playerItem,[[AVPlayerItem alloc] initWithAsset:[AVAsset assetWithURL:[self videoURL]]]]];
+    }
+    else {
+        self.player = [[AVPlayer alloc] initWithPlayerItem:nil];
+        // self.player = [[AVQueuePlayer alloc] initWithPlayerItem:nil];
+    }
+    
+    [self setMuted:_isMuted];
     
     [self.player addObserver:self forKeyPath:@"rate"
                      options:NSKeyValueObservingOptionInitial|NSKeyValueObservingOptionNew context:&PlayerRateContext];
@@ -507,9 +620,13 @@ static const NSString *PlayerStatusContext;
 }
 
 - (void)resignKVO {
-    [self.playerItem removeObserver:self forKeyPath:@"status" context:&ItemStatusContext];
-    [self.player removeObserver:self forKeyPath:@"rate" context:&PlayerRateContext];
-    [self.player removeObserver:self forKeyPath:@"status" context:&PlayerStatusContext];
+    if( self.playerItem != nil ) {
+        [self.playerItem removeObserver:self forKeyPath:@"status" context:&ItemStatusContext];
+    }
+    if( self.player != nil ) {
+        [self.player removeObserver:self forKeyPath:@"rate" context:&PlayerRateContext];
+        [self.player removeObserver:self forKeyPath:@"status" context:&PlayerStatusContext];
+    }
 }
 
 - (void)setupRemoteCommandCenter {

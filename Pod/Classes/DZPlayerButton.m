@@ -46,6 +46,29 @@
     }
 }
 
+-(void)setTitleColor:(UIColor *)color forState:(UIControlState)state
+{
+    [super setTitleColor:color forState:state];
+    UIImage *image = [self imageForState:UIControlStateNormal];
+    if (image)
+    {
+        //prepare and set image for normal state and highlighted state
+        
+        if( state == UIControlStateNormal )
+        {
+            UIColor *normalTintColor = [self titleColorForState:UIControlStateNormal];
+            UIImage *imageForNormalState = [self tintedImage:image withColor:normalTintColor];
+            [self setImage:imageForNormalState forState:UIControlStateNormal];
+        }
+        else if( state == UIControlStateHighlighted )
+        {
+            UIColor *highlightedTintColor = [self titleColorForState:UIControlStateHighlighted];
+            UIImage *imageForHighlightedState = [self tintedImage:image withColor:highlightedTintColor];
+            [self setImage:imageForHighlightedState forState:UIControlStateHighlighted];
+        }
+    }
+}
+
 - (UIImage*)tintedImage:(UIImage*)image withColor:(UIColor*)color
 {
     if (!color)

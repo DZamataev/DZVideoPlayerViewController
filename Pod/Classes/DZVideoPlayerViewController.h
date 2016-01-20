@@ -28,6 +28,7 @@
 
 // Readonly properties
 @property (readonly, nonatomic) NSTimeInterval currentPlaybackTime;
+@property (readonly, nonatomic) NSTimeInterval currentPlayerItemDuration;
 @property (readonly, nonatomic) NSTimeInterval availableDuration;
 @property (readonly, nonatomic) BOOL isPlaying;
 @property (readonly, nonatomic) BOOL isFullscreen;
@@ -65,9 +66,15 @@
 
 - (void)syncUI;
 
+- (void)setMuted:(BOOL)muted;
+
+- (BOOL)isMuted;
+
 - (void)toggleFullscreen:(id)sender;
 
 - (void)seek:(UISlider *)slider;
+
+- (void)seekToTime:(NSTimeInterval)newPlaybackTime;
 
 - (void)startSeeking:(id)sender;
 
@@ -81,7 +88,11 @@
 
 - (void)hideControls;
 
+- (void)hideControlsWithAnimationDuration:(NSTimeInterval)animationDuration;
+
 - (void)showControls;
+
+- (void)showControlsWithAnimationDuration:(NSTimeInterval)animationDuration;
 
 - (void)updateNowPlayingInfo;
 
