@@ -33,8 +33,11 @@ NSString *const kVideoFileExtension = @"mp4";
 //    self.videoPlayerViewController.configuration.isShowFullscreenExpandAndShrinkButtonsEnabled = NO;
 //    self.videoPlayerViewController.configuration.isHideControlsOnIdleEnabled = NO;
     
-    NSURL *fileURL = [[NSBundle mainBundle] URLForResource:kVideoFileName withExtension:kVideoFileExtension];
-    self.videoPlayerViewController.videoURL = fileURL;
+//    NSURL *fileURL = [[NSBundle mainBundle] URLForResource:kVideoFileName withExtension:kVideoFileExtension];
+//    self.videoPlayerViewController.videoURL = fileURL;
+    
+    NSURL *netURL = [NSURL URLWithString:@"http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"];
+    self.videoPlayerViewController.videoURL = netURL;
     [self.videoPlayerViewController prepareAndPlayAutomatically:YES];
 }
 

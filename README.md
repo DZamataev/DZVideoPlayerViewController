@@ -43,7 +43,7 @@ Basic snippet to start with:
 
 ``` ObjC
     self.videoPlayerViewController.delegate = self;
-    self.videoPlayerViewController.videoURL = [NSURL URLWithString:@"http://distilleryvesper7-3.ak.instagram.com/fdc51d8ea73611e3a15612e740d32ce3_101.mp4"];
+    self.videoPlayerViewController.videoURL = [NSURL URLWithString:@"http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"];
     self.videoPlayerViewController.isBackgroundPlaybackEnabled = YES;
     [self.videoPlayerViewController prepareAndPlayAutomatically:YES];
 ```
