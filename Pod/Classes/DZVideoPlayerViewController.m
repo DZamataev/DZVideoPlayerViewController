@@ -231,7 +231,12 @@ static const NSString *PlayerStatusContext;
     }
     
     if (self.playerItem) {
-        [self.playerItem removeObserver:self forKeyPath:@"status" context:&ItemStatusContext];
+        @try {
+            [self.playerItem removeObserver:self forKeyPath:@"status" context:&ItemStatusContext];
+        }
+        @catch(id anException) {
+            //do nothing
+        }
     }
     
     AVURLAsset *asset = [[AVURLAsset alloc] initWithURL:self.videoURL options:nil];
