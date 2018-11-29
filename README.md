@@ -1,24 +1,25 @@
 # DZVideoPlayerViewController
 
-[![CI Status](http://img.shields.io/travis/Denis Zamataev/DZVideoPlayerViewController.svg?style=flat)](https://travis-ci.org/Denis Zamataev/DZVideoPlayerViewController)
 [![Version](https://img.shields.io/cocoapods/v/DZVideoPlayerViewController.svg?style=flat)](http://cocoapods.org/pods/DZVideoPlayerViewController)
 [![License](https://img.shields.io/cocoapods/l/DZVideoPlayerViewController.svg?style=flat)](http://cocoapods.org/pods/DZVideoPlayerViewController)
 [![Platform](https://img.shields.io/cocoapods/p/DZVideoPlayerViewController.svg?style=flat)](http://cocoapods.org/pods/DZVideoPlayerViewController)
 
-##What is it
+## What is it
 
 iOS Video Player control, implemented with AVPlayer.
 
-##Screenshots
+## Screenshots
 
-
+1)
 ![image](https://raw.githubusercontent.com/DZamataev/DZVideoPlayerViewController/master/Screenshots/demo1(0.3.0).gif)
-
+2)
 ![image](https://raw.githubusercontent.com/DZamataev/DZVideoPlayerViewController/master/Screenshots/screenshot1(0.3.0).png)
+3)
 ![image](https://raw.githubusercontent.com/DZamataev/DZVideoPlayerViewController/master/Screenshots/screenshot2(0.3.0).png)
+4)
 ![image](https://raw.githubusercontent.com/DZamataev/DZVideoPlayerViewController/master/Screenshots/screenshot3(0.3.0).png)
 
-##About
+## About
 
 iOS Video Player control that features
 * play online or offline videos
